@@ -32,5 +32,6 @@ ros2 run py_akari_pubsub akari_talker
 
 
 ### Subscriber
+```
 ros2 run py_akari_pubsub akari_listener
-
+```
