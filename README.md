@@ -40,3 +40,32 @@ ros2 run py_akari_pubsub akari_talker
 ```
 ros2 run py_akari_pubsub akari_listener
 ```
+
+***
+## py_srvcli
+A simple service and client (Python)
+
+https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html
+
+### service node  
+```
+ros2 run py_srvcli service
+```
+### client node
+```
+ros2 run py_srvcli client 2 3
+```
+
+***
+## py_hello & py_tutorial_interfaces
+custom msg and srv files
+### server node  
+```
+ros2 run py_hello server
+```
+### client node
+```
+ros2 run py_hello client
+```
+
+
