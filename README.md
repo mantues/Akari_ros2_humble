@@ -20,6 +20,8 @@ ros2 run py_pubsub listener
 
 ***
 ## py_akari_pubsub
+Operate Akari using the keyboard.
+
 ### Publisher
 
 ```
