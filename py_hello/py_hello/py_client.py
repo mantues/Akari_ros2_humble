@@ -49,10 +49,7 @@ def main(args=None):
                 client.get_logger().info("Error: %r" % (e,))
             break
 
-    # ノードを明示的に破棄
     client.destroy_node()
-
-    # ROS通信のシャットダウン
     rclpy.shutdown()
 
 if __name__ == "__main__":
