@@ -14,7 +14,7 @@ https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Sim
 ```ros2 run py_pubsub listener```
 
 ***
-## py_py_akari_pubsub
+## py_akari_pubsub
 ### Publisher
 
 ```
