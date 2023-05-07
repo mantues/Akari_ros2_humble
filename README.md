@@ -9,9 +9,13 @@ A simple publisher and subscriber (Python)
 https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html
 
 ### Publisher  
-```ros2 run py_pubsub talker```
+```
+ros2 run py_pubsub talker
+```
 ### Subscriber
-```ros2 run py_pubsub listener```
+```
+ros2 run py_pubsub listener
+```
 
 ***
 ## py_akari_pubsub
