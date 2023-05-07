@@ -24,7 +24,6 @@ def main(args=None):
     server = MyServer()
 
     rclpy.spin(server)
-
     rclpy.shutdown()
 
 if __name__ == "__main__":
