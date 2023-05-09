@@ -1,0 +1,4 @@
+#For set LCD color
+string color
+---
+bool result
