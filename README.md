@@ -70,4 +70,19 @@ ros2 run py_hello server
 ros2 run py_hello client
 ```
 
-
+***
+## py_m5serial
+Read GPIO sample & simple publisher
+### check GPIO
+```
+python3 py_m5serial/src/button_gpio.py 
+```
+### Publish GPIO message. Topic /M5stack
+(ros2 run py_m5serial M5publisher does NOT work)
+```
+python3 py_m5serial/src/button_gpio_publisher.py
+```
+### To check ros2 message
+```
+ros2 topic echo /M5stack
+```
