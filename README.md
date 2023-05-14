@@ -65,7 +65,7 @@ custom msg and srv files
 ```
 ros2 run py_hello server
 ```
-### client node
+### server node  
 ```
 ros2 run py_hello client
 ```
@@ -86,3 +86,36 @@ python3 py_m5serial/src/button_gpio_publisher.py
 ```
 ros2 topic echo /M5stack
 ```
+
+***
+## A simple service and client M5stack screen
+### client node
+Send request to change color of M5stack screen
+
+```
+python3 py_m5serial/src/py_m5client.py 
+```
+Send a request by selecting at random from Color list.
+Then how results from the server.
+```
+・Color list
+ 'BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
+ 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
+ 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM'
+ 
+<FYI>
+RESET: Reset M5stack screen
+RANDOM: Random color red(0-255), green(0-255), blue(0-255)
+```
+
+
+
+
+### server node
+```
+python3 py_m5serial/src/py_m5server.py 
+```
+Changes the color of M5stack screen according to the py_m5client's request.
+If the request is for a color that includes random, True is sent as the result.
+If the request is for a reset, send False.
+
