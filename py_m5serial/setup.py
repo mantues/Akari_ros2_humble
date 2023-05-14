@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "M5publisher = src.button_gpio_publisher:main",
+            'M5publisher = src.button_gpio_publisher:main',
+            'client = src.py_m5client:main',
+            'service = src.py_m5server:main',
         ],
     },
 )
