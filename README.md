@@ -96,6 +96,7 @@ ros2 topic echo /M5stack
 
 ***
 ## M5 Stackをつかった service and client
+　ros2 run py_m5serial client, ros2 run py_m5serial service　は動きません。（なんでや）
 ### client node
 Clientから画面を変えるRequestを送信。
 Requestはカラーリストからランダムで選択します。
@@ -120,7 +121,9 @@ RANDOM: RGB成分をランダムで送信 red(0-255), green(0-255), blue(0-255)
 
 ### server node
 Clientから送られたRequestに応じて画面を変更。
+
 色を変更した場合はTrueを返す。（ランダムを含む）
+
 M5stackの画面をリセットした場合はFalseを返す。
 
 ```
