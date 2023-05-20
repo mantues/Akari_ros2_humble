@@ -78,9 +78,9 @@ Read GPIO sample & simple publisher
 python3 py_m5serial/src/button_gpio.py 
 ```
 ### Publish GPIO message. Topic /M5stack
-(ros2 run py_m5serial M5publisher does NOT work)
+
 ```
-python3 py_m5serial/src/button_gpio_publisher.py
+python3 py_m5serial/src/m5stack_publisher.py
 ```
 ### To check ros2 message
 ```
@@ -89,11 +89,11 @@ ros2 topic echo /M5stack
 
 ***
 ## A simple service and client M5stack screen
-### client node
+### client node(color request)
 Send request to change color of M5stack screen
 
 ```
-python3 py_m5serial/src/py_m5client.py 
+python3 py_m5serial/src/py_m5client_color.py 
 ```
 Send a request by selecting at random from Color list.
 Then how results from the server.
@@ -107,7 +107,28 @@ Then how results from the server.
 RESET: Reset M5stack screen
 RANDOM: Random color red(0-255), green(0-255), blue(0-255)
 ```
+### client node(text request)
+Send request to show text on M5stack screen
 
+```
+python3 py_m5serial/src/py_m5client_text.py 
+```
+Send a request by selecting at random from list.
+
+```
+・text list
+'1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯'
+
+・text size
+'3', '4', '5'
+
+・Color list(text, background)
+ 'BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
+ 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
+ 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM'
+
+
+```
 
 
 
@@ -115,7 +136,5 @@ RANDOM: Random color red(0-255), green(0-255), blue(0-255)
 ```
 python3 py_m5serial/src/py_m5server.py 
 ```
-Changes the color of M5stack screen according to the py_m5client's request.
-If the request is for a color that includes random, True is sent as the result.
-If the request is for a reset, send False.
-
+Changes a screen of M5stack according to the py_m5client's request.
+If screen is changed, True is sent as the result.
