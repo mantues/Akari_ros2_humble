@@ -11,6 +11,8 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(ament_cmake_python REQUIRED)
+
 # ADD dependencies
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
@@ -37,6 +39,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 install(TARGETS
   DESTINATION lib/${PROJECT_NAME}/
 )
+
   
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
