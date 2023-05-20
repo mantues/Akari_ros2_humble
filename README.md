@@ -87,7 +87,7 @@ python3 py_m5serial/src/button_gpio.py
 ### M5 Stackのボタンを読み取ってPublishするコマンド（トピック：　M5stack）
 　ros2 run py_m5serial M5publisher　は動きません。（調査中）
 ```
-python3 py_m5serial/src/button_gpio_publisher.py
+python3 py_m5serial/src/m5stack_publisher.py
 ```
 ### Tros2 messageの受け取り方
 ```
@@ -96,13 +96,13 @@ ros2 topic echo /M5stack
 
 ***
 ## M5 Stackをつかった service and client
-　ros2 run py_m5serial client, ros2 run py_m5serial service　は動きません。（なんでや）
-### client node
+　ros2 run py_m5serial client_color, ros2 run py_m5serial service　は動きません。（なんでや）
+### M5Stackの画面の色を変える　client node
 Clientから画面を変えるRequestを送信。
 Requestはカラーリストからランダムで選択します。
 
 ```
-python3 py_m5serial/src/py_m5client.py 
+python3 py_m5serial/src/py_m5client_color.py 
 ```
 
 ```
@@ -115,16 +115,33 @@ python3 py_m5serial/src/py_m5client.py
 RESET: M5stackの画面をリセット
 RANDOM: RGB成分をランダムで送信 red(0-255), green(0-255), blue(0-255)
 ```
+### M5Stackにテキストを表示させる　client node
+ClientからRequestを送信。
+Requestはリストからランダムで選択します。
 
+```
+python3 py_m5serial/src/py_m5client_text.py 
+```
+```
+・テキストリスト
+'1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯'
 
+・テキストサイズ
+'3', '4', '5'
+
+・カラーリスト
+ 'BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
+ 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
+ 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK'
+```
 
 
 ### server node
 Clientから送られたRequestに応じて画面を変更。
 
-色を変更した場合はTrueを返す。（ランダムを含む）
+リクエストに応じた場合はTrueを返す。
 
-M5stackの画面をリセットした場合はFalseを返す。
+想定外のリクエストの場合はFalseを返す。
 
 ```
 python3 py_m5serial/src/py_m5server.py 
