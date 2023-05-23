@@ -135,6 +135,13 @@ python3 py_m5serial/src/py_m5client_text.py
  'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK'
 ```
 
+### M5Stackをリセットする　client node
+ClientからRequestを送信。
+
+```
+python3 py_m5serial/src/py_m5client_reset.py 
+```
+
 
 ### server node
 Clientから送られたRequestに応じて画面を変更。
