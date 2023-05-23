@@ -5,13 +5,16 @@ from rclpy.node import Node
 from py_m5serial.msg import M5
 from py_m5serial.srv import (SetAllout, SetDisplayColor,
                                SetDout, SetPwmout,
-                               SetDisplayImage, SetDisplayText)
+                               SetDisplayImage, SetDisplayText,
+                               Trigger)
                                
 from akari_client import AkariClient
 from akari_client.color import Color, Colors
 from akari_client.position import Positions
 import random
 import time
+import os
+import sys
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
@@ -25,9 +28,9 @@ class m5server(Node):
         super().__init__("m5_service")
 
         # create service
-        self.srv = self.create_service(SetDisplayColor, 'set_display_color', self.set_display_color)
-        self.srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
-        
+        self._set_display_srv = self.create_service(SetDisplayColor, 'set_display_color', self.set_display_color)
+        self._set_display_srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
+        self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
         self.random_color = Color(
                 red=random.randint(0, 255),
                 green=random.randint(0, 255),
@@ -82,6 +85,19 @@ class m5server(Node):
             response.result = True
         else:
             self.m5.reset_m5()
+            response.result = False
+        return response
+        
+    # callback
+    def reset_m5(self, request, response):
+        
+        # set_display_text
+        if request.trigger == "RESET":
+            self.m5.reset_m5()
+            self.get_logger().info('RESET M5 Stack')
+            response.result = True
+        else:
+            self.get_logger().info('M5 Stack')
             response.result = False
         return response
 

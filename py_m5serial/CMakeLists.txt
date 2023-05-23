@@ -26,6 +26,7 @@ set(srv_files
   "srv/SetDisplayText.srv"
   "srv/SetDout.srv"
   "srv/SetPwmout.srv"
+  "srv/Trigger.srv"
 )
 set(msg_files
   "msg/M5.msg"
