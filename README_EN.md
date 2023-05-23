@@ -130,6 +130,13 @@ Send a request by selecting at random from list.
 
 ```
 
+### client node(RESET request)
+Send request to RESET M5stack.
+
+```
+python3 py_m5serial/src/py_m5client_reset.py 
+```
+
 
 
 ### server node
