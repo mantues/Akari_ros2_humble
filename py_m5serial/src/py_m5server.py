@@ -27,10 +27,16 @@ class m5server(Node):
     def __init__(self):
         super().__init__("m5_service")
 
-        # create service
-        self._set_display_srv = self.create_service(SetDisplayColor, 'set_display_color', self.set_display_color)
-        self._set_display_srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
+        # create service OUT
+        self._set_dout_srv = self.create_service(SetDout, 'set_dout_m5', self.set_dout_m5)
+        self._set_pwmout_srv = self.create_service(SetPwmout, 'set_pwmout_m5', self.set_pwmout_m5)
+        self._set_allout_srv = self.create_service(SetAllout, 'set_allout_m5', self.set_allout_m5)
+        self._reset_allout_srv = self.create_service(Trigger, 'reset_allout_m5', self.reset_allout_m5)
+        # create service DISPLAY
+        self._set_display_color_srv = self.create_service(SetDisplayColor, 'set_display_color', self.set_display_color)
+        self._set_display_text_srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
         self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
+        
         self.random_color = Color(
                 red=random.randint(0, 255),
                 green=random.randint(0, 255),
@@ -42,6 +48,7 @@ class m5server(Node):
         self.m5 = self.akari.m5stack
         self.data = self.m5.get()
 
+    # DISPLAY CALL BACK
     # callback
     def set_display_color(self, request, response):
         req_color = request.color
@@ -91,7 +98,7 @@ class m5server(Node):
     # callback
     def reset_m5(self, request, response):
         
-        # set_display_text
+        # reset m5 screen
         if request.trigger == "RESET":
             self.m5.reset_m5()
             self.get_logger().info('RESET M5 Stack')
@@ -100,6 +107,64 @@ class m5server(Node):
             self.get_logger().info('M5 Stack')
             response.result = False
         return response
+    
+    # OUT CALL BACK
+    # callback
+    def set_dout_m5(self, request, response):
+        req_id = request.pin_id
+        req_val = request.val
+        # set m5 dout
+        if -1 < req_id and req_id < 2:
+            self.m5.set_dout(req_id, req_val)
+            self.get_logger().info('PIN_ID: %s Valut: %s' % (str(req_id), str(req_val)))
+            response.result = True
+        else:
+            self.get_logger().info('PIN_ID is NOT Corect (0-2 is OK): %s' % (str(req_id)))
+            response.result = False
+        return response
+
+    # callback
+    def set_pwmout_m5(self, request, response):
+        req_id = request.pin_id
+        req_val = request.val
+        # set m5 dout
+        if req_id == 0 and -1 < req_val < 256:
+            self.m5.set_pwmout(req_id, req_val)
+            self.get_logger().info('PIN_ID: %s Valut: %s' % (str(req_id), str(req_val)))
+            response.result = True
+        else:
+            self.get_logger().info('PIN_ID: %s or Value: %s is NOT Corect (ID:0-2, Value:0-255)' % (str(req_id), str(req_val)))
+            response.result = False
+        return response
+
+    # callback
+    def set_allout_m5(self, request, response):
+        req_dout0 = request.dout0_val
+        req_dout1 = request.dout1_val
+        req_pwmout0_val = request.pwmout0_val
+        # set m5 dout
+        if -1 < req_pwmout0_val < 256:
+            self.m5.set_allout(dout0 = req_dout0, dout1 = req_dout1, pwmout0 = req_pwmout0_val)
+            self.get_logger().info('Dout0: %s Dout1: %s PWM: %s' % (str(req_dout0), str(req_dout1), str(req_pwmout0_val)))
+            response.result = True
+        else:
+            self.get_logger().info('PWM Value: %s is NOT Corect (0-255)' % (str(req_pwmout0_val)))
+            response.result = False
+        return response
+
+    # callback
+    def reset_allout_m5(self, request, response):
+        
+        # reset m5 allout
+        if request.trigger == "RESETALLOUT":
+            self.m5.reset_allout()
+            self.get_logger().info('RESETALLOUT M5 Stack')
+            response.result = True
+        else:
+            self.get_logger().info('M5 Stack')
+            response.result = False
+        return response
+    
 
 def main(args=None):
     rclpy.init(args=args)

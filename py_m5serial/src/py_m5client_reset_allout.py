@@ -7,7 +7,8 @@ from rclpy.node import Node
 from py_m5serial.msg import M5
 from py_m5serial.srv import (SetAllout, SetDisplayColor,
                                SetDout, SetPwmout,
-                               SetDisplayImage, SetDisplayText)
+                               SetDisplayImage, SetDisplayText,
+                               Trigger)
                                
 from akari_client import AkariClient
 from akari_client.color import Color, Colors
@@ -18,31 +19,21 @@ import os
 import sys
 
 
-color_pair_text = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
+color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
-                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK']
-                
-text_pair = ['1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯']
-text_size = [3, 4, 5]
+                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM']
 
 class m5client(Node):
 
     def __init__(self):
-        super().__init__('m5client_text_node')
+        super().__init__('m5client_reset_allout_node')
         # create client
-        self.cli = self.create_client(SetDisplayText, 'set_display_text')
+        self.cli = self.create_client(Trigger, 'reset_allout_m5')
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
         
         # create request
-        self.req = SetDisplayText.Request()
-        
-        self.random_color = Color(
-                red=random.randint(0, 255),
-                green=random.randint(0, 255),
-                blue=random.randint(0, 255),
-            )
-            
+        self.req = Trigger.Request()
                 
         self.akari = AkariClient()
         self.m5 = self.akari.m5stack
@@ -50,14 +41,8 @@ class m5client(Node):
 
     def send_request(self):
         #color_num = int(input())
-        self.req.text = random.choice(text_pair)
-        self.req.pos_x = 0
-        self.req.pos_y = 0
-        self.req.size = random.choice(text_size)
-        self.req.text_color = random.choice(color_pair_text)
-        self.req.back_color = random.choice(color_pair_text)
-        self.req.refresh = False
-        self.get_logger().info('Change color : %s' % (self.req))
+        self.req.trigger = "RESETALLOUT"
+        self.get_logger().info('M5Stack reset : %s' % (self.req))
         
         self.future = self.cli.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
