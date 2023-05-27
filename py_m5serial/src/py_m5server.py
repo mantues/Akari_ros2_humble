@@ -35,6 +35,7 @@ class m5server(Node):
         # create service DISPLAY
         self._set_display_color_srv = self.create_service(SetDisplayColor, 'set_display_color', self.set_display_color)
         self._set_display_text_srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
+        self._set_display_image_srv = self.create_service(SetDisplayImage, 'set_display_image', self.set_display_image)
         self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
         
         self.random_color = Color(
@@ -96,8 +97,19 @@ class m5server(Node):
         return response
         
     # callback
-    def reset_m5(self, request, response):
+    def set_display_image(self, request, response):
+        # display image on m5 screen
+        filepath = request.filepath
+        pos_x = request.pos_x
+        pos_y = request.pos_y
+        scale = request.scale
+        self.m5.set_display_image(filepath, pos_x, pos_y, scale)
+        response.result = True
         
+        return response
+    
+    # callback
+    def reset_m5(self, request, response):
         # reset m5 screen
         if request.trigger == "RESET":
             self.m5.reset_m5()
