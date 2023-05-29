@@ -31,11 +31,15 @@ set(srv_files
 set(msg_files
   "msg/M5.msg"
 )
+set(action_files
+  "action/MoveJoint.action"
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${srv_files}
   ${msg_files}
-  DEPENDENCIES builtin_interfaces std_msgs
+  ${action_files}
+  DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 install(TARGETS
   DESTINATION lib/${PROJECT_NAME}/
