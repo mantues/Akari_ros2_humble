@@ -1,13 +1,14 @@
 import rclpy
 from py_tutorial_interfaces.srv import AddThreeInts
 from rclpy.node import Node
+from rclpy.action import ActionServer
 
 from py_m5serial.msg import M5
 from py_m5serial.srv import (SetAllout, SetDisplayColor,
                                SetDout, SetPwmout,
                                SetDisplayImage, SetDisplayText,
                                Trigger)
-                               
+from py_m5serial.action import (MoveJoint)
 from akari_client import AkariClient
 from akari_client.color import Color, Colors
 from akari_client.position import Positions
@@ -37,6 +38,8 @@ class m5server(Node):
         self._set_display_text_srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
         self._set_display_image_srv = self.create_service(SetDisplayImage, 'set_display_image', self.set_display_image)
         self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
+        # create action service JOINTS
+        self._move_joint_action_srv = ActionServer(self, MoveJoint, 'move_joints', self.move_joints)
         
         self.random_color = Color(
                 red=random.randint(0, 255),
@@ -44,8 +47,9 @@ class m5server(Node):
                 blue=random.randint(0, 255),
             )
             
-        
+        # SETTING AKARI
         self.akari = AkariClient()
+        self.joints = self.akari.joints
         self.m5 = self.akari.m5stack
         self.data = self.m5.get()
 
@@ -166,7 +170,6 @@ class m5server(Node):
 
     # callback
     def reset_allout_m5(self, request, response):
-        
         # reset m5 allout
         if request.trigger == "RESETALLOUT":
             self.m5.reset_allout()
@@ -176,7 +179,30 @@ class m5server(Node):
             self.get_logger().info('M5 Stack')
             response.result = False
         return response
-    
+
+    # ACTION CALL BACK
+    # callback
+    def move_joints(self, action_msg):
+        # enable servo
+        self.joints.enable_all_servo()
+        # feedback
+        feedback = MoveJoint.Feedback()
+        feedback.pos_pan = self.joints.get_joint_positions()['pan']
+        feedback.pos_tilt = self.joints.get_joint_positions()['tilt']
+        action_msg.publish_feedback(feedback)
+        
+        acc_pan = action_msg.request.acc_pan
+        acc_tilt = action_msg.request.acc_tilt
+        vel_pan = action_msg.request.vel_pan
+        vel_tilt = action_msg.request.vel_tilt
+        goal_pan = action_msg.request.goal_pan
+        goal_tilt = action_msg.request.goal_tilt
+        self.joints.move_joint_positions(pan=goal_pan,tilt=goal_tilt)
+        self.get_logger().info('ACTION server pan: %s tilt: %s' % (str(goal_tilt), str(goal_pan)))
+        action_msg.succeed()
+        result = MoveJoint.Result()
+        
+        return result    
 
 def main(args=None):
     rclpy.init(args=args)
