@@ -16,10 +16,11 @@ import random
 import time
 import os
 import sys
+from std_msgs.msg import Int32MultiArray
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
-                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RANDOM']
+                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
 
 text_pair = ['1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯']
 
@@ -65,7 +66,19 @@ class m5server(Node):
                 time.sleep(0.5)
                 self.m5.set_display_text(text='RANDOM', 
                     pos_x=Positions.CENTER, pos_y=Positions.CENTER, size=5,
-                    text_color=Colors.WHITE, back_color=Colors.DARKGREY, refresh=False)            
+                    text_color=Colors.WHITE, back_color=Colors.DARKGREY, refresh=False)
+            elif req_color == 'RESET':
+                self.m5.reset_m5()
+            elif req_color == 'SELECT':
+                r_color = request.color_var[0]
+                g_color = request.color_var[1]
+                b_color = request.color_var[2]
+                color = Color(red=r_color, green=g_color, blue=b_color)
+                self.m5.set_display_color(color)
+                time.sleep(0.5)
+                self.m5.set_display_text(text='SELECT', 
+                    pos_x=Positions.CENTER, pos_y=Positions.CENTER, size=5,
+                    text_color=Colors.WHITE, back_color=Colors.DARKGREY, refresh=False)
             else:
                 self.m5.set_display_color(Colors[req_color])
                 time.sleep(0.5)                
@@ -216,4 +229,3 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
-
