@@ -17,11 +17,11 @@ import random
 import time
 import os
 import sys
-
+from std_msgs.msg import Int32MultiArray
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
-                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM']
+                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT']
 
 class m5client(Node):
 
@@ -49,7 +49,16 @@ class m5client(Node):
     def send_request(self):
         #color_num = int(input())
         #self.req.color = 'RED'
-        self.req.color = random.choice(color_pair)
+        choice = random.choice(color_pair)
+        self.req.color = choice
+        if choice == 'SELECT':
+            self.req.color_var = [random.randint(0, 255),
+                                    random.randint(0, 255),
+                                    random.randint(0, 255)]
+        else:
+            self.req.color_var = [0, 0, 0]
+
+
         self.get_logger().info('Change color : %s' % (self.req))
         
         self.future = self.cli.call_async(self.req)
