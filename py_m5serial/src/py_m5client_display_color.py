@@ -21,7 +21,7 @@ from std_msgs.msg import Int32MultiArray
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
-                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT', 'SELECT']
+                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
 
 class m5client(Node):
 
