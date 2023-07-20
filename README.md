@@ -1,4 +1,4 @@
-# Akari_for_ros2 humble
+# Akari_ros2 humble
 Akari ROS 2 Humble version (誠意製作中)
 
 https://github.com/AkariGroup/akari_software
