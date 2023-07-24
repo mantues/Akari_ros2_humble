@@ -2,7 +2,6 @@
 # coding:utf-8
 
 import rclpy
-from py_tutorial_interfaces.srv import AddThreeInts
 from rclpy.node import Node
 
 from akari_msgs.msg import M5
@@ -17,8 +16,7 @@ from akari_client.position import Positions
 import random
 import time
 import os
-import sysfile:///home/kaz/ros2_ws/src/Akari_for_ros2_humble/py_m5serial/setup.py
-
+#import setup
 
 
 class M5Publisher(Node):
