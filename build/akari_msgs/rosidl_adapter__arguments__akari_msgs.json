@@ -1,0 +1,14 @@
+{
+  "package_name": "akari_msgs",
+  "non_idl_tuples": [
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/SetAllout.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/SetDisplayColor.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/SetDisplayImage.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/SetDisplayText.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/SetDout.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/SetPwmout.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:srv/Trigger.srv",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:msg/M5.msg",
+    "/home/akariros/Akari_ros2_humble/akari_msgs:action/MoveJoint.action"
+  ]
+}

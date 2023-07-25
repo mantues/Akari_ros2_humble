@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from akari_msgs/srv/SetDisplayColor.srv
+// generated code does not contain a copyright notice
+
+
+module akari_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "For set LCD color")
+    struct SetDisplayColor_Request {
+      string color;
+
+      sequence<int32> color_var;
+    };
+    struct SetDisplayColor_Response {
+      boolean result;
+    };
+  };
+};

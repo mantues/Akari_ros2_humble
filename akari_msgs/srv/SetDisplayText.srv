@@ -1,0 +1,10 @@
+#For set LCD text
+string text
+int32 pos_x
+int32 pos_y
+uint8 size
+string text_color
+string back_color
+bool refresh
+---
+bool result

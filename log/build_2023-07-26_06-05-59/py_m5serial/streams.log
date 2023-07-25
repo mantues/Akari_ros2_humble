@@ -1,0 +1,79 @@
+[1.803s] Invoking command in '/home/akariros/Akari_ros2_humble/py_m5serial': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/py_m5serial/prefix_override:/home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/py_m5serial build --build-base /home/akariros/Akari_ros2_humble/build/py_m5serial/build install --record /home/akariros/Akari_ros2_humble/build/py_m5serial/install.log --single-version-externally-managed
+[2.426s] running egg_info
+[2.428s] creating ../build/py_m5serial/py_m5serial.egg-info
+[2.429s] writing ../build/py_m5serial/py_m5serial.egg-info/PKG-INFO
+[2.430s] writing dependency_links to ../build/py_m5serial/py_m5serial.egg-info/dependency_links.txt
+[2.431s] writing entry points to ../build/py_m5serial/py_m5serial.egg-info/entry_points.txt
+[2.431s] writing requirements to ../build/py_m5serial/py_m5serial.egg-info/requires.txt
+[2.432s] writing top-level names to ../build/py_m5serial/py_m5serial.egg-info/top_level.txt
+[2.433s] writing manifest file '../build/py_m5serial/py_m5serial.egg-info/SOURCES.txt'
+[2.438s] reading manifest file '../build/py_m5serial/py_m5serial.egg-info/SOURCES.txt'
+[2.441s] writing manifest file '../build/py_m5serial/py_m5serial.egg-info/SOURCES.txt'
+[2.441s] running build
+[2.441s] running build_py
+[2.443s] creating /home/akariros/Akari_ros2_humble/build/py_m5serial/build
+[2.443s] creating /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib
+[2.443s] creating /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.444s] copying py_m5serial/py_m5client_reset_allout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.444s] copying py_m5serial/py_m5client_set_dout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.445s] copying py_m5serial/__init__.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.445s] copying py_m5serial/m5stack_publisher.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.446s] copying py_m5serial/py_m5client_display_reset.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.447s] copying py_m5serial/py_m5client_move_joints_actionclient.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.447s] copying py_m5serial/py_m5server.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.448s] copying py_m5serial/py_m5client_set_pwmout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.448s] copying py_m5serial/py_m5client_set_allout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.449s] copying py_m5serial/py_m5client_display_color.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.449s] copying py_m5serial/py_m5client_display_image.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.450s] copying py_m5serial/py_m5client_display_text.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial
+[2.450s] running install
+[2.450s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.451s]   warnings.warn(
+[2.451s] running install_lib
+[2.452s] creating /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.453s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_reset_allout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.453s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_set_dout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.453s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/__init__.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.454s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/m5stack_publisher.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.454s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_reset.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.454s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_move_joints_actionclient.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.454s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5server.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.455s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_set_pwmout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.455s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_set_allout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.455s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_color.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.456s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_image.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.456s] copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_text.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial
+[2.457s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_reset_allout.py to py_m5client_reset_allout.cpython-310.pyc
+[2.458s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_set_dout.py to py_m5client_set_dout.cpython-310.pyc
+[2.459s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/__init__.py to __init__.cpython-310.pyc
+[2.459s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/m5stack_publisher.py to m5stack_publisher.cpython-310.pyc
+[2.460s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_reset.py to py_m5client_display_reset.cpython-310.pyc
+[2.461s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_move_joints_actionclient.py to py_m5client_move_joints_actionclient.cpython-310.pyc
+[2.462s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5server.py to py_m5server.cpython-310.pyc
+[2.465s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_set_pwmout.py to py_m5client_set_pwmout.cpython-310.pyc
+[2.465s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_set_allout.py to py_m5client_set_allout.cpython-310.pyc
+[2.466s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_color.py to py_m5client_display_color.cpython-310.pyc
+[2.468s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_image.py to py_m5client_display_image.cpython-310.pyc
+[2.468s] byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_text.py to py_m5client_display_text.cpython-310.pyc
+[2.470s] running install_data
+[2.471s] creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index
+[2.471s] creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index/resource_index
+[2.471s] creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index/resource_index/packages
+[2.472s] copying resource/py_m5serial -> /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index/resource_index/packages
+[2.472s] copying package.xml -> /home/akariros/Akari_ros2_humble/install/py_m5serial/share/py_m5serial
+[2.472s] running install_egg_info
+[2.474s] Copying ../build/py_m5serial/py_m5serial.egg-info to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial-0.0.0-py3.10.egg-info
+[2.476s] running install_scripts
+[2.512s] Installing m5client_display_color script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.514s] Installing m5client_display_image script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.514s] Installing m5client_display_reset script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.515s] Installing m5client_display_text script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.517s] Installing m5client_move_joints_actionclient script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.518s] Installing m5client_reset_allout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.518s] Installing m5client_set_allout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.518s] Installing m5client_set_dout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.519s] Installing m5client_set_pwmout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.519s] Installing m5publisher script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.519s] Installing m5server script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial
+[2.519s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/py_m5serial/install.log'
+[2.565s] Invoked command in '/home/akariros/Akari_ros2_humble/py_m5serial' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/py_m5serial/prefix_override:/home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/py_m5serial build --build-base /home/akariros/Akari_ros2_humble/build/py_m5serial/build install --record /home/akariros/Akari_ros2_humble/build/py_m5serial/install.log --single-version-externally-managed

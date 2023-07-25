@@ -1,0 +1,9 @@
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/SetAllout.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/SetDisplayColor.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/SetDisplayImage.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/SetDisplayText.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/SetDout.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/SetPwmout.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:srv/Trigger.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:msg/M5.idl
+/home/akariros/Akari_ros2_humble/build/akari_msgs/rosidl_adapter/akari_msgs:action/MoveJoint.idl
