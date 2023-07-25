@@ -1,4 +1,0 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(akari_msgs_IDL_FILES "srv/SetAllout.idl;srv/SetDisplayColor.idl;srv/SetDisplayImage.idl;srv/SetDisplayText.idl;srv/SetDout.idl;srv/SetPwmout.idl;srv/Trigger.idl;msg/M5.idl;action/MoveJoint.idl")
-set(akari_msgs_INTERFACE_FILES "srv/SetAllout.srv;srv/SetAllout_Request.msg;srv/SetAllout_Response.msg;srv/SetDisplayColor.srv;srv/SetDisplayColor_Request.msg;srv/SetDisplayColor_Response.msg;srv/SetDisplayImage.srv;srv/SetDisplayImage_Request.msg;srv/SetDisplayImage_Response.msg;srv/SetDisplayText.srv;srv/SetDisplayText_Request.msg;srv/SetDisplayText_Response.msg;srv/SetDout.srv;srv/SetDout_Request.msg;srv/SetDout_Response.msg;srv/SetPwmout.srv;srv/SetPwmout_Request.msg;srv/SetPwmout_Response.msg;srv/Trigger.srv;srv/Trigger_Request.msg;srv/Trigger_Response.msg;msg/M5.msg;action/MoveJoint.action")

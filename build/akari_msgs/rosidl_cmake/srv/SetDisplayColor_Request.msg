@@ -1,3 +1,0 @@
-#For set LCD color
-string color
-int32[] color_var
