@@ -1,0 +1,6 @@
+source;share/m5displayserver/hook/pythonpath.ps1
+source;share/m5displayserver/hook/pythonpath.dsv
+source;share/m5displayserver/hook/pythonpath.sh
+source;share/m5displayserver/hook/ament_prefix_path.ps1
+source;share/m5displayserver/hook/ament_prefix_path.dsv
+source;share/m5displayserver/hook/ament_prefix_path.sh

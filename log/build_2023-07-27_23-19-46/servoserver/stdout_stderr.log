@@ -1,0 +1,36 @@
+running egg_info
+creating ../build/servoserver/servoserver.egg-info
+writing ../build/servoserver/servoserver.egg-info/PKG-INFO
+writing dependency_links to ../build/servoserver/servoserver.egg-info/dependency_links.txt
+writing entry points to ../build/servoserver/servoserver.egg-info/entry_points.txt
+writing requirements to ../build/servoserver/servoserver.egg-info/requires.txt
+writing top-level names to ../build/servoserver/servoserver.egg-info/top_level.txt
+writing manifest file '../build/servoserver/servoserver.egg-info/SOURCES.txt'
+reading manifest file '../build/servoserver/servoserver.egg-info/SOURCES.txt'
+writing manifest file '../build/servoserver/servoserver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/akariros/Akari_ros2_humble/build/servoserver/build
+creating /home/akariros/Akari_ros2_humble/build/servoserver/build/lib
+creating /home/akariros/Akari_ros2_humble/build/servoserver/build/lib/servoserver
+copying servoserver/__init__.py -> /home/akariros/Akari_ros2_humble/build/servoserver/build/lib/servoserver
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/akariros/Akari_ros2_humble/install/servoserver/lib/python3.10/site-packages/servoserver
+copying /home/akariros/Akari_ros2_humble/build/servoserver/build/lib/servoserver/__init__.py -> /home/akariros/Akari_ros2_humble/install/servoserver/lib/python3.10/site-packages/servoserver
+byte-compiling /home/akariros/Akari_ros2_humble/install/servoserver/lib/python3.10/site-packages/servoserver/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/akariros/Akari_ros2_humble/install/servoserver/share/ament_index
+creating /home/akariros/Akari_ros2_humble/install/servoserver/share/ament_index/resource_index
+creating /home/akariros/Akari_ros2_humble/install/servoserver/share/ament_index/resource_index/packages
+copying resource/servoserver -> /home/akariros/Akari_ros2_humble/install/servoserver/share/ament_index/resource_index/packages
+copying package.xml -> /home/akariros/Akari_ros2_humble/install/servoserver/share/servoserver
+creating /home/akariros/Akari_ros2_humble/install/servoserver/share/servoserver/launch
+copying launch/servoserver_launch.py -> /home/akariros/Akari_ros2_humble/install/servoserver/share/servoserver/launch
+running install_egg_info
+Copying ../build/servoserver/servoserver.egg-info to /home/akariros/Akari_ros2_humble/install/servoserver/lib/python3.10/site-packages/servoserver-0.0.0-py3.10.egg-info
+running install_scripts
+Installing m5servoserver script to /home/akariros/Akari_ros2_humble/install/servoserver/lib/servoserver
+writing list of installed files to '/home/akariros/Akari_ros2_humble/build/servoserver/install.log'

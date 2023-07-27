@@ -1,0 +1,936 @@
+[0.000000] (-) TimerEvent: {}
+[0.000340] (akari_msgs) JobQueued: {'identifier': 'akari_msgs', 'dependencies': OrderedDict()}
+[0.000391] (m5displayserver) JobQueued: {'identifier': 'm5displayserver', 'dependencies': OrderedDict()}
+[0.000457] (py_akari_pubsub) JobQueued: {'identifier': 'py_akari_pubsub', 'dependencies': OrderedDict()}
+[0.000484] (py_m5serial) JobQueued: {'identifier': 'py_m5serial', 'dependencies': OrderedDict()}
+[0.002169] (akari_msgs) JobStarted: {'identifier': 'akari_msgs'}
+[0.038987] (m5displayserver) JobStarted: {'identifier': 'm5displayserver'}
+[0.050642] (py_akari_pubsub) JobStarted: {'identifier': 'py_akari_pubsub'}
+[0.062168] (py_m5serial) JobStarted: {'identifier': 'py_m5serial'}
+[0.073856] (akari_msgs) JobProgress: {'identifier': 'akari_msgs', 'progress': 'cmake'}
+[0.074388] (akari_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/akariros/Akari_ros2_humble/akari_msgs', '-DCMAKE_INSTALL_PREFIX=/home/akariros/Akari_ros2_humble/install/akari_msgs'], 'cwd': '/home/akariros/Akari_ros2_humble/build/akari_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akariros'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akariros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1070'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akariros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akariros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('DOTNET_ROOT', '/usr/lib/dotnet'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/akariros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akariros/.dotnet/tools'), ('SESSION_MANAGER', 'local/akariros-Alpha:@/tmp/.ICE-unix/1070,unix/akariros-Alpha:/tmp/.ICE-unix/1070'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3851e695_c44c_4716_9439_d5ac6dced1fa'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/akariros/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PHDY81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akariros/Akari_ros2_humble/build/akari_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099650] (-) TimerEvent: {}
+[0.200050] (-) TimerEvent: {}
+[0.300505] (-) TimerEvent: {}
+[0.400948] (-) TimerEvent: {}
+[0.501468] (-) TimerEvent: {}
+[0.601943] (-) TimerEvent: {}
+[0.702334] (-) TimerEvent: {}
+[0.802740] (-) TimerEvent: {}
+[0.903150] (-) TimerEvent: {}
+[0.955801] (akari_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.957655] (akari_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.957996] (akari_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.958928] (akari_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.959123] (akari_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.959276] (akari_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.959421] (akari_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.959567] (akari_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.959712] (akari_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.959859] (akari_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.960011] (akari_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.960152] (akari_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.960296] (akari_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.003266] (-) TimerEvent: {}
+[1.103699] (-) TimerEvent: {}
+[1.141736] (akari_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.203815] (-) TimerEvent: {}
+[1.304236] (-) TimerEvent: {}
+[1.314665] (akari_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.406632] (-) TimerEvent: {}
+[1.416659] (akari_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.430350] (akari_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.460491] (akari_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.506750] (-) TimerEvent: {}
+[1.507590] (akari_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.569600] (akari_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.606863] (-) TimerEvent: {}
+[1.707296] (-) TimerEvent: {}
+[1.807753] (-) TimerEvent: {}
+[1.908319] (-) TimerEvent: {}
+[1.998545] (akari_msgs) StdoutLine: {'line': b'-- Found rclpy: 3.3.8 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.002469] (akari_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.008440] (-) TimerEvent: {}
+[2.109022] (-) TimerEvent: {}
+[2.209557] (-) TimerEvent: {}
+[2.310099] (-) TimerEvent: {}
+[2.361512] (m5displayserver) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/m5displayserver', 'build', '--build-base', '/home/akariros/Akari_ros2_humble/build/m5displayserver/build', 'install', '--record', '/home/akariros/Akari_ros2_humble/build/m5displayserver/install.log', '--single-version-externally-managed'], 'cwd': '/home/akariros/Akari_ros2_humble/m5displayserver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'akariros', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/akariros', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1070', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'akariros', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'akariros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'DOTNET_ROOT': '/usr/lib/dotnet', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/akariros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akariros/.dotnet/tools', 'SESSION_MANAGER': 'local/akariros-Alpha:@/tmp/.ICE-unix/1070,unix/akariros-Alpha:/tmp/.ICE-unix/1070', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3851e695_c44c_4716_9439_d5ac6dced1fa', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/akariros/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PHDY81', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/akariros/Akari_ros2_humble/build/m5displayserver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/akariros/Akari_ros2_humble/build/m5displayserver/prefix_override:/home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.367187] (py_m5serial) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/py_m5serial', 'build', '--build-base', '/home/akariros/Akari_ros2_humble/build/py_m5serial/build', 'install', '--record', '/home/akariros/Akari_ros2_humble/build/py_m5serial/install.log', '--single-version-externally-managed'], 'cwd': '/home/akariros/Akari_ros2_humble/py_m5serial', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'akariros', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/akariros', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1070', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'akariros', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'akariros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'DOTNET_ROOT': '/usr/lib/dotnet', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/akariros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akariros/.dotnet/tools', 'SESSION_MANAGER': 'local/akariros-Alpha:@/tmp/.ICE-unix/1070,unix/akariros-Alpha:/tmp/.ICE-unix/1070', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3851e695_c44c_4716_9439_d5ac6dced1fa', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/akariros/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PHDY81', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/akariros/Akari_ros2_humble/build/py_m5serial', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/akariros/Akari_ros2_humble/build/py_m5serial/prefix_override:/home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.373774] (py_akari_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/py_akari_pubsub', 'build', '--build-base', '/home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build', 'install', '--record', '/home/akariros/Akari_ros2_humble/build/py_akari_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/akariros/Akari_ros2_humble/py_akari_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'akariros', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/akariros', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1070', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'akariros', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'akariros', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'DOTNET_ROOT': '/usr/lib/dotnet', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/akariros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akariros/.dotnet/tools', 'SESSION_MANAGER': 'local/akariros-Alpha:@/tmp/.ICE-unix/1070,unix/akariros-Alpha:/tmp/.ICE-unix/1070', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ja_JP.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3851e695_c44c_4716_9439_d5ac6dced1fa', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/akariros/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PHDY81', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/akariros/Akari_ros2_humble/build/py_akari_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/akariros/Akari_ros2_humble/build/py_akari_pubsub/prefix_override:/home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.410209] (-) TimerEvent: {}
+[2.510620] (-) TimerEvent: {}
+[2.611017] (-) TimerEvent: {}
+[2.711451] (-) TimerEvent: {}
+[2.811890] (-) TimerEvent: {}
+[2.912328] (-) TimerEvent: {}
+[2.981554] (m5displayserver) StdoutLine: {'line': b'running egg_info\n'}
+[2.982764] (m5displayserver) StdoutLine: {'line': b'creating ../build/m5displayserver/m5displayserver.egg-info\n'}
+[2.983200] (m5displayserver) StdoutLine: {'line': b'writing ../build/m5displayserver/m5displayserver.egg-info/PKG-INFO\n'}
+[2.983649] (m5displayserver) StdoutLine: {'line': b'writing dependency_links to ../build/m5displayserver/m5displayserver.egg-info/dependency_links.txt\n'}
+[2.983905] (m5displayserver) StdoutLine: {'line': b'writing entry points to ../build/m5displayserver/m5displayserver.egg-info/entry_points.txt\n'}
+[2.984150] (m5displayserver) StdoutLine: {'line': b'writing requirements to ../build/m5displayserver/m5displayserver.egg-info/requires.txt\n'}
+[2.984371] (m5displayserver) StdoutLine: {'line': b'writing top-level names to ../build/m5displayserver/m5displayserver.egg-info/top_level.txt\n'}
+[2.984736] (m5displayserver) StdoutLine: {'line': b"writing manifest file '../build/m5displayserver/m5displayserver.egg-info/SOURCES.txt'\n"}
+[2.988464] (m5displayserver) StdoutLine: {'line': b"reading manifest file '../build/m5displayserver/m5displayserver.egg-info/SOURCES.txt'\n"}
+[2.990220] (m5displayserver) StdoutLine: {'line': b"writing manifest file '../build/m5displayserver/m5displayserver.egg-info/SOURCES.txt'\n"}
+[2.990908] (m5displayserver) StdoutLine: {'line': b'running build\n'}
+[2.991140] (m5displayserver) StdoutLine: {'line': b'running build_py\n'}
+[2.991399] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/m5displayserver/build\n'}
+[2.991575] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/m5displayserver/build/lib\n'}
+[2.991791] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/m5displayserver/build/lib/m5displayserver\n'}
+[2.991954] (m5displayserver) StdoutLine: {'line': b'copying m5displayserver/__init__.py -> /home/akariros/Akari_ros2_humble/build/m5displayserver/build/lib/m5displayserver\n'}
+[2.992961] (m5displayserver) StdoutLine: {'line': b'copying m5displayserver/py_displayserver.py -> /home/akariros/Akari_ros2_humble/build/m5displayserver/build/lib/m5displayserver\n'}
+[2.993256] (m5displayserver) StdoutLine: {'line': b'running install\n'}
+[2.993493] (py_m5serial) StdoutLine: {'line': b'running egg_info\n'}
+[2.994452] (py_m5serial) StdoutLine: {'line': b'creating ../build/py_m5serial/py_m5serial.egg-info\n'}
+[2.994883] (py_m5serial) StdoutLine: {'line': b'writing ../build/py_m5serial/py_m5serial.egg-info/PKG-INFO\n'}
+[2.995329] (py_m5serial) StdoutLine: {'line': b'writing dependency_links to ../build/py_m5serial/py_m5serial.egg-info/dependency_links.txt\n'}
+[2.995760] (py_m5serial) StdoutLine: {'line': b'writing entry points to ../build/py_m5serial/py_m5serial.egg-info/entry_points.txt\n'}
+[2.996005] (py_m5serial) StdoutLine: {'line': b'writing requirements to ../build/py_m5serial/py_m5serial.egg-info/requires.txt\n'}
+[2.996225] (py_m5serial) StdoutLine: {'line': b'writing top-level names to ../build/py_m5serial/py_m5serial.egg-info/top_level.txt\n'}
+[2.996631] (py_m5serial) StdoutLine: {'line': b"writing manifest file '../build/py_m5serial/py_m5serial.egg-info/SOURCES.txt'\n"}
+[3.000531] (py_m5serial) StdoutLine: {'line': b"reading manifest file '../build/py_m5serial/py_m5serial.egg-info/SOURCES.txt'\n"}
+[3.003238] (py_m5serial) StdoutLine: {'line': b"writing manifest file '../build/py_m5serial/py_m5serial.egg-info/SOURCES.txt'\n"}
+[3.003601] (py_m5serial) StdoutLine: {'line': b'running build\n'}
+[3.003776] (py_m5serial) StdoutLine: {'line': b'running build_py\n'}
+[3.004242] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/py_m5serial/build\n'}
+[3.004554] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib\n'}
+[3.004791] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.004958] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_reset_allout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.005240] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_set_dout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.005439] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/__init__.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.005708] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/m5stack_publisher.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.006001] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_display_reset.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.006373] (py_akari_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[3.006577] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_move_joints_actionclient.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.006814] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5server.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.007047] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_set_pwmout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.007421] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_set_allout.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.007659] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_display_color.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.007890] (py_akari_pubsub) StdoutLine: {'line': b'creating ../build/py_akari_pubsub/py_akari_pubsub.egg-info\n'}
+[3.008087] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_display_image.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.008335] (py_m5serial) StdoutLine: {'line': b'copying py_m5serial/py_m5client_display_text.py -> /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial\n'}
+[3.008512] (py_akari_pubsub) StdoutLine: {'line': b'writing ../build/py_akari_pubsub/py_akari_pubsub.egg-info/PKG-INFO\n'}
+[3.008749] (py_akari_pubsub) StdoutLine: {'line': b'writing dependency_links to ../build/py_akari_pubsub/py_akari_pubsub.egg-info/dependency_links.txt\n'}
+[3.012801] (py_akari_pubsub) StdoutLine: {'line': b'writing entry points to ../build/py_akari_pubsub/py_akari_pubsub.egg-info/entry_points.txt\n'}
+[3.013159] (-) TimerEvent: {}
+[3.013619] (py_akari_pubsub) StdoutLine: {'line': b'writing requirements to ../build/py_akari_pubsub/py_akari_pubsub.egg-info/requires.txt\n'}
+[3.013946] (py_akari_pubsub) StdoutLine: {'line': b'writing top-level names to ../build/py_akari_pubsub/py_akari_pubsub.egg-info/top_level.txt\n'}
+[3.014517] (py_akari_pubsub) StdoutLine: {'line': b"writing manifest file '../build/py_akari_pubsub/py_akari_pubsub.egg-info/SOURCES.txt'\n"}
+[3.014804] (m5displayserver) StdoutLine: {'line': b'running install_lib\n'}
+[3.014983] (m5displayserver) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.015168] (m5displayserver) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.015326] (py_m5serial) StdoutLine: {'line': b'running install\n'}
+[3.015490] (py_m5serial) StdoutLine: {'line': b'running install_lib\n'}
+[3.015700] (py_m5serial) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.015874] (py_m5serial) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.016025] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver\n'}
+[3.016185] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.016340] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_reset_allout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.016498] (m5displayserver) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/m5displayserver/build/lib/m5displayserver/__init__.py -> /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver\n'}
+[3.016655] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_set_dout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.016841] (m5displayserver) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/m5displayserver/build/lib/m5displayserver/py_displayserver.py -> /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver\n'}
+[3.017089] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/__init__.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.017281] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/m5stack_publisher.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.017440] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_reset.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.017599] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_move_joints_actionclient.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.017754] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5server.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.018009] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_set_pwmout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.019160] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_set_allout.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.019436] (m5displayserver) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver/__init__.py to __init__.cpython-310.pyc\n'}
+[3.019613] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_color.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.019774] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_image.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.019937] (py_m5serial) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_m5serial/build/lib/py_m5serial/py_m5client_display_text.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial\n'}
+[3.020158] (m5displayserver) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver/py_displayserver.py to py_displayserver.cpython-310.pyc\n'}
+[3.020464] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_reset_allout.py to py_m5client_reset_allout.cpython-310.pyc\n'}
+[3.020697] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_set_dout.py to py_m5client_set_dout.cpython-310.pyc\n'}
+[3.020923] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/__init__.py to __init__.cpython-310.pyc\n'}
+[3.021103] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/m5stack_publisher.py to m5stack_publisher.cpython-310.pyc\n'}
+[3.021263] (m5displayserver) StdoutLine: {'line': b'running install_data\n'}
+[3.021424] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_reset.py to py_m5client_display_reset.cpython-310.pyc\n'}
+[3.021718] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_move_joints_actionclient.py to py_m5client_move_joints_actionclient.cpython-310.pyc\n'}
+[3.021971] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/m5displayserver/share/ament_index\n'}
+[3.022185] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/m5displayserver/share/ament_index/resource_index\n'}
+[3.022341] (m5displayserver) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/m5displayserver/share/ament_index/resource_index/packages\n'}
+[3.022495] (py_akari_pubsub) StdoutLine: {'line': b"reading manifest file '../build/py_akari_pubsub/py_akari_pubsub.egg-info/SOURCES.txt'\n"}
+[3.022659] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5server.py to py_m5server.cpython-310.pyc\n'}
+[3.022822] (m5displayserver) StdoutLine: {'line': b'copying resource/m5displayserver -> /home/akariros/Akari_ros2_humble/install/m5displayserver/share/ament_index/resource_index/packages\n'}
+[3.022981] (m5displayserver) StdoutLine: {'line': b'copying package.xml -> /home/akariros/Akari_ros2_humble/install/m5displayserver/share/m5displayserver\n'}
+[3.023135] (m5displayserver) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.024702] (py_akari_pubsub) StdoutLine: {'line': b"writing manifest file '../build/py_akari_pubsub/py_akari_pubsub.egg-info/SOURCES.txt'\n"}
+[3.024973] (py_akari_pubsub) StdoutLine: {'line': b'running build\n'}
+[3.026211] (py_akari_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[3.026455] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build\n'}
+[3.026619] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib\n'}
+[3.026775] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub\n'}
+[3.026935] (py_akari_pubsub) StdoutLine: {'line': b'copying py_akari_pubsub/__init__.py -> /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub\n'}
+[3.027509] (py_akari_pubsub) StdoutLine: {'line': b'copying py_akari_pubsub/subscriber.py -> /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub\n'}
+[3.028067] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_set_pwmout.py to py_m5client_set_pwmout.cpython-310.pyc\n'}
+[3.028282] (m5displayserver) StdoutLine: {'line': b'Copying ../build/m5displayserver/m5displayserver.egg-info to /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver-0.0.0-py3.10.egg-info\n'}
+[3.038946] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_set_allout.py to py_m5client_set_allout.cpython-310.pyc\n'}
+[3.039221] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_color.py to py_m5client_display_color.cpython-310.pyc\n'}
+[3.039426] (py_akari_pubsub) StdoutLine: {'line': b'copying py_akari_pubsub/publisher.py -> /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub\n'}
+[3.039600] (m5displayserver) StdoutLine: {'line': b'running install_scripts\n'}
+[3.039781] (py_akari_pubsub) StdoutLine: {'line': b'copying py_akari_pubsub/akari.py -> /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub\n'}
+[3.039959] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_image.py to py_m5client_display_image.cpython-310.pyc\n'}
+[3.040190] (py_m5serial) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial/py_m5client_display_text.py to py_m5client_display_text.cpython-310.pyc\n'}
+[3.040406] (py_m5serial) StdoutLine: {'line': b'running install_data\n'}
+[3.040601] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index\n'}
+[3.040750] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index/resource_index\n'}
+[3.040919] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index/resource_index/packages\n'}
+[3.041105] (py_m5serial) StdoutLine: {'line': b'copying resource/py_m5serial -> /home/akariros/Akari_ros2_humble/install/py_m5serial/share/ament_index/resource_index/packages\n'}
+[3.041252] (py_m5serial) StdoutLine: {'line': b'copying package.xml -> /home/akariros/Akari_ros2_humble/install/py_m5serial/share/py_m5serial\n'}
+[3.041393] (py_m5serial) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_m5serial/share/py_m5serial/launch\n'}
+[3.041529] (py_m5serial) StdoutLine: {'line': b'copying launch/akariserver_launch.py -> /home/akariros/Akari_ros2_humble/install/py_m5serial/share/py_m5serial/launch\n'}
+[3.041664] (py_akari_pubsub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.041832] (py_akari_pubsub) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.041968] (py_akari_pubsub) StdoutLine: {'line': b'running install\n'}
+[3.042103] (py_akari_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[3.042334] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub\n'}
+[3.042475] (py_akari_pubsub) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub/__init__.py -> /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub\n'}
+[3.042611] (py_akari_pubsub) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub/subscriber.py -> /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub\n'}
+[3.042743] (py_akari_pubsub) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub/publisher.py -> /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub\n'}
+[3.042874] (py_akari_pubsub) StdoutLine: {'line': b'copying /home/akariros/Akari_ros2_humble/build/py_akari_pubsub/build/lib/py_akari_pubsub/akari.py -> /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub\n'}
+[3.043021] (py_m5serial) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.043162] (py_m5serial) StdoutLine: {'line': b'Copying ../build/py_m5serial/py_m5serial.egg-info to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/python3.10/site-packages/py_m5serial-0.0.0-py3.10.egg-info\n'}
+[3.043321] (py_m5serial) StdoutLine: {'line': b'running install_scripts\n'}
+[3.043481] (py_akari_pubsub) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub/__init__.py to __init__.cpython-310.pyc\n'}
+[3.043650] (py_akari_pubsub) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub/subscriber.py to subscriber.cpython-310.pyc\n'}
+[3.043849] (py_akari_pubsub) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub/publisher.py to publisher.cpython-310.pyc\n'}
+[3.044053] (py_akari_pubsub) StdoutLine: {'line': b'byte-compiling /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub/akari.py to akari.cpython-310.pyc\n'}
+[3.049490] (py_akari_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[3.049694] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/share/ament_index\n'}
+[3.049867] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/share/ament_index/resource_index\n'}
+[3.050024] (py_akari_pubsub) StdoutLine: {'line': b'creating /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/share/ament_index/resource_index/packages\n'}
+[3.050175] (py_akari_pubsub) StdoutLine: {'line': b'copying resource/py_akari_pubsub -> /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/share/ament_index/resource_index/packages\n'}
+[3.050329] (py_akari_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/share/py_akari_pubsub\n'}
+[3.050502] (py_akari_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.050657] (py_akari_pubsub) StdoutLine: {'line': b'Copying ../build/py_akari_pubsub/py_akari_pubsub.egg-info to /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/python3.10/site-packages/py_akari_pubsub-0.0.0-py3.10.egg-info\n'}
+[3.050813] (py_akari_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[3.075250] (m5displayserver) StdoutLine: {'line': b'Installing m5displayserver script to /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/m5displayserver\n'}
+[3.075843] (m5displayserver) StdoutLine: {'line': b"writing list of installed files to '/home/akariros/Akari_ros2_humble/build/m5displayserver/install.log'\n"}
+[3.091696] (py_akari_pubsub) StdoutLine: {'line': b'Installing akari_listener script to /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/py_akari_pubsub\n'}
+[3.092037] (py_akari_pubsub) StdoutLine: {'line': b'Installing akari_talker script to /home/akariros/Akari_ros2_humble/install/py_akari_pubsub/lib/py_akari_pubsub\n'}
+[3.092484] (py_akari_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/akariros/Akari_ros2_humble/build/py_akari_pubsub/install.log'\n"}
+[3.093646] (py_m5serial) StdoutLine: {'line': b'Installing m5client_display_color script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.093990] (py_m5serial) StdoutLine: {'line': b'Installing m5client_display_image script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.094289] (py_m5serial) StdoutLine: {'line': b'Installing m5client_display_reset script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.094525] (py_m5serial) StdoutLine: {'line': b'Installing m5client_display_text script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.094779] (py_m5serial) StdoutLine: {'line': b'Installing m5client_move_joints_actionclient script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.095046] (py_m5serial) StdoutLine: {'line': b'Installing m5client_reset_allout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.095306] (py_m5serial) StdoutLine: {'line': b'Installing m5client_set_allout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.095569] (py_m5serial) StdoutLine: {'line': b'Installing m5client_set_dout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.095827] (py_m5serial) StdoutLine: {'line': b'Installing m5client_set_pwmout script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.096082] (py_m5serial) StdoutLine: {'line': b'Installing m5publisher script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.096336] (py_m5serial) StdoutLine: {'line': b'Installing m5server script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.096594] (py_m5serial) StdoutLine: {'line': b'Installing m5servoserver script to /home/akariros/Akari_ros2_humble/install/py_m5serial/lib/py_m5serial\n'}
+[3.098023] (py_m5serial) StdoutLine: {'line': b"writing list of installed files to '/home/akariros/Akari_ros2_humble/build/py_m5serial/install.log'\n"}
+[3.113330] (-) TimerEvent: {}
+[3.134779] (m5displayserver) CommandEnded: {'returncode': 0}
+[3.173793] (m5displayserver) JobEnded: {'identifier': 'm5displayserver', 'rc': 0}
+[3.178850] (py_akari_pubsub) CommandEnded: {'returncode': 0}
+[3.191797] (py_akari_pubsub) JobEnded: {'identifier': 'py_akari_pubsub', 'rc': 0}
+[3.196808] (py_m5serial) CommandEnded: {'returncode': 0}
+[3.209733] (py_m5serial) JobEnded: {'identifier': 'py_m5serial', 'rc': 0}
+[3.213428] (-) TimerEvent: {}
+[3.226855] (akari_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.313547] (-) TimerEvent: {}
+[3.414046] (-) TimerEvent: {}
+[3.514527] (-) TimerEvent: {}
+[3.614929] (-) TimerEvent: {}
+[3.715374] (-) TimerEvent: {}
+[3.815976] (-) TimerEvent: {}
+[3.916392] (-) TimerEvent: {}
+[3.995606] (akari_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.016672] (-) TimerEvent: {}
+[4.117333] (-) TimerEvent: {}
+[4.217721] (-) TimerEvent: {}
+[4.310702] (akari_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.317875] (-) TimerEvent: {}
+[4.366444] (akari_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[4.371388] (akari_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.409949] (akari_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[4.410259] (akari_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.410359] (akari_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.410448] (akari_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.418025] (-) TimerEvent: {}
+[4.438989] (akari_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.518174] (-) TimerEvent: {}
+[4.575430] (akari_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.618291] (-) TimerEvent: {}
+[4.674841] (akari_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.677614] (akari_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.682202] (akari_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.718439] (-) TimerEvent: {}
+[4.754631] (akari_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.758500] (akari_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/akariros/Akari_ros2_humble/build/akari_msgs\n'}
+[4.772641] (akari_msgs) CommandEnded: {'returncode': 0}
+[4.773566] (akari_msgs) JobProgress: {'identifier': 'akari_msgs', 'progress': 'build'}
+[4.775170] (akari_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akariros/Akari_ros2_humble/build/akari_msgs', '--', '-j4', '-l4'], 'cwd': '/home/akariros/Akari_ros2_humble/build/akari_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akariros'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akariros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1070'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akariros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akariros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('DOTNET_ROOT', '/usr/lib/dotnet'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/akariros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akariros/.dotnet/tools'), ('SESSION_MANAGER', 'local/akariros-Alpha:@/tmp/.ICE-unix/1070,unix/akariros-Alpha:/tmp/.ICE-unix/1070'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3851e695_c44c_4716_9439_d5ac6dced1fa'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/akariros/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PHDY81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akariros/Akari_ros2_humble/build/akari_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.818547] (-) TimerEvent: {}
+[4.834930] (akari_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.853793] (akari_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.866653] (akari_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_akari_msgs\n'}
+[4.918660] (-) TimerEvent: {}
+[5.019032] (-) TimerEvent: {}
+[5.119553] (-) TimerEvent: {}
+[5.219931] (-) TimerEvent: {}
+[5.320456] (-) TimerEvent: {}
+[5.367340] (akari_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.368304] (akari_msgs) StdoutLine: {'line': b'creating akari_msgs.egg-info\n'}
+[5.368809] (akari_msgs) StdoutLine: {'line': b'writing akari_msgs.egg-info/PKG-INFO\n'}
+[5.369142] (akari_msgs) StdoutLine: {'line': b'writing dependency_links to akari_msgs.egg-info/dependency_links.txt\n'}
+[5.369462] (akari_msgs) StdoutLine: {'line': b'writing top-level names to akari_msgs.egg-info/top_level.txt\n'}
+[5.369911] (akari_msgs) StdoutLine: {'line': b"writing manifest file 'akari_msgs.egg-info/SOURCES.txt'\n"}
+[5.372733] (akari_msgs) StdoutLine: {'line': b"reading manifest file 'akari_msgs.egg-info/SOURCES.txt'\n"}
+[5.373741] (akari_msgs) StdoutLine: {'line': b"writing manifest file 'akari_msgs.egg-info/SOURCES.txt'\n"}
+[5.413383] (akari_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_akari_msgs_egg\n'}
+[5.420604] (-) TimerEvent: {}
+[5.520961] (-) TimerEvent: {}
+[5.621329] (-) TimerEvent: {}
+[5.721674] (-) TimerEvent: {}
+[5.822027] (-) TimerEvent: {}
+[5.922376] (-) TimerEvent: {}
+[6.022728] (-) TimerEvent: {}
+[6.123075] (-) TimerEvent: {}
+[6.223430] (-) TimerEvent: {}
+[6.323784] (-) TimerEvent: {}
+[6.424141] (-) TimerEvent: {}
+[6.524506] (-) TimerEvent: {}
+[6.624846] (-) TimerEvent: {}
+[6.725238] (-) TimerEvent: {}
+[6.825610] (-) TimerEvent: {}
+[6.926013] (-) TimerEvent: {}
+[7.026411] (-) TimerEvent: {}
+[7.126805] (-) TimerEvent: {}
+[7.217209] (akari_msgs) StdoutLine: {'line': b'[  2%] Built target akari_msgs__cpp\n'}
+[7.226937] (-) TimerEvent: {}
+[7.236605] (akari_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.236972] (akari_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.238102] (akari_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.327044] (-) TimerEvent: {}
+[7.427540] (-) TimerEvent: {}
+[7.528036] (-) TimerEvent: {}
+[7.628570] (-) TimerEvent: {}
+[7.729085] (-) TimerEvent: {}
+[7.829607] (-) TimerEvent: {}
+[7.894968] (akari_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_allout__functions.c.o\x1b[0m\n'}
+[7.929725] (-) TimerEvent: {}
+[8.030300] (-) TimerEvent: {}
+[8.083335] (akari_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_display_color__functions.c.o\x1b[0m\n'}
+[8.130392] (-) TimerEvent: {}
+[8.216298] (akari_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_display_image__functions.c.o\x1b[0m\n'}
+[8.230507] (-) TimerEvent: {}
+[8.331031] (-) TimerEvent: {}
+[8.365106] (akari_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_display_text__functions.c.o\x1b[0m\n'}
+[8.431149] (-) TimerEvent: {}
+[8.507433] (akari_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_dout__functions.c.o\x1b[0m\n'}
+[8.531265] (-) TimerEvent: {}
+[8.631754] (-) TimerEvent: {}
+[8.638825] (akari_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_pwmout__functions.c.o\x1b[0m\n'}
+[8.731882] (-) TimerEvent: {}
+[8.772947] (akari_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/trigger__functions.c.o\x1b[0m\n'}
+[8.831989] (-) TimerEvent: {}
+[8.902876] (akari_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/msg/detail/m5__functions.c.o\x1b[0m\n'}
+[8.932096] (-) TimerEvent: {}
+[9.032561] (-) TimerEvent: {}
+[9.063083] (akari_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/action/detail/move_joint__functions.c.o\x1b[0m\n'}
+[9.070460] (akari_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_allout__type_support.cpp.o\x1b[0m\n'}
+[9.132693] (-) TimerEvent: {}
+[9.233270] (-) TimerEvent: {}
+[9.333773] (-) TimerEvent: {}
+[9.352320] (akari_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libakari_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[9.433891] (-) TimerEvent: {}
+[9.440101] (akari_msgs) StdoutLine: {'line': b'[ 16%] Built target akari_msgs__rosidl_generator_c\n'}
+[9.455739] (akari_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_display_color__type_support.cpp.o\x1b[0m\n'}
+[9.534000] (-) TimerEvent: {}
+[9.597995] (akari_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_allout__type_support.cpp.o\x1b[0m\n'}
+[9.634125] (-) TimerEvent: {}
+[9.734708] (-) TimerEvent: {}
+[9.835096] (-) TimerEvent: {}
+[9.864380] (akari_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_display_color__type_support.cpp.o\x1b[0m\n'}
+[9.935225] (-) TimerEvent: {}
+[10.035647] (-) TimerEvent: {}
+[10.091227] (akari_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_display_image__type_support.cpp.o\x1b[0m\n'}
+[10.135786] (-) TimerEvent: {}
+[10.173059] (akari_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_allout__type_support.cpp.o\x1b[0m\n'}
+[10.235926] (-) TimerEvent: {}
+[10.336452] (-) TimerEvent: {}
+[10.437013] (-) TimerEvent: {}
+[10.511110] (akari_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_display_image__type_support.cpp.o\x1b[0m\n'}
+[10.537201] (-) TimerEvent: {}
+[10.637629] (-) TimerEvent: {}
+[10.715523] (akari_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_display_text__type_support.cpp.o\x1b[0m\n'}
+[10.737744] (-) TimerEvent: {}
+[10.838169] (-) TimerEvent: {}
+[10.865173] (akari_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_display_text__type_support.cpp.o\x1b[0m\n'}
+[10.938296] (-) TimerEvent: {}
+[11.038830] (-) TimerEvent: {}
+[11.139366] (-) TimerEvent: {}
+[11.193518] (akari_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_display_color__type_support.cpp.o\x1b[0m\n'}
+[11.239486] (-) TimerEvent: {}
+[11.339530] (akari_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_dout__type_support.cpp.o\x1b[0m\n'}
+[11.339842] (-) TimerEvent: {}
+[11.440301] (-) TimerEvent: {}
+[11.458932] (akari_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_dout__type_support.cpp.o\x1b[0m\n'}
+[11.540428] (-) TimerEvent: {}
+[11.640858] (-) TimerEvent: {}
+[11.741818] (-) TimerEvent: {}
+[11.764412] (akari_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_pwmout__type_support.cpp.o\x1b[0m\n'}
+[11.841942] (-) TimerEvent: {}
+[11.942482] (-) TimerEvent: {}
+[11.987449] (akari_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_pwmout__type_support.cpp.o\x1b[0m\n'}
+[12.042614] (-) TimerEvent: {}
+[12.143172] (-) TimerEvent: {}
+[12.243718] (-) TimerEvent: {}
+[12.259598] (akari_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_display_image__type_support.cpp.o\x1b[0m\n'}
+[12.343842] (-) TimerEvent: {}
+[12.354957] (akari_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/trigger__type_support.cpp.o\x1b[0m\n'}
+[12.443977] (-) TimerEvent: {}
+[12.544397] (-) TimerEvent: {}
+[12.643659] (akari_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/trigger__type_support.cpp.o\x1b[0m\n'}
+[12.644483] (-) TimerEvent: {}
+[12.651008] (akari_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/msg/detail/m5__type_support.cpp.o\x1b[0m\n'}
+[12.744619] (-) TimerEvent: {}
+[12.845172] (-) TimerEvent: {}
+[12.945770] (-) TimerEvent: {}
+[13.046325] (-) TimerEvent: {}
+[13.146847] (-) TimerEvent: {}
+[13.200625] (akari_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_display_text__type_support.cpp.o\x1b[0m\n'}
+[13.247011] (-) TimerEvent: {}
+[13.270247] (akari_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/action/detail/move_joint__type_support.cpp.o\x1b[0m\n'}
+[13.280345] (akari_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/msg/m5__type_support.cpp.o\x1b[0m\n'}
+[13.347132] (-) TimerEvent: {}
+[13.447740] (-) TimerEvent: {}
+[13.548144] (-) TimerEvent: {}
+[13.582334] (akari_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/action/move_joint__type_support.cpp.o\x1b[0m\n'}
+[13.648276] (-) TimerEvent: {}
+[13.748826] (-) TimerEvent: {}
+[13.849532] (-) TimerEvent: {}
+[13.907466] (akari_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_dout__type_support.cpp.o\x1b[0m\n'}
+[13.949658] (-) TimerEvent: {}
+[14.050097] (-) TimerEvent: {}
+[14.150531] (-) TimerEvent: {}
+[14.157992] (akari_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_pwmout__type_support.cpp.o\x1b[0m\n'}
+[14.250659] (-) TimerEvent: {}
+[14.351211] (-) TimerEvent: {}
+[14.451625] (-) TimerEvent: {}
+[14.552039] (-) TimerEvent: {}
+[14.652480] (-) TimerEvent: {}
+[14.669777] (akari_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[14.699821] (akari_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[14.753090] (-) TimerEvent: {}
+[14.770760] (akari_msgs) StdoutLine: {'line': b'[ 43%] Built target akari_msgs__rosidl_typesupport_cpp\n'}
+[14.793472] (akari_msgs) StdoutLine: {'line': b'[ 44%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.853203] (-) TimerEvent: {}
+[14.862009] (akari_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/trigger__type_support.cpp.o\x1b[0m\n'}
+[14.890216] (akari_msgs) StdoutLine: {'line': b'[ 45%] Built target akari_msgs__rosidl_typesupport_introspection_cpp\n'}
+[14.910444] (akari_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[14.953329] (-) TimerEvent: {}
+[15.053760] (-) TimerEvent: {}
+[15.107091] (akari_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/msg/detail/dds_fastrtps/m5__type_support.cpp.o\x1b[0m\n'}
+[15.153882] (-) TimerEvent: {}
+[15.254313] (-) TimerEvent: {}
+[15.354727] (-) TimerEvent: {}
+[15.455211] (-) TimerEvent: {}
+[15.555686] (-) TimerEvent: {}
+[15.656189] (-) TimerEvent: {}
+[15.756721] (-) TimerEvent: {}
+[15.792607] (akari_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/action/detail/dds_fastrtps/move_joint__type_support.cpp.o\x1b[0m\n'}
+[15.856848] (-) TimerEvent: {}
+[15.957273] (-) TimerEvent: {}
+[16.019833] (akari_msgs) StdoutLine: {'line': b'[ 49%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.057381] (-) TimerEvent: {}
+[16.157880] (-) TimerEvent: {}
+[16.258391] (-) TimerEvent: {}
+[16.358950] (-) TimerEvent: {}
+[16.459497] (-) TimerEvent: {}
+[16.560026] (-) TimerEvent: {}
+[16.660448] (-) TimerEvent: {}
+[16.760869] (-) TimerEvent: {}
+[16.861322] (-) TimerEvent: {}
+[16.961759] (-) TimerEvent: {}
+[17.038154] (akari_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[17.061893] (-) TimerEvent: {}
+[17.162502] (-) TimerEvent: {}
+[17.228045] (akari_msgs) StdoutLine: {'line': b'[ 50%] Built target akari_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[17.262624] (-) TimerEvent: {}
+[17.363170] (-) TimerEvent: {}
+[17.367681] (akari_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_allout__type_support.c.o\x1b[0m\n'}
+[17.463290] (-) TimerEvent: {}
+[17.466035] (akari_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_display_image__type_support.c.o\x1b[0m\n'}
+[17.466453] (akari_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_display_color__type_support.c.o\x1b[0m\n'}
+[17.496180] (akari_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_allout__type_support_c.cpp.o\x1b[0m\n'}
+[17.563421] (-) TimerEvent: {}
+[17.564591] (akari_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_display_text__type_support.c.o\x1b[0m\n'}
+[17.564950] (akari_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_dout__type_support.c.o\x1b[0m\n'}
+[17.663544] (-) TimerEvent: {}
+[17.667857] (akari_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_display_color__type_support_c.cpp.o\x1b[0m\n'}
+[17.668190] (akari_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_pwmout__type_support.c.o\x1b[0m\n'}
+[17.763673] (-) TimerEvent: {}
+[17.771273] (akari_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/trigger__type_support.c.o\x1b[0m\n'}
+[17.856115] (akari_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_allout__type_support.cpp.o\x1b[0m\n'}
+[17.863850] (-) TimerEvent: {}
+[17.872409] (akari_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/msg/detail/m5__type_support.c.o\x1b[0m\n'}
+[17.925253] (akari_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_display_color__type_support.cpp.o\x1b[0m\n'}
+[17.960103] (akari_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/action/detail/move_joint__type_support.c.o\x1b[0m\n'}
+[17.963967] (-) TimerEvent: {}
+[17.992581] (akari_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_display_image__type_support.cpp.o\x1b[0m\n'}
+[18.060945] (akari_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_display_text__type_support.cpp.o\x1b[0m\n'}
+[18.064090] (-) TimerEvent: {}
+[18.077419] (akari_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C shared library libakari_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[18.133392] (akari_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_dout__type_support.cpp.o\x1b[0m\n'}
+[18.157508] (akari_msgs) StdoutLine: {'line': b'[ 68%] Built target akari_msgs__rosidl_typesupport_introspection_c\n'}
+[18.164224] (-) TimerEvent: {}
+[18.173709] (akari_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_display_image__type_support_c.cpp.o\x1b[0m\n'}
+[18.204223] (akari_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_pwmout__type_support.cpp.o\x1b[0m\n'}
+[18.264354] (-) TimerEvent: {}
+[18.297849] (akari_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/trigger__type_support.cpp.o\x1b[0m\n'}
+[18.336781] (akari_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_display_text__type_support_c.cpp.o\x1b[0m\n'}
+[18.364497] (-) TimerEvent: {}
+[18.372703] (akari_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/msg/m5__type_support.cpp.o\x1b[0m\n'}
+[18.464629] (-) TimerEvent: {}
+[18.472206] (akari_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/action/move_joint__type_support.cpp.o\x1b[0m\n'}
+[18.538774] (akari_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_dout__type_support_c.cpp.o\x1b[0m\n'}
+[18.564759] (-) TimerEvent: {}
+[18.594845] (akari_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[18.664892] (-) TimerEvent: {}
+[18.703811] (akari_msgs) StdoutLine: {'line': b'[ 76%] Built target akari_msgs__rosidl_typesupport_c\n'}
+[18.722617] (akari_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_pwmout__type_support_c.cpp.o\x1b[0m\n'}
+[18.765041] (-) TimerEvent: {}
+[18.865470] (-) TimerEvent: {}
+[18.965890] (-) TimerEvent: {}
+[18.988060] (akari_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/trigger__type_support_c.cpp.o\x1b[0m\n'}
+[19.066015] (-) TimerEvent: {}
+[19.163566] (akari_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/msg/detail/m5__type_support_c.cpp.o\x1b[0m\n'}
+[19.166128] (-) TimerEvent: {}
+[19.266644] (-) TimerEvent: {}
+[19.367176] (-) TimerEvent: {}
+[19.372216] (akari_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/action/detail/move_joint__type_support_c.cpp.o\x1b[0m\n'}
+[19.467303] (-) TimerEvent: {}
+[19.567834] (-) TimerEvent: {}
+[19.668266] (-) TimerEvent: {}
+[19.768824] (-) TimerEvent: {}
+[19.869276] (-) TimerEvent: {}
+[19.969739] (-) TimerEvent: {}
+[19.996193] (akari_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[20.069885] (-) TimerEvent: {}
+[20.119742] (akari_msgs) StdoutLine: {'line': b'[ 82%] Built target akari_msgs__rosidl_typesupport_fastrtps_c\n'}
+[20.147065] (akari_msgs) StdoutLine: {'line': b'[ 82%] Built target akari_msgs\n'}
+[20.170052] (-) TimerEvent: {}
+[20.173787] (akari_msgs) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[20.270196] (-) TimerEvent: {}
+[20.370550] (-) TimerEvent: {}
+[20.470936] (-) TimerEvent: {}
+[20.571364] (-) TimerEvent: {}
+[20.693365] (-) TimerEvent: {}
+[20.793707] (-) TimerEvent: {}
+[20.894046] (-) TimerEvent: {}
+[20.994379] (-) TimerEvent: {}
+[21.094722] (-) TimerEvent: {}
+[21.195095] (-) TimerEvent: {}
+[21.295432] (-) TimerEvent: {}
+[21.395773] (-) TimerEvent: {}
+[21.496107] (-) TimerEvent: {}
+[21.596448] (-) TimerEvent: {}
+[21.696795] (-) TimerEvent: {}
+[21.797134] (-) TimerEvent: {}
+[21.897476] (-) TimerEvent: {}
+[21.997815] (-) TimerEvent: {}
+[22.098157] (-) TimerEvent: {}
+[22.198499] (-) TimerEvent: {}
+[22.298849] (-) TimerEvent: {}
+[22.399204] (-) TimerEvent: {}
+[22.499677] (-) TimerEvent: {}
+[22.600247] (-) TimerEvent: {}
+[22.700596] (-) TimerEvent: {}
+[22.800944] (-) TimerEvent: {}
+[22.901299] (-) TimerEvent: {}
+[23.001651] (-) TimerEvent: {}
+[23.102007] (-) TimerEvent: {}
+[23.116446] (akari_msgs) StdoutLine: {'line': b'[ 83%] Built target akari_msgs__py\n'}
+[23.147650] (akari_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_allout_s.c.o\x1b[0m\n'}
+[23.148252] (akari_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_display_image_s.c.o\x1b[0m\n'}
+[23.148580] (akari_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_display_color_s.c.o\x1b[0m\n'}
+[23.148835] (akari_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_display_text_s.c.o\x1b[0m\n'}
+[23.202152] (-) TimerEvent: {}
+[23.302784] (-) TimerEvent: {}
+[23.403228] (-) TimerEvent: {}
+[23.476070] (akari_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_dout_s.c.o\x1b[0m\n'}
+[23.488401] (akari_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_pwmout_s.c.o\x1b[0m\n'}
+[23.489481] (akari_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_trigger_s.c.o\x1b[0m\n'}
+[23.497688] (akari_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/msg/_m5_s.c.o\x1b[0m\n'}
+[23.503353] (-) TimerEvent: {}
+[23.603902] (-) TimerEvent: {}
+[23.704471] (-) TimerEvent: {}
+[23.747528] (akari_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/action/_move_joint_s.c.o\x1b[0m\n'}
+[23.804600] (-) TimerEvent: {}
+[23.905070] (-) TimerEvent: {}
+[23.952591] (akari_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/akari_msgs/libakari_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[24.005245] (-) TimerEvent: {}
+[24.016946] (akari_msgs) StdoutLine: {'line': b'[ 93%] Built target akari_msgs__rosidl_generator_py\n'}
+[24.048351] (akari_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[24.049735] (akari_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[24.053132] (akari_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[24.105380] (-) TimerEvent: {}
+[24.205941] (-) TimerEvent: {}
+[24.306470] (-) TimerEvent: {}
+[24.311905] (akari_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[24.379911] (akari_msgs) StdoutLine: {'line': b'[ 97%] Built target akari_msgs__rosidl_typesupport_c__pyext\n'}
+[24.406618] (-) TimerEvent: {}
+[24.451260] (akari_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[24.455004] (akari_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[24.506770] (-) TimerEvent: {}
+[24.516755] (akari_msgs) StdoutLine: {'line': b'[100%] Built target akari_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[24.519622] (akari_msgs) StdoutLine: {'line': b'[100%] Built target akari_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[24.545954] (akari_msgs) CommandEnded: {'returncode': 0}
+[24.606891] (-) TimerEvent: {}
+[24.707231] (-) TimerEvent: {}
+[24.807650] (-) TimerEvent: {}
+[24.809207] (akari_msgs) JobProgress: {'identifier': 'akari_msgs', 'progress': 'install'}
+[24.820183] (akari_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/akariros/Akari_ros2_humble/build/akari_msgs'], 'cwd': '/home/akariros/Akari_ros2_humble/build/akari_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akariros'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akariros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1070'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akariros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akariros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('DOTNET_ROOT', '/usr/lib/dotnet'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/akariros/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/akariros/.dotnet/tools'), ('SESSION_MANAGER', 'local/akariros-Alpha:@/tmp/.ICE-unix/1070,unix/akariros-Alpha:/tmp/.ICE-unix/1070'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3851e695_c44c_4716_9439_d5ac6dced1fa'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/akariros/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.PHDY81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akariros/Akari_ros2_humble/build/akari_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=b6e2671a5215843e51dc5b4064c18be1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[24.831773] (akari_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.832171] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/rosidl_interfaces/akari_msgs\n'}
+[24.832446] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs\n'}
+[24.832810] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv\n'}
+[24.833071] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_pwmout.h\n'}
+[24.833352] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail\n'}
+[24.833589] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__type_support.h\n'}
+[24.833848] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__functions.c\n'}
+[24.834100] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__struct.h\n'}
+[24.834410] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__functions.c\n'}
+[24.834684] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__struct.h\n'}
+[24.834924] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__type_support.h\n'}
+[24.835137] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__functions.c\n'}
+[24.835416] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__type_support.h\n'}
+[24.835671] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__functions.h\n'}
+[24.835905] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__functions.h\n'}
+[24.836106] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__struct.h\n'}
+[24.836481] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__functions.h\n'}
+[24.836717] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__functions.h\n'}
+[24.836954] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__functions.h\n'}
+[24.837234] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__type_support.h\n'}
+[24.837554] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__functions.c\n'}
+[24.837793] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__struct.h\n'}
+[24.838021] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__type_support.h\n'}
+[24.838281] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__struct.h\n'}
+[24.838509] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__type_support.h\n'}
+[24.838732] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__functions.h\n'}
+[24.838960] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__functions.c\n'}
+[24.839191] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__struct.h\n'}
+[24.839422] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__type_support.h\n'}
+[24.839627] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__functions.c\n'}
+[24.839882] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__struct.h\n'}
+[24.840088] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__functions.c\n'}
+[24.840481] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__functions.h\n'}
+[24.840739] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/trigger.h\n'}
+[24.840972] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_text.h\n'}
+[24.841187] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_image.h\n'}
+[24.841445] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_dout.h\n'}
+[24.841719] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_color.h\n'}
+[24.842001] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_allout.h\n'}
+[24.842248] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg\n'}
+[24.842522] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[24.842855] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail\n'}
+[24.843105] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__functions.c\n'}
+[24.843352] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__struct.h\n'}
+[24.843586] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__type_support.h\n'}
+[24.843848] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__functions.h\n'}
+[24.844086] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/m5.h\n'}
+[24.844384] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action\n'}
+[24.844652] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/move_joint.h\n'}
+[24.844860] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail\n'}
+[24.845138] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__functions.c\n'}
+[24.845363] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__functions.h\n'}
+[24.845571] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__struct.h\n'}
+[24.845789] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__type_support.h\n'}
+[24.846026] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/library_path.sh\n'}
+[24.846219] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/library_path.dsv\n'}
+[24.846516] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_c.so\n'}
+[24.847309] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_c.so" to ""\n'}
+[24.847651] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs\n'}
+[24.847893] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv\n'}
+[24.848124] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail\n'}
+[24.848342] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_fastrtps_c.h\n'}
+[24.848656] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_fastrtps_c.h\n'}
+[24.848894] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_fastrtps_c.h\n'}
+[24.849141] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_fastrtps_c.h\n'}
+[24.849374] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h\n'}
+[24.849641] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_fastrtps_c.h\n'}
+[24.849874] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_fastrtps_c.h\n'}
+[24.850121] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg\n'}
+[24.850342] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail\n'}
+[24.850564] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_fastrtps_c.h\n'}
+[24.850810] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[24.850996] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action\n'}
+[24.851213] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail\n'}
+[24.851431] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_fastrtps_c.h\n'}
+[24.851650] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[24.851944] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[24.852173] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs\n'}
+[24.852405] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv\n'}
+[24.852683] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_text.hpp\n'}
+[24.852916] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_image.hpp\n'}
+[24.853207] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_allout.hpp\n'}
+[24.853509] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail\n'}
+[24.853785] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__struct.hpp\n'}
+[24.854031] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__traits.hpp\n'}
+[24.854234] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__builder.hpp\n'}
+[24.854463] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__builder.hpp\n'}
+[24.854694] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__struct.hpp\n'}
+[24.854935] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__struct.hpp\n'}
+[24.855167] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__struct.hpp\n'}
+[24.855400] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__struct.hpp\n'}
+[24.855634] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__traits.hpp\n'}
+[24.855867] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__struct.hpp\n'}
+[24.856100] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__builder.hpp\n'}
+[24.856414] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__builder.hpp\n'}
+[24.856663] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__traits.hpp\n'}
+[24.856898] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__builder.hpp\n'}
+[24.857142] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__traits.hpp\n'}
+[24.857393] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__struct.hpp\n'}
+[24.857699] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__builder.hpp\n'}
+[24.857930] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__traits.hpp\n'}
+[24.858163] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__traits.hpp\n'}
+[24.858395] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__builder.hpp\n'}
+[24.858631] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__traits.hpp\n'}
+[24.858864] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_color.hpp\n'}
+[24.859139] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_dout.hpp\n'}
+[24.859349] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/trigger.hpp\n'}
+[24.859577] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_pwmout.hpp\n'}
+[24.859806] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg\n'}
+[24.860045] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail\n'}
+[24.860395] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__traits.hpp\n'}
+[24.860637] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__struct.hpp\n'}
+[24.860884] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__builder.hpp\n'}
+[24.861153] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/m5.hpp\n'}
+[24.861390] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action\n'}
+[24.861705] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail\n'}
+[24.861978] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__traits.hpp\n'}
+[24.862210] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__builder.hpp\n'}
+[24.862422] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__struct.hpp\n'}
+[24.862656] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/move_joint.hpp\n'}
+[24.862888] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs\n'}
+[24.863120] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv\n'}
+[24.863351] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail\n'}
+[24.863588] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/dds_fastrtps\n'}
+[24.863816] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.864088] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.864399] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.864680] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.864921] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.865118] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.865369] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.865567] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg\n'}
+[24.865750] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[24.865942] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail\n'}
+[24.866141] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/dds_fastrtps\n'}
+[24.866347] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.866646] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action\n'}
+[24.866960] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail\n'}
+[24.867184] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/dds_fastrtps\n'}
+[24.867416] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.867624] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[24.867856] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[24.868087] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs\n'}
+[24.868405] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv\n'}
+[24.868664] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail\n'}
+[24.868894] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_introspection_c.h\n'}
+[24.869162] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__type_support.c\n'}
+[24.869521] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__type_support.c\n'}
+[24.869756] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__type_support.c\n'}
+[24.870020] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_introspection_c.h\n'}
+[24.870257] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_introspection_c.h\n'}
+[24.870522] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_introspection_c.h\n'}
+[24.870775] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__type_support.c\n'}
+[24.871029] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__type_support.c\n'}
+[24.871235] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_introspection_c.h\n'}
+[24.871465] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_introspection_c.h\n'}
+[24.871728] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__type_support.c\n'}
+[24.871967] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__type_support.c\n'}
+[24.872158] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_introspection_c.h\n'}
+[24.872373] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg\n'}
+[24.872647] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[24.872838] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail\n'}
+[24.873086] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__type_support.c\n'}
+[24.873188] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_introspection_c.h\n'}
+[24.873272] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action\n'}
+[24.873411] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail\n'}
+[24.873559] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_introspection_c.h\n'}
+[24.873783] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__type_support.c\n'}
+[24.873925] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_c.so\n'}
+[24.874068] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[24.874350] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_c.so\n'}
+[24.874545] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_c.so" to ""\n'}
+[24.874739] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs\n'}
+[24.874912] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv\n'}
+[24.875148] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail\n'}
+[24.875298] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__type_support.cpp\n'}
+[24.875511] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__type_support.cpp\n'}
+[24.875661] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__type_support.cpp\n'}
+[24.875857] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.876042] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.876188] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.876391] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__type_support.cpp\n'}
+[24.876577] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__type_support.cpp\n'}
+[24.876758] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.876943] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.877197] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__type_support.cpp\n'}
+[24.877379] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.877549] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__type_support.cpp\n'}
+[24.877719] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.877887] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg\n'}
+[24.878055] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail\n'}
+[24.878222] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__type_support.cpp\n'}
+[24.878390] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.878611] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action\n'}
+[24.878821] (akari_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail\n'}
+[24.879039] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__type_support.cpp\n'}
+[24.879183] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.879322] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[24.879460] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[24.879603] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_cpp.so\n'}
+[24.879816] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[24.880040] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/pythonpath.sh\n'}
+[24.880227] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/pythonpath.dsv\n'}
+[24.880412] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info\n'}
+[24.880618] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[24.880803] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[24.881002] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[24.881246] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[24.881388] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs\n'}
+[24.881527] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[24.881742] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv\n'}
+[24.881961] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_image_s.c\n'}
+[24.882152] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/__init__.py\n'}
+[24.882329] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_text.py\n'}
+[24.882514] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_pwmout_s.c\n'}
+[24.882701] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_allout_s.c\n'}
+[24.882872] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_image.py\n'}
+[24.883082] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_trigger.py\n'}
+[24.883284] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_color.py\n'}
+[24.883467] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_text_s.c\n'}
+[24.883652] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_allout.py\n'}
+[24.883836] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_dout_s.c\n'}
+[24.884019] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_trigger_s.c\n'}
+[24.884208] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_color_s.c\n'}
+[24.884378] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_pwmout.py\n'}
+[24.884590] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_dout.py\n'}
+[24.884813] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.885007] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/__init__.py\n'}
+[24.885159] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/libakari_msgs__rosidl_generator_py.so\n'}
+[24.885375] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg\n'}
+[24.885595] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_m5_s.c\n'}
+[24.885789] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/__init__.py\n'}
+[24.885978] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_m5.py\n'}
+[24.886118] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[24.886304] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.886524] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.886796] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action\n'}
+[24.886993] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/_move_joint.py\n'}
+[24.887178] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/__init__.py\n'}
+[24.887368] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/_move_joint_s.c\n'}
+[24.887556] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[24.907780] (-) TimerEvent: {}
+[24.978691] (akari_msgs) StdoutLine: {'line': b"Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs'...\n"}
+[24.978983] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/__init__.py'...\n"}
+[24.979091] (akari_msgs) StdoutLine: {'line': b"Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action'...\n"}
+[24.979203] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/__init__.py'...\n"}
+[24.979290] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/_move_joint.py'...\n"}
+[24.979374] (akari_msgs) StdoutLine: {'line': b"Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg'...\n"}
+[24.979487] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/__init__.py'...\n"}
+[24.979567] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_m5.py'...\n"}
+[24.979647] (akari_msgs) StdoutLine: {'line': b"Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv'...\n"}
+[24.979728] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/__init__.py'...\n"}
+[24.979807] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_allout.py'...\n"}
+[24.979885] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_color.py'...\n"}
+[24.979965] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_image.py'...\n"}
+[24.980045] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_text.py'...\n"}
+[24.980124] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_dout.py'...\n"}
+[24.980203] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_pwmout.py'...\n"}
+[24.980283] (akari_msgs) StdoutLine: {'line': b"Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_trigger.py'...\n"}
+[24.985562] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.986238] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[24.986621] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.987293] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[24.987662] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.988349] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[24.988543] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_py.so\n'}
+[24.989399] (akari_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_py.so" to ""\n'}
+[24.989658] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout.idl\n'}
+[24.989912] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor.idl\n'}
+[24.990168] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage.idl\n'}
+[24.990418] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText.idl\n'}
+[24.990642] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout.idl\n'}
+[24.990832] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout.idl\n'}
+[24.991069] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger.idl\n'}
+[24.991381] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/msg/M5.idl\n'}
+[24.991658] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/action/MoveJoint.idl\n'}
+[24.991895] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout.srv\n'}
+[24.992216] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout_Request.msg\n'}
+[24.992448] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout_Response.msg\n'}
+[24.992653] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor.srv\n'}
+[24.992877] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor_Request.msg\n'}
+[24.993190] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor_Response.msg\n'}
+[24.993456] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage.srv\n'}
+[24.993712] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage_Request.msg\n'}
+[24.993964] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage_Response.msg\n'}
+[24.994182] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText.srv\n'}
+[24.994410] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText_Request.msg\n'}
+[24.994644] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText_Response.msg\n'}
+[24.994878] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout.srv\n'}
+[24.995107] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout_Request.msg\n'}
+[24.995333] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout_Response.msg\n'}
+[24.995565] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout.srv\n'}
+[24.995792] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout_Request.msg\n'}
+[24.996025] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout_Response.msg\n'}
+[24.996272] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger.srv\n'}
+[24.996521] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger_Request.msg\n'}
+[24.996731] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger_Response.msg\n'}
+[24.996964] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/msg/M5.msg\n'}
+[24.997204] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/action/MoveJoint.action\n'}
+[24.997466] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/package_run_dependencies/akari_msgs\n'}
+[24.997729] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/parent_prefix_path/akari_msgs\n'}
+[24.997964] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/ament_prefix_path.sh\n'}
+[24.998211] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/ament_prefix_path.dsv\n'}
+[24.998458] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/path.sh\n'}
+[24.998699] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/path.dsv\n'}
+[24.998930] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.bash\n'}
+[24.999155] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.sh\n'}
+[24.999390] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.zsh\n'}
+[24.999620] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.dsv\n'}
+[24.999851] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.dsv\n'}
+[25.000207] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/packages/akari_msgs\n'}
+[25.000550] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_cExport.cmake\n'}
+[25.000777] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[25.001089] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[25.001388] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[25.001716] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_cppExport.cmake\n'}
+[25.002047] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[25.002272] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[25.002514] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[25.002766] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[25.003046] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cExport.cmake\n'}
+[25.003290] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[25.003569] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[25.003818] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[25.004091] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[25.004400] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[25.004729] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_pyExport.cmake\n'}
+[25.004970] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[25.005285] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[25.005479] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[25.005710] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.005956] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[25.006213] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[25.006450] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[25.006701] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[25.007019] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgsConfig.cmake\n'}
+[25.007271] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgsConfig-version.cmake\n'}
+[25.007472] (akari_msgs) StdoutLine: {'line': b'-- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.xml\n'}
+[25.007838] (-) TimerEvent: {}
+[25.010892] (akari_msgs) CommandEnded: {'returncode': 0}
+[25.107979] (-) TimerEvent: {}
+[25.208320] (-) TimerEvent: {}
+[25.305094] (akari_msgs) JobEnded: {'identifier': 'akari_msgs', 'rc': 0}
+[25.306294] (-) EventReactorShutdown: {}

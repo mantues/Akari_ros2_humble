@@ -1,0 +1,3 @@
+[console_scripts]
+m5servoserver = servoserver.py_servoserver:main
+

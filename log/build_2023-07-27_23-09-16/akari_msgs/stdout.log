@@ -1,0 +1,22 @@
+[  1%] Built target akari_msgs__cpp
+[ 12%] Built target akari_msgs__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_akari_msgs
+[ 24%] Built target akari_msgs__rosidl_typesupport_fastrtps_cpp
+[ 35%] Built target akari_msgs__rosidl_typesupport_fastrtps_c
+[ 47%] Built target akari_msgs__rosidl_typesupport_cpp
+[ 58%] Built target akari_msgs__rosidl_typesupport_introspection_cpp
+[ 70%] Built target akari_msgs__rosidl_typesupport_introspection_c
+[ 82%] Built target akari_msgs__rosidl_typesupport_c
+[ 82%] Built target akari_msgs
+[ 83%] Built target akari_msgs__py
+[ 93%] Built target akari_msgs__rosidl_generator_py
+[ 95%] Built target akari_msgs__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target akari_msgs__rosidl_typesupport_c__pyext
+[100%] Built target akari_msgs__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing akari_msgs.egg-info/PKG-INFO
+writing dependency_links to akari_msgs.egg-info/dependency_links.txt
+writing top-level names to akari_msgs.egg-info/top_level.txt
+reading manifest file 'akari_msgs.egg-info/SOURCES.txt'
+writing manifest file 'akari_msgs.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_akari_msgs_egg

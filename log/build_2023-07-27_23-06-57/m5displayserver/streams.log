@@ -1,0 +1,24 @@
+[2.522s] Invoking command in '/home/akariros/Akari_ros2_humble/m5displayserver': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/m5displayserver/prefix_override:/home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/m5displayserver build --build-base /home/akariros/Akari_ros2_humble/build/m5displayserver/build install --record /home/akariros/Akari_ros2_humble/build/m5displayserver/install.log --single-version-externally-managed
+[3.137s] running egg_info
+[3.138s] writing ../build/m5displayserver/m5displayserver.egg-info/PKG-INFO
+[3.138s] writing dependency_links to ../build/m5displayserver/m5displayserver.egg-info/dependency_links.txt
+[3.139s] writing entry points to ../build/m5displayserver/m5displayserver.egg-info/entry_points.txt
+[3.139s] writing requirements to ../build/m5displayserver/m5displayserver.egg-info/requires.txt
+[3.139s] writing top-level names to ../build/m5displayserver/m5displayserver.egg-info/top_level.txt
+[3.143s] reading manifest file '../build/m5displayserver/m5displayserver.egg-info/SOURCES.txt'
+[3.144s] writing manifest file '../build/m5displayserver/m5displayserver.egg-info/SOURCES.txt'
+[3.145s] running build
+[3.145s] running build_py
+[3.145s] running install
+[3.145s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.145s]   warnings.warn(
+[3.146s] running install_lib
+[3.148s] running install_data
+[3.150s] creating /home/akariros/Akari_ros2_humble/install/m5displayserver/share/m5displayserver/launch
+[3.150s] copying launch/m5displayserver_launch.py -> /home/akariros/Akari_ros2_humble/install/m5displayserver/share/m5displayserver/launch
+[3.150s] running install_egg_info
+[3.153s] removing '/home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver-0.0.0-py3.10.egg-info' (and everything under it)
+[3.154s] Copying ../build/m5displayserver/m5displayserver.egg-info to /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/python3.10/site-packages/m5displayserver-0.0.0-py3.10.egg-info
+[3.156s] running install_scripts
+[3.190s] Installing m5displayserver script to /home/akariros/Akari_ros2_humble/install/m5displayserver/lib/m5displayserver
+[3.191s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/m5displayserver/install.log'

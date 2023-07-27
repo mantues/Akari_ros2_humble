@@ -1,0 +1,12 @@
+#For move joints
+float32 acc_pan
+float32 acc_tilt
+float32 vel_pan
+float32 vel_tilt
+float32 goal_pan
+float32 goal_tilt
+---
+bool result
+---
+float32 pos_pan
+float32 pos_tilt
