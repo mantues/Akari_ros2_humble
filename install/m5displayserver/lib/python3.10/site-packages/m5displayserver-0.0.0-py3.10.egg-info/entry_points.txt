@@ -1,3 +1,0 @@
-[console_scripts]
-m5displayserver = m5displayserver.py_displayserver:main
-

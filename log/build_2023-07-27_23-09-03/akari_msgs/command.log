@@ -1,1 +1,0 @@
-Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akariros/Akari_ros2_humble/install/py_m5serial:/home/akariros/Akari_ros2_humble/install/py_akari_pubsub:/home/akariros/Akari_ros2_humble/install/m5displayserver:/opt/ros/humble /usr/bin/cmake --build /home/akariros/Akari_ros2_humble/build/akari_msgs -- -j4 -l4

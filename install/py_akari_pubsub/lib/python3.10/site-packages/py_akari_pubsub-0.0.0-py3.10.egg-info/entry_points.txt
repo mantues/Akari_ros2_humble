@@ -1,4 +1,0 @@
-[console_scripts]
-akari_listener = py_akari_pubsub.subscriber:main
-akari_talker = py_akari_pubsub.publisher:main
-

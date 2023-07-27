@@ -1,4 +1,0 @@
-source;share/akari_msgs/local_setup.bash
-source;share/akari_msgs/local_setup.dsv
-source;share/akari_msgs/local_setup.sh
-source;share/akari_msgs/local_setup.zsh
