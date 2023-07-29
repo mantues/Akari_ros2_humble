@@ -3,7 +3,7 @@ from glob import glob
 from setuptools import setup
 
 
-package_name = 'akari_launch'
+package_name = 'akari_state_publisher'
 
 setup(
     name=package_name,
@@ -24,6 +24,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'akari_state_publisher = akari_state_publisher.jointstatepublisher:main',
         ],
     },
 )

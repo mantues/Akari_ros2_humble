@@ -4,7 +4,7 @@
   <name>akari_launch</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="mantues@yahoo.co.jp">akariros</maintainer>
+  <maintainer email="akariros@todo.todo">akariros</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
