@@ -30,6 +30,7 @@ set(srv_files
 )
 set(msg_files
   "msg/M5.msg"
+  "msg/Akarisetting.msg"
 )
 set(action_files
   "action/MoveJoint.action"
