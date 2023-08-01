@@ -49,6 +49,9 @@ class MinimalPublisher(Node):
         
         #servoenabled = self.joints.get_servo_enabled()
         #msg.servoenabled = [servoenabled[(jointnames[0])], servoenabled[(jointnames[1])]]
+        pan_status = self.joints.pan_joint.get_servo_enabled()
+        tilt_status = self.joints.tilt_joint.get_servo_enabled()
+        msg.servoenabled = [pan_status, tilt_status]
         
         servomovingstate = self.joints.get_moving_state()
         msg.servomovingstate = [servomovingstate[(jointnames[0])], servomovingstate[(jointnames[1])]]
