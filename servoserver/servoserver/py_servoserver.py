@@ -21,7 +21,7 @@ from std_msgs.msg import Int32MultiArray
 # server
 class m5server(Node):
     def __init__(self):
-        super().__init__("m5_service")
+        super().__init__("velocity_service")
 
         # create action service JOINTS
         self._move_joint_action_srv = ActionServer(self, MoveJoint, 'move_joints', self.move_joints)
@@ -37,11 +37,9 @@ class m5server(Node):
     def move_joints(self, action_msg):
         # enable servo
         self.joints.enable_all_servo()
-        # feedback
         feedback = MoveJoint.Feedback()
         feedback.pos_pan = self.joints.get_joint_positions()['pan']
         feedback.pos_tilt = self.joints.get_joint_positions()['tilt']
-        action_msg.publish_feedback(feedback)
 
         acc_pan = action_msg.request.acc_pan
         acc_tilt = action_msg.request.acc_tilt
@@ -49,8 +47,14 @@ class m5server(Node):
         vel_tilt = action_msg.request.vel_tilt
         goal_pan = action_msg.request.goal_pan
         goal_tilt = action_msg.request.goal_tilt
+        self.joints.set_joint_accelerations(pan=acc_pan,tilt=acc_tilt)
+        self.joints.set_joint_velocities(pan=vel_pan,tilt=vel_tilt)
         self.joints.move_joint_positions(pan=goal_pan,tilt=goal_tilt)
-        self.get_logger().info('ACTION server pan: %s tilt: %s' % (str(goal_tilt), str(goal_pan)))
+        
+        while self.joints.get_moving_state == 0:
+            # feedback
+            action_msg.publish_feedback(feedback)
+            self.get_logger().info('ACTION server pan: %s tilt: %s' % (str(goal_tilt), str(goal_pan)))
         action_msg.succeed()
         result = MoveJoint.Result()
 
