@@ -38,7 +38,7 @@ setup(
             'm5client_set_dout = py_m5client.py_m5client_set_dout:main',
             'm5client_set_pwmout = py_m5client.py_m5client_set_pwmout:main',
             'm5client_reset_allout = py_m5client.py_m5client_reset_allout:main',
-            'm5server = py_m5client.py_m5server:main',
+            'm5client_servo_set = py_m5client.py_m5client_servoset:main',
         ],
     },
 )

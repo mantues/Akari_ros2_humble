@@ -27,6 +27,7 @@ set(srv_files
   "srv/SetDout.srv"
   "srv/SetPwmout.srv"
   "srv/Trigger.srv"
+  "srv/SetServoStatus.srv"
 )
 set(msg_files
   "msg/M5.msg"

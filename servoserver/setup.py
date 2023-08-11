@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'm5servoserver = servoserver.py_servoserver:main',
+            'servoset = servoserver.py_servoset:main',
         ],
     },
 )
