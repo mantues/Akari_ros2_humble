@@ -38,8 +38,6 @@ class m5server(Node):
         # enable servo
         self.joints.enable_all_servo()
         feedback = MoveJoint.Feedback()
-        feedback.pos_pan = self.joints.get_joint_positions()['pan']
-        feedback.pos_tilt = self.joints.get_joint_positions()['tilt']
 
         acc_pan = action_msg.request.acc_pan
         acc_tilt = action_msg.request.acc_tilt
@@ -51,10 +49,17 @@ class m5server(Node):
         self.joints.set_joint_velocities(pan=vel_pan,tilt=vel_tilt)
         self.joints.move_joint_positions(pan=goal_pan,tilt=goal_tilt)
         
-        while self.joints.get_moving_state == 0:
-            # feedback
+        # feedback
+        pan_state = self.joints.get_moving_state()['pan']
+        tilt_state = self.joints.get_moving_state()['tilt']
+        while (pan_state == False or tilt_state == False):
+            self.get_logger().info('SERVO state: %s' % (str(self.joints.get_moving_state())))
+            feedback.pos_pan = self.joints.get_joint_positions()['pan']
+            feedback.pos_tilt = self.joints.get_joint_positions()['tilt']
             action_msg.publish_feedback(feedback)
-            self.get_logger().info('ACTION server pan: %s tilt: %s' % (str(goal_tilt), str(goal_pan)))
+            pan_state = self.joints.get_moving_state()['pan']
+            tilt_state = self.joints.get_moving_state()['tilt']
+        self.get_logger().info('GOAL pan: %s tilt: %s' % (str(goal_tilt), str(goal_pan)))
         action_msg.succeed()
         result = MoveJoint.Result()
 

@@ -43,11 +43,11 @@ class m5client(Node):
         goal_msg.vel_tilt = vel_tilt
         self._action_client.wait_for_server()
 
-        self._send_goal_future = self._action_client.send_goal_async(goal_msg)
+        self._send_goal_future = self._action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
 
         self._send_goal_future.add_done_callback(self.goal_response_callback)
 
-        return self._action_client.send_goal_async(goal_msg)
+        return self._action_client.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
 
     def goal_response_callback(self, future):
         goal_handle = future.result()
@@ -67,8 +67,8 @@ class m5client(Node):
 
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback
-        self.get_logger().info('Received feedback: {0}'.format(feedback.pos_pan))
-        self.get_logger().info('Received feedback: {0}'.format(feedback.pos_tilt))
+        self.get_logger().info('Received feedback pan: {0}'.format(feedback.pos_pan))
+        self.get_logger().info('Received feedback tilt: {0}'.format(feedback.pos_tilt))
 
 
 def main():
