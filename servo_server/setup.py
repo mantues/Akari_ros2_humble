@@ -2,22 +2,17 @@ import os
 from glob import glob
 from setuptools import setup
 
-package_name = 'akari_setting_publisher'
+package_name = 'servo_server'
 
 setup(
     name=package_name,
     version='0.0.0',
     packages=[package_name],
-    package_data={
-        '': [
-            'akari_msgs',
-        ]
-    },
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob(os.path.join('akari_setting_launch', '*launch.[pxy][yma]*')))
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -28,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'setting_publisher = akari_setting_publisher.setting_publisher:main',
+            'servo_server = servo_server.servo_server:main',
+            'servo_set = servo_server.servo_set:main',
         ],
     },
 )
