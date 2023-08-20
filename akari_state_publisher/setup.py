@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'akari_state_publisher = akari_state_publisher.jointstatepublisher:main',
+            'joint_state_publisher = akari_state_publisher.joint_state_publisher:main',
         ],
     },
 )
