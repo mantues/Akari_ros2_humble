@@ -1,0 +1,6 @@
+source;share/akari_client_example/hook/pythonpath.ps1
+source;share/akari_client_example/hook/pythonpath.dsv
+source;share/akari_client_example/hook/pythonpath.sh
+source;share/akari_client_example/hook/ament_prefix_path.ps1
+source;share/akari_client_example/hook/ament_prefix_path.dsv
+source;share/akari_client_example/hook/ament_prefix_path.sh

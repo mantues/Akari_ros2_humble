@@ -1,0 +1,40 @@
+[2.328s] Invoking command in '/home/akariros/Akari_ros2_humble/akari_launch': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_launch/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_launch build --build-base /home/akariros/Akari_ros2_humble/build/akari_launch/build install --record /home/akariros/Akari_ros2_humble/build/akari_launch/install.log --single-version-externally-managed
+[2.950s] running egg_info
+[2.951s] creating ../build/akari_launch/akari_launch.egg-info
+[2.952s] writing ../build/akari_launch/akari_launch.egg-info/PKG-INFO
+[2.952s] writing dependency_links to ../build/akari_launch/akari_launch.egg-info/dependency_links.txt
+[2.952s] writing entry points to ../build/akari_launch/akari_launch.egg-info/entry_points.txt
+[2.953s] writing requirements to ../build/akari_launch/akari_launch.egg-info/requires.txt
+[2.953s] writing top-level names to ../build/akari_launch/akari_launch.egg-info/top_level.txt
+[2.953s] writing manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+[2.958s] reading manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+[2.959s] writing manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+[2.959s] running build
+[2.960s] running build_py
+[2.960s] creating /home/akariros/Akari_ros2_humble/build/akari_launch/build
+[2.960s] creating /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib
+[2.960s] creating /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch
+[2.961s] copying akari_launch/__init__.py -> /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch
+[2.961s] copying akari_launch/akari_launch.py -> /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch
+[2.961s] running install
+[2.967s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.967s]   warnings.warn(
+[2.968s] running install_lib
+[2.968s] creating /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch
+[2.969s] copying /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch/__init__.py -> /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch
+[2.969s] copying /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch/akari_launch.py -> /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch
+[2.970s] byte-compiling /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch/__init__.py to __init__.cpython-310.pyc
+[2.970s] byte-compiling /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch/akari_launch.py to akari_launch.cpython-310.pyc
+[2.978s] running install_data
+[2.985s] creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index
+[2.985s] creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index/resource_index
+[2.985s] creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index/resource_index/packages
+[2.986s] copying resource/akari_launch -> /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index/resource_index/packages
+[2.987s] copying package.xml -> /home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch
+[2.987s] creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/launch
+[2.988s] copying akari_launch/akari_launch.py -> /home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/launch
+[2.988s] running install_egg_info
+[2.990s] Copying ../build/akari_launch/akari_launch.egg-info to /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch-0.0.0-py3.10.egg-info
+[2.992s] running install_scripts
+[3.028s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_launch/install.log'
+[3.094s] Invoked command in '/home/akariros/Akari_ros2_humble/akari_launch' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_launch/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_launch build --build-base /home/akariros/Akari_ros2_humble/build/akari_launch/build install --record /home/akariros/Akari_ros2_humble/build/akari_launch/install.log --single-version-externally-managed

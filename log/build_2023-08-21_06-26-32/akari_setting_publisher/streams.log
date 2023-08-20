@@ -1,0 +1,40 @@
+[2.305s] Invoking command in '/home/akariros/Akari_ros2_humble/akari_setting_publisher': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_setting_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_setting_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/install.log --single-version-externally-managed
+[2.930s] running egg_info
+[2.931s] creating ../build/akari_setting_publisher/akari_setting_publisher.egg-info
+[2.932s] writing ../build/akari_setting_publisher/akari_setting_publisher.egg-info/PKG-INFO
+[2.932s] writing dependency_links to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/dependency_links.txt
+[2.932s] writing entry points to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/entry_points.txt
+[2.933s] writing requirements to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/requires.txt
+[2.933s] writing top-level names to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/top_level.txt
+[2.933s] writing manifest file '../build/akari_setting_publisher/akari_setting_publisher.egg-info/SOURCES.txt'
+[2.937s] reading manifest file '../build/akari_setting_publisher/akari_setting_publisher.egg-info/SOURCES.txt'
+[2.939s] writing manifest file '../build/akari_setting_publisher/akari_setting_publisher.egg-info/SOURCES.txt'
+[2.939s] running build
+[2.939s] running build_py
+[2.940s] creating /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build
+[2.940s] creating /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib
+[2.940s] creating /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher
+[2.940s] copying akari_setting_publisher/__init__.py -> /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher
+[2.940s] copying akari_setting_publisher/setting_publisher.py -> /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher
+[2.941s] running install
+[2.949s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.949s]   warnings.warn(
+[2.950s] running install_lib
+[2.951s] creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher
+[2.952s] copying /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher/__init__.py -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher
+[2.952s] copying /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher/setting_publisher.py -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher
+[2.952s] byte-compiling /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher/__init__.py to __init__.cpython-310.pyc
+[2.953s] byte-compiling /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher/setting_publisher.py to setting_publisher.cpython-310.pyc
+[2.965s] running install_data
+[2.968s] creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index
+[2.969s] creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index/resource_index
+[2.969s] creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index/resource_index/packages
+[2.969s] copying resource/akari_setting_publisher -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index/resource_index/packages
+[2.970s] copying package.xml -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher
+[2.970s] creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/launch
+[2.970s] running install_egg_info
+[2.974s] Copying ../build/akari_setting_publisher/akari_setting_publisher.egg-info to /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher-0.0.0-py3.10.egg-info
+[2.975s] running install_scripts
+[3.010s] Installing setting_publisher script to /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/akari_setting_publisher
+[3.012s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_setting_publisher/install.log'
+[3.164s] Invoked command in '/home/akariros/Akari_ros2_humble/akari_setting_publisher' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_setting_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_setting_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/install.log --single-version-externally-managed

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from akari_msgs/srv/SetDout.srv
+// generated code does not contain a copyright notice
+
+
+module akari_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "This is for sending simple command")
+    struct SetDout_Request {
+      uint8 pin_id;
+
+      boolean val;
+    };
+    struct SetDout_Response {
+      boolean result;
+    };
+  };
+};
