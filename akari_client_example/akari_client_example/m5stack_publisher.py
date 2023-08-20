@@ -2,7 +2,6 @@
 # coding:utf-8
 
 import rclpy
-from py_tutorial_interfaces.srv import AddThreeInts
 from rclpy.node import Node
 
 from akari_msgs.msg import M5
