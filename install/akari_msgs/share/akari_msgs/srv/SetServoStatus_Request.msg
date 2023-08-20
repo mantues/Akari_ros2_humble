@@ -1,9 +1,0 @@
-#For set servo status
-string joint_name
-string[] joint_name_array
-float32 joint_vel_val
-float32[] joint_vel_array
-float32 joint_acc_val
-float32[] joint_acc_array
-bool servo_enable
-bool[] servo_enable_array
