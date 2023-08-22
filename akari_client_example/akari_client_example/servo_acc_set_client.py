@@ -8,7 +8,8 @@ from akari_msgs.msg import M5
 from akari_msgs.srv import (SetAllout, SetDisplayColor,
                                SetDout, SetPwmout,
                                SetDisplayImage, SetDisplayText,
-                               Trigger, SetServoStatus)
+                               Trigger, SetServoStatus,
+                               SetJointBool, SetJointFloat)
 
 from akari_client import AkariClient
 from akari_client.color import Color, Colors
@@ -18,31 +19,29 @@ import time
 import os
 import sys
 
-id_pair = [0,1]
-
 class m5client(Node):
 
     def __init__(self):
-        super().__init__('m5client_set_servo_node')
+        super().__init__('m5client_set_servo_acc_node')
         # create client
-        self.cli = self.create_client(SetServoStatus, 'set_servo_status')
+        self.cli = self.create_client(SetJointFloat, 'set_joint_acc')
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
 
         # create request
-        self.req = SetServoStatus.Request()
+        self.req = SetJointFloat.Request()
 
         self.akari = AkariClient()
         self.m5 = self.akari.m5stack
         self.data = self.m5.get()
 
     def send_request(self):
-        self.req.joint_name = 'pan'
-        self.req.joint_acc_val = random.uniform(0.15, 0.5)
-        self.req.joint_vel_val = random.uniform(0.15, 0.25)
-        self.req.servo_enable = True
+        self.req.joint_name = ['pan', 'tilt']
+        pan_val = random.uniform(0.15, 0.5)
+        tilt_val = random.uniform(0.15, 0.5)
+        self.req.val = [pan_val, tilt_val]
         
-        self.get_logger().info('OUTPUT acc: %s vel %s' % (str(self.req.joint_acc_val), str(self.req.joint_vel_val)))
+        self.get_logger().info('OUTPUT acc pan : %s tilt : %s' % (str(pan_val), str(tilt_val)))
 
         self.future = self.cli.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)

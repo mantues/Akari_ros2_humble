@@ -60,9 +60,9 @@ class m5server(Node):
                 req_vel = request.joint_vel_val
                 req_enable = request.servo_enable
                 
-                self.joints.set_joint_accelerations(pan=req_acc)
-                self.joints.set_joint_velocities(pan=req_vel)
-                self.joints.set_servo_enabled(pan=req_enable)
+                self.joints.set_joint_accelerations(tilt=req_acc)
+                self.joints.set_joint_velocities(tilt=req_vel)
+                self.joints.set_servo_enabled(tilt=req_enable)
                 self.get_logger().info('Change joint : %s' % (str(req_joint)))
                 
             

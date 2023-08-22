@@ -28,6 +28,8 @@ set(srv_files
   "srv/SetPwmout.srv"
   "srv/Trigger.srv"
   "srv/SetServoStatus.srv"
+  "srv/SetJointFloat.srv"
+  "srv/SetJointBool.srv"
 )
 set(msg_files
   "msg/M5.msg"

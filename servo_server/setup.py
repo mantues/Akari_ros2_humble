@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'servo_server = servo_server.servo_server:main',
             'servo_set = servo_server.servo_set:main',
+            'servo_acc = servo_server.servo_set_acc_server:main',
         ],
     },
 )
