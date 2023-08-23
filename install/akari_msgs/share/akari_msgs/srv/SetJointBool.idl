@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from akari_msgs/srv/SetJointBool.srv
+// generated code does not contain a copyright notice
+
+
+module akari_msgs {
+  module srv {
+    struct SetJointBool_Request {
+      sequence<string> joint_name;
+
+      sequence<boolean> val;
+    };
+    struct SetJointBool_Response {
+      boolean result;
+    };
+  };
+};

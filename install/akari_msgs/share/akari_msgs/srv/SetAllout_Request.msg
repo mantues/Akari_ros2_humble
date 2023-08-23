@@ -1,0 +1,4 @@
+#This is for sending all pin command
+bool dout0_val
+bool dout1_val
+uint8 pwmout0_val

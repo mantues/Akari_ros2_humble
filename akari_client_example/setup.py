@@ -40,6 +40,7 @@ setup(
             'reset_allout = akari_client_example.reset_allout:main',
             'servo_acc_set_client = akari_client_example.servo_acc_set_client:main',
             'servo_vel_set_client = akari_client_example.servo_vel_set_client:main',
+            'servo_enable_set_client = akari_client_example.servo_enable_set_client:main',
         ],
     },
 )

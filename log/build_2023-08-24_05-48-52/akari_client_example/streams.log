@@ -1,0 +1,38 @@
+[3.423s] Invoking command in '/home/akariros/Akari_ros2_humble/akari_client_example': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_client_example/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_client_example build --build-base /home/akariros/Akari_ros2_humble/build/akari_client_example/build install --record /home/akariros/Akari_ros2_humble/build/akari_client_example/install.log --single-version-externally-managed
+[4.178s] running egg_info
+[4.180s] writing ../build/akari_client_example/akari_client_example.egg-info/PKG-INFO
+[4.181s] writing dependency_links to ../build/akari_client_example/akari_client_example.egg-info/dependency_links.txt
+[4.182s] writing entry points to ../build/akari_client_example/akari_client_example.egg-info/entry_points.txt
+[4.182s] writing requirements to ../build/akari_client_example/akari_client_example.egg-info/requires.txt
+[4.183s] writing top-level names to ../build/akari_client_example/akari_client_example.egg-info/top_level.txt
+[4.186s] reading manifest file '../build/akari_client_example/akari_client_example.egg-info/SOURCES.txt'
+[4.189s] writing manifest file '../build/akari_client_example/akari_client_example.egg-info/SOURCES.txt'
+[4.189s] running build
+[4.189s] running build_py
+[4.190s] copying akari_client_example/servo_enable_set_client.py -> /home/akariros/Akari_ros2_humble/build/akari_client_example/build/lib/akari_client_example
+[4.192s] running install
+[4.192s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.192s]   warnings.warn(
+[4.193s] running install_lib
+[4.195s] copying /home/akariros/Akari_ros2_humble/build/akari_client_example/build/lib/akari_client_example/servo_enable_set_client.py -> /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example
+[4.197s] byte-compiling /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example/servo_enable_set_client.py to servo_enable_set_client.cpython-310.pyc
+[4.199s] running install_data
+[4.200s] running install_egg_info
+[4.207s] removing '/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example-0.0.0-py3.10.egg-info' (and everything under it)
+[4.207s] Copying ../build/akari_client_example/akari_client_example.egg-info to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example-0.0.0-py3.10.egg-info
+[4.208s] running install_scripts
+[4.265s] Installing display_color script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.265s] Installing display_image script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.266s] Installing display_reset script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.266s] Installing display_text script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.266s] Installing m5publisher script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.266s] Installing move_joints_action_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.266s] Installing reset_allout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.267s] Installing servo_acc_set_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.267s] Installing servo_enable_set_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.267s] Installing servo_vel_set_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.267s] Installing set_allout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.268s] Installing set_dout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.268s] Installing set_pwmout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+[4.268s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_client_example/install.log'
+[4.639s] Invoked command in '/home/akariros/Akari_ros2_humble/akari_client_example' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_client_example/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_client_example build --build-base /home/akariros/Akari_ros2_humble/build/akari_client_example/build install --record /home/akariros/Akari_ros2_humble/build/akari_client_example/install.log --single-version-externally-managed

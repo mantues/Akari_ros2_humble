@@ -1,0 +1,3 @@
+#This is for sending simple command
+uint8 pin_id
+uint8 val
