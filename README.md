@@ -268,8 +268,8 @@ ros2 run akari_client_example move_joints_action_client
 ・目標位置
 pan：-1.0 - 1.0のランダム
 tiltpan：-0.5 - 0.5のランダム
-=======
 
+```
 ```
 ros2 launch akari_launch akari_launch.py 
 ros2 run akari_client_example move_joints_action_client
@@ -406,11 +406,10 @@ ros2 run akari_client_example servo_enable_set_client
 ## m5_server：AkariのM5Stackディスプレイ表示を変更するserverパッケージ
 
 Clientから送られたRequestに応じて画面を変更。
->>>>>>> 2bcd28bf1be502f8432205f5807cd10fec09a917
 
 ・フィードバック
 目的位置に到着するまでにServer側から位置情報のフィードバックを受けて表示している。
-```
+
 
 ### set_allout：Akari上面のLED（dout0, dout1, PWM(pwmout0)）を点灯させる　client node
 ### MSG：SetAllout.srv
