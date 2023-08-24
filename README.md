@@ -92,16 +92,10 @@ ros2 topic echo /akarisettingstates
 
 http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
 
->>>>>>> 2bcd28bf1be502f8432205f5807cd10fec09a917
-### メッセージの受け取り方
 ```
 ros2 launch akari_launch akari_launch.py 
 ros2 topic echo /akari_joint_states
 ```
-
-
-***
-<<<<<<< HEAD
 
 ***
 ## akari_setting_publisher：Akariの設定値をPublishするパッケージ
