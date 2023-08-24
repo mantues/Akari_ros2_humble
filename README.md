@@ -527,10 +527,6 @@ Clientから送られたRequestに応じて画面を変更。
 
 想定外のリクエストの場合はFalseを返す。
 
-
-```
-ros2 launch akari_launch akari_launch.py 
-```
 ### servo_server：サーボ設定を変更するserverパッケージ
 ```
 servo_server：サーボを動かすAction node
