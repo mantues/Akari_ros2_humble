@@ -36,9 +36,6 @@ class MinimalPublisher(Node):
         jointnames = self.joints.get_joint_names()
         msg.name = [jointnames[0], jointnames[1]]
         
-        velocities = self.joints.get_joint_velocities()
-        msg.velocity = [velocities[str(jointnames[0])], velocities[str(jointnames[1])]]
-        
         positions = self.joints.get_joint_positions()
         msg.position = [positions[str(jointnames[0])], positions[str(jointnames[1])]]
         

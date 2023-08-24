@@ -36,107 +36,78 @@ sudo apt upgrade
 sudo apt install ros-humble-desktop
 ```
 
-
 ***
-## py_subpub
-ROS 2の publisher と subscriber (Python)
-サンプルそのまま
+## akari_launch：サーバーパッケージとakari_state_publisher、akari_setting_publisherを起動するlaunch
+```
+ros2 launch akari_launch akari_launch.py 
+```
+### MSG型：sensor_msgs/JointState.msg
 
-https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html
+http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
 
-### Publisher
+### メッセージの受け取り方
 ```
-ros2 run py_pubsub talker
-```
-### Subscriber
-```
-ros2 run py_pubsub listener
+ros2 launch akari_launch akari_launch.py 
+ros2 topic echo /akari_joint_states
 ```
 
 ***
-## py_akari_pubsub：キーボードを使ったAkariを動かすパッケージ
-　Publisher：floatのリストをPublishします。
- 
-　Subscriber：floatのリストをSubscribeしてAkariを動かします。
-
-### Publisher
-
-```
-ros2 run py_akari_pubsub akari_talker
-```
-
-```
-*** キーボードコマンド ***
-  首を垂直に動かす {q, w}
-  首を水平に動かす {a, s}
-  首を初期位置に動かす {r}
-  サーボON  {e}
-  サーボOFF {d}
-```
-
-
-### Subscriber
-```
-ros2 run py_akari_pubsub akari_listener
-```
 
 ***
-## py_srvcli
-ROS 2の service and client (Python)
-サンプルそのまま
+## akari_setting_publisher：Akariの設定値をPublishするパッケージ
+　
+### MSG：Akarisetting.msg
 
-https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html
+```
+std_msgs/Header header
+string[] jointname
+float32[] jointpositions
+float32[] jointvelocities
+float32[] jointaccelerations
+bool[] servoenabled
+bool[] servomovingstate
+```
 
-### service node 
+### メッセージの受け取り方
+
 ```
-ros2 run py_srvcli service
-```
-### client node
-```
-ros2 run py_srvcli client 2 3
+ros2 launch akari_launch akari_launch.py 
+ros2 topic echo /akarisettingstates
 ```
 
-***
-## py_hello & py_tutorial_interfaces
-ROS 2の custom msg and srv files
-サンプルそのまま
 
-### server node 
-```
-ros2 run py_hello server
-```
-### server node 
-```
-ros2 run py_hello client
-```
 
 ***
-## py_m5serial
-M5 Stackのボタンを読み取る sample & simple publisher
+## akari_state_publisher：Akariの関節の位置をJointState型でPublishするパッケージ
 
-### M5 Stackのボタンを読み取るコマンド
+### MSG：sensor_msgs/JointState.msg
+
+http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
+
+### メッセージの受け取り方
 ```
-python3 py_m5serial/src/button_gpio.py 
+ros2 launch akari_launch akari_launch.py 
+ros2 topic echo /akari_joint_states
 ```
-### M5 Stackのボタンを読み取ってPublishするコマンド（トピック：　M5stack）
-　ros2 run py_m5serial M5publisher　は動きません。（調査中）
-```
-python3 py_m5serial/src/m5stack_publisher.py
-```
-### Tros2 messageの受け取り方
-```
-ros2 topic echo /M5stack
-```
+
 
 ***
-## M5 Stackをつかった service and client
-　ros2 run py_m5serial client_color, ros2 run py_m5serial service　は動きません。（なんでや）
-### M5Stackの画面の色を変える　client node
+## akari_client_example：Akari設定を変更するClientパッケージ
+
+### display_color：M5Stackの画面の色を変える　client node
+### MSG：SetDisplayColor.srv
+```
+string color
+int32[] color_var
+---
+bool result
+```
 Clientから画面を変えるRequestを送信。
 Requestはカラーリストからランダムで選択します。
 
 ```
-python3 py_m5serial/src/py_m5client_color.py 
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example display_color
 ```
 
 ```
@@ -150,12 +121,25 @@ RESET: M5stackの画面をリセット
 RANDOM: RGB成分をランダムで送信 red(0-255), green(0-255), blue(0-255)
 SELECT: RGB成分をInt32MultiArrayで送信して表示させる（デフォルトはランダムでRGB値を設定）
 ```
-### M5Stackにテキストを表示させる　client node
+### display_text：M5Stackにテキストを表示させる　client node
+### MSG：SetDisplayText.srv
+```
+string text
+int32 pos_x
+int32 pos_y
+uint8 size
+string text_color
+string back_color
+bool refresh
+---
+bool result
+```
 ClientからRequestを送信。
 Requestはリストからランダムで選択します。
 
 ```
-python3 py_m5serial/src/py_m5client_text.py 
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example display_text
 ```
 ```
 ・テキストリスト
@@ -170,22 +154,200 @@ python3 py_m5serial/src/py_m5client_text.py
  'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK'
 ```
 
-### M5Stackをリセットする　client node
+### display_image：M5Stackの画面にロゴを表示させる　client node
+### MSG：SetDisplayImage.srv
+```
+string filepath
+int32 pos_x
+int32 pos_y
+float32 scale
+---
+bool result
+```
+ClientからRequestを送信。
+
+いくつかのロゴ画像をリクエストしてM5Stackの画面に表示させる
+ロゴ位置と大きさはランダムで選択
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example display_image
+```
+```
+・ロゴリスト
+"/jpg/logo320_ex.jpg", "/jpg/logo320.jpg", "/jpg/waiting.jpg"
+
+・ロゴ位置
+Positions.CENTER, Positions.LEFT, Positions.TOP, Positions.RIGHT, Positions.BOTTOM
+
+・倍率
+0.5-1.0までのランダム
+```
+
+### display_reset：M5Stackをリセットする　client node
+### MSG：Trigger.srv
+```
+string trigger
+---
+bool result
+```
 ClientからRequestを送信。
 
 ```
-python3 py_m5serial/src/py_m5client_reset.py 
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example display_reset
 ```
 
+### move_joints_action_client：pan、tiltを動かすAction & Client　client node
+### MSG：MoveJoint.action
+```
+float32 acc_pan
+float32 acc_tilt
+float32 vel_pan
+float32 vel_tilt
+float32 goal_pan
+float32 goal_tilt
+---
+bool result
+---
+float32 pos_pan
+float32 pos_tilt
+```
+ClientからRequestを送信。
+目標位置をRequestして目標地点に到達するまでに位置情報をフィードバックもらう
 
-### server node
-Clientから送られたRequestに応じて画面を変更。
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example move_joints_action_client
+```
+```
+・関節の加速度、速度は0.15で固定（フィードバックがわかりやすいようにゆっくり）
+・目標位置
+pan：-1.0 - 1.0のランダム
+tiltpan：-0.5 - 0.5のランダム
 
-リクエストに応じた場合はTrueを返す。
+・フィードバック
+目的位置に到着するまでにServer側から位置情報のフィードバックを受けて表示している。
+```
+
+### set_allout：Akari上面のLED（dout0, dout1, PWM(pwmout0)）を点灯させる　client node
+### MSG：SetAllout.srv
+```
+bool dout0_val
+bool dout1_val
+uint8 pwmout0_val
+---
+bool result
+```
+ClientからRequestを送信。
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example set_allout
+```
+```
+・dout0：True, Falseからランダムで選択
+・dout1：True, Falseからランダムで選択
+・PWM(pwmout0)：0 - 255のIntからランダムで選択
+```
+### set_dout：Akari上面のLED（dout0, dout1）を点灯させる　client node
+### MSG：SetDout.srv
+```
+uint8 pin_id
+bool val
+---
+bool result
+```
+ClientからRequestを送信。
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example set_dout
+```
+```
+・LEDは[0, 1]のリストからランダムで選択
+```
+### set_pwmout：Akari上面のLED（PWM(pwmout0)）を点灯させる　client node
+### MSG：SetPwmout.srv
+```
+uint8 pin_id
+uint8 val
+---
+bool result
+```
+ClientからRequestを送信。
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example set_pwmout
+```
+```
+・0 - 255のIntからランダムで選択
+```
+
+### servo_acc_set_client：Akariのサーボ（pan, tilt）の加速度を設定する　client node
+### MSG：SetJointFloat.srv
+```
+string[] joint_name
+float32[] val
+---
+bool result
+```
+ClientからRequestを送信。
+
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example servo_acc_set_client
+```
+```
+・Requestを送るjoint_nameは ['pan', 'tilt']のリスト
+・加速度は0.15 - 0.5のfloatからランダム
+```
+
+### servo_vel_set_client：Akariのサーボ（pan, tilt）の速度を設定する　client node
+### MSG：SetJointFloat.srv
+```
+string[] joint_name
+float32[] val
+---
+bool result
+```
+ClientからRequestを送信。
+
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example servo_vel_set_client
+```
+```
+・Requestを送るjoint_nameは ['pan', 'tilt']のリスト
+・速度は0.15 - 2.5のfloatからランダム
+```
+
+### servo_enable_set_client：Akariのサーボ（pan, tilt）の有効無効状態を設定する　client node
+### MSG：SetJointBool.srv
+```
+string[] joint_name
+bool[] val
+---
+bool result
+```
+ClientからRequestを送信。
+
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example servo_enable_set_client
+```
+```
+・Requestを送るjoint_nameは ['pan', 'tilt']のリスト
+・有効無効はランダムで選択
+```
 
 想定外のリクエストの場合はFalseを返す。
 
 ```
-python3 py_m5serial/src/py_m5server.py 
+ros2 launch akari_launch akari_launch.py 
 ```
 

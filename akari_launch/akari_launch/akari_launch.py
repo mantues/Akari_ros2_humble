@@ -11,11 +11,6 @@ def generate_launch_description():
         ),
         Node(
             package='servo_server',
-            executable='servo_set',
-            name='servo_set'
-        ),
-        Node(
-            package='servo_server',
             executable='servo_acc',
             name='servo_set_acc_server'
         ),

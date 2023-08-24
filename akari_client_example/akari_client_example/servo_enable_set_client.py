@@ -37,8 +37,8 @@ class m5client(Node):
 
     def send_request(self):
         self.req.joint_name = ['pan', 'tilt']
-        pan_val = True
-        tilt_val = True
+        pan_val = random.choice([True, False])
+        tilt_val = random.choice([True, False])
         self.req.val = [pan_val, tilt_val]
         
         self.get_logger().info('Request enable pan : %s tilt : %s' % (str(pan_val), str(tilt_val)))
