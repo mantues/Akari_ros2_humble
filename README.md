@@ -36,7 +36,7 @@ sudo apt upgrade
 sudo apt install ros-humble-desktop
 ```
 
-<<<<<<< HEAD
+
 ***
 ## akari_launch：サーバーパッケージとakari_state_publisher、akari_setting_publisherを起動するlaunch
 ```
@@ -136,8 +136,6 @@ ros2 topic echo /akari_joint_states
 
 
 ***
-=======
->>>>>>> 2bcd28bf1be502f8432205f5807cd10fec09a917
 ## akari_client_example：Akari設定を変更するClientパッケージ
 
 ### display_color：M5Stackの画面の色を変える　client node
@@ -261,7 +259,6 @@ float32 pos_tilt
 ```
 ClientからRequestを送信。
 目標位置をRequestして目標地点に到達するまでに位置情報をフィードバックもらう
-<<<<<<< HEAD
 
 ```
 ros2 launch akari_launch akari_launch.py 
