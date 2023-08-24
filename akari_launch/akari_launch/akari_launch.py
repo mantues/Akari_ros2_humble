@@ -15,6 +15,21 @@ def generate_launch_description():
             name='servo_set'
         ),
         Node(
+            package='servo_server',
+            executable='servo_acc',
+            name='servo_set_acc_server'
+        ),
+        Node(
+            package='servo_server',
+            executable='servo_vel',
+            name='servo_set_vel_server'
+        ),
+        Node(
+            package='servo_server',
+            executable='servo_enable',
+            name='servo_set_enable_server'
+        ),
+        Node(
             package='m5_server',
             executable='m5_server',
             name='m5_server'
