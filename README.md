@@ -399,18 +399,6 @@ ros2 run akari_client_example servo_enable_set_client
 ・有効無効はランダムで選択
 ```
 
-***
-## server node
-
-
-## m5_server：AkariのM5Stackディスプレイ表示を変更するserverパッケージ
-
-Clientから送られたRequestに応じて画面を変更。
-
-・フィードバック
-目的位置に到着するまでにServer側から位置情報のフィードバックを受けて表示している。
-
-
 ### set_allout：Akari上面のLED（dout0, dout1, PWM(pwmout0)）を点灯させる　client node
 ### MSG：SetAllout.srv
 ```
@@ -526,21 +514,31 @@ ros2 run akari_client_example servo_enable_set_client
 ・有効無効はランダムで選択
 ```
 
-想定外のリクエストの場合はFalseを返す。
+***
+## server node
 
+サーボはすべてlaunchファイルで起動します。
 ```
 ros2 launch akari_launch akari_launch.py 
 ```
-
-***
-## servo_server：サーボ設定を変更するserverパッケージ
-
 Clientから送られたRequestに応じて画面を変更。
 
 リクエストに応じた場合はTrueを返す。
 
 想定外のリクエストの場合はFalseを返す。
 
+
 ```
 ros2 launch akari_launch akari_launch.py 
+```
+### servo_server：サーボ設定を変更するserverパッケージ
+```
+servo_server：サーボを動かすAction node
+servo_acc：サーボの加速度を設定server node
+servo_vel：サーボの速度を設定server node
+servo_enable：サーボの有効無効を設定するserver node
+```
+### m5_server：AkariのM5Stackディスプレイ表示を変更するserverパッケージ
+```
+m5_server：M5Stackの表示画面、LEDを操作するserver node
 ```
