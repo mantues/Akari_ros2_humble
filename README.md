@@ -46,7 +46,6 @@ ros2 launch akari_launch akari_launch.py
 
 http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
 
-=======
 ***
 ## akari_launch：サーバーパッケージとakari_state_publisher、akari_setting_publisherを起動するlaunch
 ```
