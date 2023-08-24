@@ -36,6 +36,17 @@ sudo apt upgrade
 sudo apt install ros-humble-desktop
 ```
 
+<<<<<<< HEAD
+***
+## akari_launch：サーバーパッケージとakari_state_publisher、akari_setting_publisherを起動するlaunch
+```
+ros2 launch akari_launch akari_launch.py 
+```
+### MSG型：sensor_msgs/JointState.msg
+
+http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
+
+=======
 ***
 ## akari_launch：サーバーパッケージとakari_state_publisher、akari_setting_publisherを起動するlaunch
 ```
@@ -50,8 +61,47 @@ http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
 ros2 launch akari_launch akari_launch.py 
 ros2 topic echo /akari_joint_states
 ```
+***
+## akari_setting_publisher：Akariの設定値をPublishするパッケージ
+　
+### MSG：Akarisetting.msg
+
+```
+std_msgs/Header header
+string[] jointname
+float32[] jointpositions
+float32[] jointvelocities
+float32[] jointaccelerations
+bool[] servoenabled
+bool[] servomovingstate
+```
+
+### メッセージの受け取り方
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 topic echo /akarisettingstates
+```
+
+
 
 ***
+## akari_state_publisher：Akariの関節の位置をJointState型でPublishするパッケージ
+
+### MSG：sensor_msgs/JointState.msg
+
+http://docs.ros.org/en/api/sensor_msgs/html/msg/JointState.html
+
+>>>>>>> 2bcd28bf1be502f8432205f5807cd10fec09a917
+### メッセージの受け取り方
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 topic echo /akari_joint_states
+```
+
+
+***
+<<<<<<< HEAD
 
 ***
 ## akari_setting_publisher：Akariの設定値をPublishするパッケージ
@@ -92,6 +142,8 @@ ros2 topic echo /akari_joint_states
 
 
 ***
+=======
+>>>>>>> 2bcd28bf1be502f8432205f5807cd10fec09a917
 ## akari_client_example：Akari設定を変更するClientパッケージ
 
 ### display_color：M5Stackの画面の色を変える　client node
@@ -215,6 +267,18 @@ float32 pos_tilt
 ```
 ClientからRequestを送信。
 目標位置をRequestして目標地点に到達するまでに位置情報をフィードバックもらう
+<<<<<<< HEAD
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example move_joints_action_client
+```
+```
+・関節の加速度、速度は0.15で固定（フィードバックがわかりやすいようにゆっくり）
+・目標位置
+pan：-1.0 - 1.0のランダム
+tiltpan：-0.5 - 0.5のランダム
+=======
 
 ```
 ros2 launch akari_launch akari_launch.py 
@@ -345,9 +409,148 @@ ros2 run akari_client_example servo_enable_set_client
 ・有効無効はランダムで選択
 ```
 
+***
+## server node
+
+
+## m5_server：AkariのM5Stackディスプレイ表示を変更するserverパッケージ
+
+Clientから送られたRequestに応じて画面を変更。
+>>>>>>> 2bcd28bf1be502f8432205f5807cd10fec09a917
+
+・フィードバック
+目的位置に到着するまでにServer側から位置情報のフィードバックを受けて表示している。
+```
+
+### set_allout：Akari上面のLED（dout0, dout1, PWM(pwmout0)）を点灯させる　client node
+### MSG：SetAllout.srv
+```
+bool dout0_val
+bool dout1_val
+uint8 pwmout0_val
+---
+bool result
+```
+ClientからRequestを送信。
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example set_allout
+```
+```
+・dout0：True, Falseからランダムで選択
+・dout1：True, Falseからランダムで選択
+・PWM(pwmout0)：0 - 255のIntからランダムで選択
+```
+### set_dout：Akari上面のLED（dout0, dout1）を点灯させる　client node
+### MSG：SetDout.srv
+```
+uint8 pin_id
+bool val
+---
+bool result
+```
+ClientからRequestを送信。
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example set_dout
+```
+```
+・LEDは[0, 1]のリストからランダムで選択
+```
+### set_pwmout：Akari上面のLED（PWM(pwmout0)）を点灯させる　client node
+### MSG：SetPwmout.srv
+```
+uint8 pin_id
+uint8 val
+---
+bool result
+```
+ClientからRequestを送信。
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example set_pwmout
+```
+```
+・0 - 255のIntからランダムで選択
+```
+
+### servo_acc_set_client：Akariのサーボ（pan, tilt）の加速度を設定する　client node
+### MSG：SetJointFloat.srv
+```
+string[] joint_name
+float32[] val
+---
+bool result
+```
+ClientからRequestを送信。
+
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example servo_acc_set_client
+```
+```
+・Requestを送るjoint_nameは ['pan', 'tilt']のリスト
+・加速度は0.15 - 0.5のfloatからランダム
+```
+
+### servo_vel_set_client：Akariのサーボ（pan, tilt）の速度を設定する　client node
+### MSG：SetJointFloat.srv
+```
+string[] joint_name
+float32[] val
+---
+bool result
+```
+ClientからRequestを送信。
+
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example servo_vel_set_client
+```
+```
+・Requestを送るjoint_nameは ['pan', 'tilt']のリスト
+・速度は0.15 - 2.5のfloatからランダム
+```
+
+### servo_enable_set_client：Akariのサーボ（pan, tilt）の有効無効状態を設定する　client node
+### MSG：SetJointBool.srv
+```
+string[] joint_name
+bool[] val
+---
+bool result
+```
+ClientからRequestを送信。
+
+
+```
+ros2 launch akari_launch akari_launch.py 
+ros2 run akari_client_example servo_enable_set_client
+```
+```
+・Requestを送るjoint_nameは ['pan', 'tilt']のリスト
+・有効無効はランダムで選択
+```
+
 想定外のリクエストの場合はFalseを返す。
 
 ```
 ros2 launch akari_launch akari_launch.py 
 ```
 
+## servo_server：サーボ設定を変更するserverパッケージ
+
+Clientから送られたRequestに応じて画面を変更。
+
+リクエストに応じた場合はTrueを返す。
+
+想定外のリクエストの場合はFalseを返す。
+
+```
+ros2 launch akari_launch akari_launch.py 
+```
