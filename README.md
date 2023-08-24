@@ -517,7 +517,7 @@ ros2 run akari_client_example servo_enable_set_client
 ***
 ## server node
 
-サーボはすべてlaunchファイルで起動します。
+server nodeはすべてlaunchファイルで起動します。
 ```
 ros2 launch akari_launch akari_launch.py 
 ```
