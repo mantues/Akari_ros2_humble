@@ -1,7 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
-  warnings.warn(
-  File "/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example/set_dout.py", line 7
-    from akari_msgs.srv import SetDout,
-                                       ^
-SyntaxError: trailing comma not allowed without surrounding parentheses
-

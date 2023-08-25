@@ -1,4 +1,0 @@
-string[] joint_name
-bool[] val
----
-bool result
