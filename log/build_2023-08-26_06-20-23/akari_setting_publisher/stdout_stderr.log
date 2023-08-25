@@ -1,0 +1,38 @@
+running egg_info
+creating ../build/akari_setting_publisher/akari_setting_publisher.egg-info
+writing ../build/akari_setting_publisher/akari_setting_publisher.egg-info/PKG-INFO
+writing dependency_links to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/dependency_links.txt
+writing entry points to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/entry_points.txt
+writing requirements to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/requires.txt
+writing top-level names to ../build/akari_setting_publisher/akari_setting_publisher.egg-info/top_level.txt
+writing manifest file '../build/akari_setting_publisher/akari_setting_publisher.egg-info/SOURCES.txt'
+reading manifest file '../build/akari_setting_publisher/akari_setting_publisher.egg-info/SOURCES.txt'
+writing manifest file '../build/akari_setting_publisher/akari_setting_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build
+creating /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib
+creating /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher
+copying akari_setting_publisher/__init__.py -> /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher
+copying akari_setting_publisher/setting_publisher.py -> /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher
+copying /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher/__init__.py -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher
+copying /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build/lib/akari_setting_publisher/setting_publisher.py -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher
+byte-compiling /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher/setting_publisher.py to setting_publisher.cpython-310.pyc
+running install_data
+creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index
+creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index/resource_index
+creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index/resource_index/packages
+copying resource/akari_setting_publisher -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher
+creating /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/launch
+running install_egg_info
+Copying ../build/akari_setting_publisher/akari_setting_publisher.egg-info to /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages/akari_setting_publisher-0.0.0-py3.10.egg-info
+running install_scripts
+Installing setting_publisher script to /home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/akari_setting_publisher
+writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_setting_publisher/install.log'

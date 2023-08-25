@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from akari_msgs/srv/Trigger.srv
+// generated code does not contain a copyright notice
+
+
+module akari_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "For send trigger")
+    struct Trigger_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct Trigger_Response {
+      boolean result;
+    };
+  };
+};

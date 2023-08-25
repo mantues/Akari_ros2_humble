@@ -1,0 +1,22 @@
+[3.298s] Invoking command in '/home/akariros/Akari_ros2_humble/akari_launch': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_launch/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_launch build --build-base /home/akariros/Akari_ros2_humble/build/akari_launch/build install --record /home/akariros/Akari_ros2_humble/build/akari_launch/install.log --single-version-externally-managed
+[4.182s] running egg_info
+[4.184s] writing ../build/akari_launch/akari_launch.egg-info/PKG-INFO
+[4.185s] writing dependency_links to ../build/akari_launch/akari_launch.egg-info/dependency_links.txt
+[4.185s] writing entry points to ../build/akari_launch/akari_launch.egg-info/entry_points.txt
+[4.186s] writing requirements to ../build/akari_launch/akari_launch.egg-info/requires.txt
+[4.186s] writing top-level names to ../build/akari_launch/akari_launch.egg-info/top_level.txt
+[4.190s] reading manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+[4.193s] writing manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+[4.193s] running build
+[4.193s] running build_py
+[4.194s] running install
+[4.195s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.195s]   warnings.warn(
+[4.196s] running install_lib
+[4.200s] running install_data
+[4.201s] running install_egg_info
+[4.206s] removing '/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[4.207s] Copying ../build/akari_launch/akari_launch.egg-info to /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch-0.0.0-py3.10.egg-info
+[4.209s] running install_scripts
+[4.269s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_launch/install.log'
+[4.335s] Invoked command in '/home/akariros/Akari_ros2_humble/akari_launch' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_launch/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_launch build --build-base /home/akariros/Akari_ros2_humble/build/akari_launch/build install --record /home/akariros/Akari_ros2_humble/build/akari_launch/install.log --single-version-externally-managed

@@ -1,0 +1,34 @@
+running egg_info
+writing ../build/akari_client_example/akari_client_example.egg-info/PKG-INFO
+writing dependency_links to ../build/akari_client_example/akari_client_example.egg-info/dependency_links.txt
+writing entry points to ../build/akari_client_example/akari_client_example.egg-info/entry_points.txt
+writing requirements to ../build/akari_client_example/akari_client_example.egg-info/requires.txt
+writing top-level names to ../build/akari_client_example/akari_client_example.egg-info/top_level.txt
+reading manifest file '../build/akari_client_example/akari_client_example.egg-info/SOURCES.txt'
+writing manifest file '../build/akari_client_example/akari_client_example.egg-info/SOURCES.txt'
+running build
+running build_py
+copying akari_client_example/set_allout.py -> /home/akariros/Akari_ros2_humble/build/akari_client_example/build/lib/akari_client_example
+running install
+running install_lib
+copying /home/akariros/Akari_ros2_humble/build/akari_client_example/build/lib/akari_client_example/set_allout.py -> /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example
+byte-compiling /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example/set_allout.py to set_allout.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/akari_client_example/akari_client_example.egg-info to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages/akari_client_example-0.0.0-py3.10.egg-info
+running install_scripts
+Installing display_color script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing display_image script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing display_reset script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing display_text script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing m5publisher script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing move_joints_action_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing reset_allout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing servo_acc_set_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing servo_enable_set_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing servo_vel_set_client script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing set_allout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing set_dout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+Installing set_pwmout script to /home/akariros/Akari_ros2_humble/install/akari_client_example/lib/akari_client_example
+writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_client_example/install.log'

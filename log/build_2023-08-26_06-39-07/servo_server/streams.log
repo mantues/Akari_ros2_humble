@@ -1,0 +1,23 @@
+[2.732s] Invoking command in '/home/akariros/Akari_ros2_humble/servo_server': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/servo_server/prefix_override:/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/servo_server build --build-base /home/akariros/Akari_ros2_humble/build/servo_server/build install --record /home/akariros/Akari_ros2_humble/build/servo_server/install.log --single-version-externally-managed
+[3.579s] running egg_info
+[3.580s] writing ../build/servo_server/servo_server.egg-info/PKG-INFO
+[3.581s] writing dependency_links to ../build/servo_server/servo_server.egg-info/dependency_links.txt
+[3.581s] writing entry points to ../build/servo_server/servo_server.egg-info/entry_points.txt
+[3.581s] writing requirements to ../build/servo_server/servo_server.egg-info/requires.txt
+[3.582s] writing top-level names to ../build/servo_server/servo_server.egg-info/top_level.txt
+[3.586s] reading manifest file '../build/servo_server/servo_server.egg-info/SOURCES.txt'
+[3.588s] writing manifest file '../build/servo_server/servo_server.egg-info/SOURCES.txt'
+[3.588s] running build
+[3.588s] running build_py
+[3.589s] running install
+[3.589s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.589s]   warnings.warn(
+[3.589s] running install_lib
+[3.592s] running install_data
+[3.593s] running install_egg_info
+[3.597s] removing '/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server-0.0.0-py3.10.egg-info' (and everything under it)
+[3.597s] Copying ../build/servo_server/servo_server.egg-info to /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server-0.0.0-py3.10.egg-info
+[3.599s] running install_scripts
+[3.648s] Installing servo_server script to /home/akariros/Akari_ros2_humble/install/servo_server/lib/servo_server
+[3.649s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/servo_server/install.log'
+[3.689s] Invoked command in '/home/akariros/Akari_ros2_humble/servo_server' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/servo_server/prefix_override:/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/servo_server build --build-base /home/akariros/Akari_ros2_humble/build/servo_server/build install --record /home/akariros/Akari_ros2_humble/build/servo_server/install.log --single-version-externally-managed

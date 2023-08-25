@@ -1,0 +1,23 @@
+[2.530s] Invoking command in '/home/akariros/Akari_ros2_humble/akari_state_publisher': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_state_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_state_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_state_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_state_publisher/install.log --single-version-externally-managed
+[3.343s] running egg_info
+[3.345s] writing ../build/akari_state_publisher/akari_state_publisher.egg-info/PKG-INFO
+[3.347s] writing dependency_links to ../build/akari_state_publisher/akari_state_publisher.egg-info/dependency_links.txt
+[3.347s] writing entry points to ../build/akari_state_publisher/akari_state_publisher.egg-info/entry_points.txt
+[3.347s] writing requirements to ../build/akari_state_publisher/akari_state_publisher.egg-info/requires.txt
+[3.351s] writing top-level names to ../build/akari_state_publisher/akari_state_publisher.egg-info/top_level.txt
+[3.353s] reading manifest file '../build/akari_state_publisher/akari_state_publisher.egg-info/SOURCES.txt'
+[3.355s] writing manifest file '../build/akari_state_publisher/akari_state_publisher.egg-info/SOURCES.txt'
+[3.355s] running build
+[3.356s] running build_py
+[3.356s] running install
+[3.357s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.357s]   warnings.warn(
+[3.357s] running install_lib
+[3.361s] running install_data
+[3.363s] running install_egg_info
+[3.368s] removing '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages/akari_state_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[3.369s] Copying ../build/akari_state_publisher/akari_state_publisher.egg-info to /home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages/akari_state_publisher-0.0.0-py3.10.egg-info
+[3.371s] running install_scripts
+[3.433s] Installing joint_state_publisher script to /home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/akari_state_publisher
+[3.433s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_state_publisher/install.log'
+[3.508s] Invoked command in '/home/akariros/Akari_ros2_humble/akari_state_publisher' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_state_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_state_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_state_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_state_publisher/install.log --single-version-externally-managed

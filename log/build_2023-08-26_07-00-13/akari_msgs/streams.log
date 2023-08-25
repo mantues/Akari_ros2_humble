@@ -1,0 +1,7 @@
+[1.111s] Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akariros/Akari_ros2_humble/install/servo_server:/home/akariros/Akari_ros2_humble/install/m5_server:/home/akariros/Akari_ros2_humble/install/akari_state_publisher:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher:/home/akariros/Akari_ros2_humble/install/akari_launch:/home/akariros/Akari_ros2_humble/install/akari_client_example:/opt/ros/humble /usr/bin/cmake --build /home/akariros/Akari_ros2_humble/build/akari_msgs -- -j4 -l4
+[1.217s] gmake[2]: *** [CMakeFiles/akari_msgs__cpp.dir/build.make:416: CMakeFiles/akari_msgs__cpp.dir/depend] Interrupt
+[1.217s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_akari_msgs.dir/all] Interrupt
+[1.218s] gmake[2]: *** [CMakeFiles/akari_msgs__rosidl_generator_c.dir/build.make:621: CMakeFiles/akari_msgs__rosidl_generator_c.dir/depend] Interrupt
+[1.218s] gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/akari_msgs__rosidl_generator_c.dir/all] Interrupt
+[1.218s] gmake[1]: *** [CMakeFiles/Makefile2:264: CMakeFiles/akari_msgs__cpp.dir/all] Interrupt
+[1.218s] gmake: *** [Makefile:146: all] Interrupt

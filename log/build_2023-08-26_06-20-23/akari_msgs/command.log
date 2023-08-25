@@ -1,0 +1,2 @@
+Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/akariros/Akari_ros2_humble/akari_msgs -DCMAKE_INSTALL_PREFIX=/home/akariros/Akari_ros2_humble/install/akari_msgs
+Invoked command in '/home/akariros/Akari_ros2_humble/build/akari_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/akariros/Akari_ros2_humble/akari_msgs -DCMAKE_INSTALL_PREFIX=/home/akariros/Akari_ros2_humble/install/akari_msgs

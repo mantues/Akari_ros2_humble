@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from akari_msgs/action/MoveJoint.action
+// generated code does not contain a copyright notice
+
+
+module akari_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "For move joints")
+    struct MoveJoint_Goal {
+      float acc_pan;
+
+      float acc_tilt;
+
+      float vel_pan;
+
+      float vel_tilt;
+
+      float goal_pan;
+
+      float goal_tilt;
+    };
+    struct MoveJoint_Result {
+      boolean result;
+    };
+    struct MoveJoint_Feedback {
+      float pos_pan;
+
+      float pos_tilt;
+    };
+  };
+};

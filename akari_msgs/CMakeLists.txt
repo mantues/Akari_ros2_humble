@@ -27,7 +27,6 @@ set(srv_files
   "srv/SetDout.srv"
   "srv/SetPwmout.srv"
   "srv/Trigger.srv"
-  "srv/SetServoStatus.srv"
   "srv/SetJointFloat.srv"
   "srv/SetJointBool.srv"
 )

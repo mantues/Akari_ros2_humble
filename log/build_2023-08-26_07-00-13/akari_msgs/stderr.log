@@ -1,0 +1,6 @@
+gmake[2]: *** [CMakeFiles/akari_msgs__cpp.dir/build.make:416: CMakeFiles/akari_msgs__cpp.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_akari_msgs.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/akari_msgs__rosidl_generator_c.dir/build.make:621: CMakeFiles/akari_msgs__rosidl_generator_c.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/akari_msgs__rosidl_generator_c.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:264: CMakeFiles/akari_msgs__cpp.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

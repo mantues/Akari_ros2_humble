@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from akari_msgs/srv/SetDisplayText.srv
+// generated code does not contain a copyright notice
+
+
+module akari_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "For set LCD text")
+    struct SetDisplayText_Request {
+      string text;
+
+      int32 pos_x;
+
+      int32 pos_y;
+
+      uint8 size;
+
+      string text_color;
+
+      string back_color;
+
+      boolean refresh;
+    };
+    struct SetDisplayText_Response {
+      boolean result;
+    };
+  };
+};

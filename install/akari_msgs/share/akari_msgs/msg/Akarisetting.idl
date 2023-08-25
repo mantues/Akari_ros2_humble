@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from akari_msgs/msg/Akarisetting.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module akari_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This is the buttons message")
+    struct Akarisetting {
+      std_msgs::msg::Header header;
+
+      sequence<string> jointname;
+
+      sequence<float> jointpositions;
+
+      sequence<float> jointvelocities;
+
+      sequence<float> jointaccelerations;
+
+      sequence<boolean> servoenabled;
+
+      sequence<boolean> servomovingstate;
+    };
+  };
+};

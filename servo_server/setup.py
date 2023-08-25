@@ -24,9 +24,6 @@ setup(
     entry_points={
         'console_scripts': [
             'servo_server = servo_server.servo_server:main',
-            'servo_acc = servo_server.servo_set_acc_server:main',
-            'servo_vel = servo_server.servo_set_vel_server:main',
-            'servo_enable = servo_server.servo_set_enable_server:main',
         ],
     },
 )

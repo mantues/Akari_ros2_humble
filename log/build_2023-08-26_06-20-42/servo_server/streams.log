@@ -1,0 +1,49 @@
+[2.228s] Invoking command in '/home/akariros/Akari_ros2_humble/servo_server': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/servo_server/prefix_override:/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/servo_server build --build-base /home/akariros/Akari_ros2_humble/build/servo_server/build install --record /home/akariros/Akari_ros2_humble/build/servo_server/install.log --single-version-externally-managed
+[2.933s] running egg_info
+[2.933s] creating ../build/servo_server/servo_server.egg-info
+[2.933s] writing ../build/servo_server/servo_server.egg-info/PKG-INFO
+[2.933s] writing dependency_links to ../build/servo_server/servo_server.egg-info/dependency_links.txt
+[2.933s] writing entry points to ../build/servo_server/servo_server.egg-info/entry_points.txt
+[2.934s] writing requirements to ../build/servo_server/servo_server.egg-info/requires.txt
+[2.934s] writing top-level names to ../build/servo_server/servo_server.egg-info/top_level.txt
+[2.934s] writing manifest file '../build/servo_server/servo_server.egg-info/SOURCES.txt'
+[2.936s] reading manifest file '../build/servo_server/servo_server.egg-info/SOURCES.txt'
+[2.940s] writing manifest file '../build/servo_server/servo_server.egg-info/SOURCES.txt'
+[2.941s] running build
+[2.941s] running build_py
+[2.941s] creating /home/akariros/Akari_ros2_humble/build/servo_server/build
+[2.941s] creating /home/akariros/Akari_ros2_humble/build/servo_server/build/lib
+[2.941s] creating /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server
+[2.941s] copying servo_server/servo_server.py -> /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server
+[2.942s] copying servo_server/__init__.py -> /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server
+[2.942s] copying servo_server/servo_set_vel_server.py -> /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server
+[2.942s] copying servo_server/servo_set_enable_server.py -> /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server
+[2.942s] copying servo_server/servo_set_acc_server.py -> /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server
+[2.942s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.943s]   warnings.warn(
+[2.943s] running install
+[2.943s] running install_lib
+[2.943s] creating /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server
+[2.943s] copying /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server/servo_server.py -> /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server
+[2.944s] copying /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server/__init__.py -> /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server
+[2.944s] copying /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server/servo_set_vel_server.py -> /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server
+[2.944s] copying /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server/servo_set_enable_server.py -> /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server
+[2.944s] copying /home/akariros/Akari_ros2_humble/build/servo_server/build/lib/servo_server/servo_set_acc_server.py -> /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server
+[2.945s] byte-compiling /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server/servo_server.py to servo_server.cpython-310.pyc
+[2.948s] byte-compiling /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server/__init__.py to __init__.cpython-310.pyc
+[2.948s] byte-compiling /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server/servo_set_vel_server.py to servo_set_vel_server.cpython-310.pyc
+[2.951s] byte-compiling /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server/servo_set_enable_server.py to servo_set_enable_server.cpython-310.pyc
+[2.951s] byte-compiling /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server/servo_set_acc_server.py to servo_set_acc_server.cpython-310.pyc
+[2.952s] running install_data
+[2.954s] creating /home/akariros/Akari_ros2_humble/install/servo_server/share/ament_index
+[2.954s] creating /home/akariros/Akari_ros2_humble/install/servo_server/share/ament_index/resource_index
+[2.954s] creating /home/akariros/Akari_ros2_humble/install/servo_server/share/ament_index/resource_index/packages
+[2.954s] copying resource/servo_server -> /home/akariros/Akari_ros2_humble/install/servo_server/share/ament_index/resource_index/packages
+[2.954s] copying package.xml -> /home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server
+[2.955s] creating /home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/launch
+[2.955s] running install_egg_info
+[2.958s] Copying ../build/servo_server/servo_server.egg-info to /home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages/servo_server-0.0.0-py3.10.egg-info
+[2.960s] running install_scripts
+[3.006s] Installing servo_server script to /home/akariros/Akari_ros2_humble/install/servo_server/lib/servo_server
+[3.007s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/servo_server/install.log'
+[3.058s] Invoked command in '/home/akariros/Akari_ros2_humble/servo_server' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/servo_server/prefix_override:/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/servo_server build --build-base /home/akariros/Akari_ros2_humble/build/servo_server/build install --record /home/akariros/Akari_ros2_humble/build/servo_server/install.log --single-version-externally-managed

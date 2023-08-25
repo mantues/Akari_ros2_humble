@@ -1,0 +1,38 @@
+running egg_info
+creating ../build/akari_launch/akari_launch.egg-info
+writing ../build/akari_launch/akari_launch.egg-info/PKG-INFO
+writing dependency_links to ../build/akari_launch/akari_launch.egg-info/dependency_links.txt
+writing entry points to ../build/akari_launch/akari_launch.egg-info/entry_points.txt
+writing requirements to ../build/akari_launch/akari_launch.egg-info/requires.txt
+writing top-level names to ../build/akari_launch/akari_launch.egg-info/top_level.txt
+writing manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+reading manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+writing manifest file '../build/akari_launch/akari_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/akariros/Akari_ros2_humble/build/akari_launch/build
+creating /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib
+creating /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch
+copying akari_launch/__init__.py -> /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch
+copying akari_launch/akari_launch.py -> /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch
+copying /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch/__init__.py -> /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch
+copying /home/akariros/Akari_ros2_humble/build/akari_launch/build/lib/akari_launch/akari_launch.py -> /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch
+byte-compiling /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch/akari_launch.py to akari_launch.cpython-310.pyc
+running install_data
+creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index
+creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index/resource_index
+creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index/resource_index/packages
+copying resource/akari_launch -> /home/akariros/Akari_ros2_humble/install/akari_launch/share/ament_index/resource_index/packages
+copying package.xml -> /home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch
+creating /home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/launch
+copying akari_launch/akari_launch.py -> /home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/launch
+running install_egg_info
+Copying ../build/akari_launch/akari_launch.egg-info to /home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages/akari_launch-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/akariros/Akari_ros2_humble/build/akari_launch/install.log'

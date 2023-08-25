@@ -1,0 +1,576 @@
+[0.808s] Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/akariros/Akari_ros2_humble/akari_msgs -DCMAKE_INSTALL_PREFIX=/home/akariros/Akari_ros2_humble/install/akari_msgs
+[0.825s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.040s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.079s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.083s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.092s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.111s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.135s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.407s] -- Found rclpy: 3.3.9 (/opt/ros/humble/share/rclpy/cmake)
+[1.407s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.760s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.622s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.106s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.160s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.165s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.206s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.207s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.207s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.207s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.238s] -- Found PythonExtra: .so  
+[4.366s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.531s] -- Added test 'lint_cmake' to check CMake code style
+[4.535s] -- Added test 'xmllint' to check XML markup files
+[4.544s] -- Configuring done
+[4.720s] -- Generating done
+[4.728s] -- Build files have been written to: /home/akariros/Akari_ros2_humble/build/akari_msgs
+[4.747s] Invoked command in '/home/akariros/Akari_ros2_humble/build/akari_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/akariros/Akari_ros2_humble/akari_msgs -DCMAKE_INSTALL_PREFIX=/home/akariros/Akari_ros2_humble/install/akari_msgs
+[4.750s] Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akariros/Akari_ros2_humble/build/akari_msgs -- -j4 -l4
+[4.892s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.894s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.949s] [  1%] Built target ament_cmake_python_copy_akari_msgs
+[5.731s] running egg_info
+[5.732s] creating akari_msgs.egg-info
+[5.732s] writing akari_msgs.egg-info/PKG-INFO
+[5.733s] writing dependency_links to akari_msgs.egg-info/dependency_links.txt
+[5.733s] writing top-level names to akari_msgs.egg-info/top_level.txt
+[5.733s] writing manifest file 'akari_msgs.egg-info/SOURCES.txt'
+[5.738s] reading manifest file 'akari_msgs.egg-info/SOURCES.txt'
+[5.739s] writing manifest file 'akari_msgs.egg-info/SOURCES.txt'
+[5.825s] [  1%] Built target ament_cmake_python_build_akari_msgs_egg
+[7.884s] [  1%] Built target akari_msgs__cpp
+[7.907s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.909s] [  2%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.168s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.518s] [  4%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_allout__functions.c.o[0m
+[8.693s] [  5%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_display_color__functions.c.o[0m
+[8.852s] [  6%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_display_image__functions.c.o[0m
+[9.012s] [  6%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_display_text__functions.c.o[0m
+[9.161s] [  7%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_dout__functions.c.o[0m
+[9.308s] [  8%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_pwmout__functions.c.o[0m
+[9.448s] [  9%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/trigger__functions.c.o[0m
+[9.592s] [ 10%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_joint_float__functions.c.o[0m
+[9.733s] [ 11%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/srv/detail/set_joint_bool__functions.c.o[0m
+[9.870s] [ 11%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/msg/detail/m5__functions.c.o[0m
+[10.027s] [ 12%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/msg/detail/akarisetting__functions.c.o[0m
+[10.091s] [ 13%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_allout__type_support.cpp.o[0m
+[10.151s] [ 14%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_c.dir/rosidl_generator_c/akari_msgs/action/detail/move_joint__functions.c.o[0m
+[10.451s] [ 15%] [32m[1mLinking C shared library libakari_msgs__rosidl_generator_c.so[0m
+[10.549s] [ 15%] Built target akari_msgs__rosidl_generator_c
+[10.572s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.886s] [ 17%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_display_color__type_support.cpp.o[0m
+[11.046s] [ 17%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_allout__type_support.cpp.o[0m
+[11.528s] [ 18%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_allout__type_support.cpp.o[0m
+[11.547s] [ 19%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_display_image__type_support.cpp.o[0m
+[12.028s] [ 20%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_display_color__type_support.cpp.o[0m
+[12.195s] [ 21%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_display_text__type_support.cpp.o[0m
+[12.564s] [ 22%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_display_color__type_support.cpp.o[0m
+[12.836s] [ 22%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_dout__type_support.cpp.o[0m
+[13.041s] [ 23%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_display_image__type_support.cpp.o[0m
+[13.464s] [ 24%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_pwmout__type_support.cpp.o[0m
+[13.736s] [ 25%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_display_image__type_support.cpp.o[0m
+[14.046s] [ 26%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_display_text__type_support.cpp.o[0m
+[14.054s] [ 27%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_allout__type_support_c.cpp.o[0m
+[14.135s] [ 28%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/trigger__type_support.cpp.o[0m
+[14.856s] [ 29%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_display_text__type_support.cpp.o[0m
+[14.908s] [ 30%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_joint_float__type_support.cpp.o[0m
+[15.072s] [ 31%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_display_color__type_support_c.cpp.o[0m
+[15.083s] [ 32%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_dout__type_support.cpp.o[0m
+[15.700s] [ 33%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/srv/set_joint_bool__type_support.cpp.o[0m
+[16.083s] [ 34%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_dout__type_support.cpp.o[0m
+[16.084s] [ 35%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_pwmout__type_support.cpp.o[0m
+[16.109s] [ 35%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_display_image__type_support_c.cpp.o[0m
+[16.419s] [ 36%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/msg/m5__type_support.cpp.o[0m
+[16.951s] [ 37%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_display_text__type_support_c.cpp.o[0m
+[17.020s] [ 37%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/trigger__type_support.cpp.o[0m
+[17.098s] [ 37%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_pwmout__type_support.cpp.o[0m
+[17.123s] [ 37%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/msg/akarisetting__type_support.cpp.o[0m
+[17.765s] [ 38%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/akari_msgs/action/move_joint__type_support.cpp.o[0m
+[17.809s] [ 39%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_dout__type_support_c.cpp.o[0m
+[17.993s] [ 40%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_joint_float__type_support.cpp.o[0m
+[18.092s] [ 41%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/trigger__type_support.cpp.o[0m
+[18.620s] [ 42%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_pwmout__type_support_c.cpp.o[0m
+[18.875s] [ 43%] [32m[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_cpp.so[0m
+[19.013s] [ 43%] Built target akari_msgs__rosidl_typesupport_cpp
+[19.034s] [ 44%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_joint_float__type_support.cpp.o[0m
+[19.082s] [ 45%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/srv/detail/dds_fastrtps/set_joint_bool__type_support.cpp.o[0m
+[19.127s] [ 46%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/srv/detail/set_joint_bool__type_support.cpp.o[0m
+[19.445s] [ 47%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/trigger__type_support_c.cpp.o[0m
+[20.207s] [ 48%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/msg/detail/dds_fastrtps/m5__type_support.cpp.o[0m
+[20.210s] [ 49%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/msg/detail/dds_fastrtps/akarisetting__type_support.cpp.o[0m
+[20.285s] [ 50%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_joint_float__type_support_c.cpp.o[0m
+[20.300s] [ 51%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/msg/detail/m5__type_support.cpp.o[0m
+[21.168s] [ 51%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/srv/detail/set_joint_bool__type_support_c.cpp.o[0m
+[21.168s] [ 51%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/akari_msgs/action/detail/dds_fastrtps/move_joint__type_support.cpp.o[0m
+[21.243s] [ 52%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/msg/detail/akarisetting__type_support.cpp.o[0m
+[21.378s] [ 53%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/msg/detail/m5__type_support_c.cpp.o[0m
+[22.041s] [ 54%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/msg/detail/akarisetting__type_support_c.cpp.o[0m
+[22.198s] [ 55%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/akari_msgs/action/detail/move_joint__type_support_c.cpp.o[0m
+[22.521s] [ 57%] [32m[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.521s] [ 57%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/akari_msgs/action/detail/move_joint__type_support.cpp.o[0m
+[22.765s] [ 57%] Built target akari_msgs__rosidl_typesupport_fastrtps_cpp
+[22.791s] [ 58%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[22.908s] [ 59%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[23.124s] [ 60%] [32m[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[23.320s] [ 60%] Built target akari_msgs__rosidl_typesupport_fastrtps_c
+[23.872s] [ 61%] [32m[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[24.114s] [ 61%] Built target akari_msgs__rosidl_typesupport_introspection_cpp
+[24.568s] [ 61%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_display_color__type_support.cpp.o[0m
+[24.569s] [ 63%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_allout__type_support.cpp.o[0m
+[24.569s] [ 63%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_display_image__type_support.cpp.o[0m
+[24.662s] [ 64%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_display_text__type_support.cpp.o[0m
+[24.663s] [ 65%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_dout__type_support.cpp.o[0m
+[24.750s] [ 66%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_pwmout__type_support.cpp.o[0m
+[24.751s] [ 66%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_joint_float__type_support.cpp.o[0m
+[24.752s] [ 67%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/trigger__type_support.cpp.o[0m
+[24.849s] [ 69%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/srv/set_joint_bool__type_support.cpp.o[0m
+[24.849s] [ 69%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/msg/m5__type_support.cpp.o[0m
+[24.859s] [ 70%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/msg/akarisetting__type_support.cpp.o[0m
+[24.893s] [ 71%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_allout__type_support.c.o[0m
+[24.970s] [ 72%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_display_color__type_support.c.o[0m
+[24.973s] [ 73%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_display_image__type_support.c.o[0m
+[24.974s] [ 74%] [32mBuilding CXX object CMakeFiles/akari_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/akari_msgs/action/move_joint__type_support.cpp.o[0m
+[25.023s] [ 74%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_display_text__type_support.c.o[0m
+[25.062s] [ 75%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_dout__type_support.c.o[0m
+[25.070s] [ 76%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_pwmout__type_support.c.o[0m
+[25.103s] [ 77%] [32m[1mLinking CXX shared library libakari_msgs__rosidl_typesupport_c.so[0m
+[25.117s] [ 78%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/trigger__type_support.c.o[0m
+[25.146s] [ 79%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_joint_float__type_support.c.o[0m
+[25.157s] [ 80%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/srv/detail/set_joint_bool__type_support.c.o[0m
+[25.208s] [ 81%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/msg/detail/m5__type_support.c.o[0m
+[25.214s] [ 81%] Built target akari_msgs__rosidl_typesupport_c
+[25.232s] [ 81%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/msg/detail/akarisetting__type_support.c.o[0m
+[25.245s] [ 82%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/akari_msgs/action/detail/move_joint__type_support.c.o[0m
+[25.326s] [ 83%] [32m[1mLinking C shared library libakari_msgs__rosidl_typesupport_introspection_c.so[0m
+[25.387s] [ 83%] Built target akari_msgs__rosidl_typesupport_introspection_c
+[25.418s] [ 83%] Built target akari_msgs
+[25.448s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[29.104s] [ 84%] Built target akari_msgs__py
+[29.141s] [ 85%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_allout_s.c.o[0m
+[29.141s] [ 85%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_display_image_s.c.o[0m
+[29.142s] [ 86%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_display_text_s.c.o[0m
+[29.144s] [ 87%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_display_color_s.c.o[0m
+[29.468s] [ 88%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_dout_s.c.o[0m
+[29.477s] [ 89%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_pwmout_s.c.o[0m
+[29.478s] [ 90%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_trigger_s.c.o[0m
+[29.481s] [ 91%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_joint_float_s.c.o[0m
+[29.748s] [ 92%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/srv/_set_joint_bool_s.c.o[0m
+[29.748s] [ 92%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/msg/_m5_s.c.o[0m
+[29.757s] [ 93%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/msg/_akarisetting_s.c.o[0m
+[29.778s] [ 94%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_generator_py.dir/rosidl_generator_py/akari_msgs/action/_move_joint_s.c.o[0m
+[30.106s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/akari_msgs/libakari_msgs__rosidl_generator_py.so[0m
+[30.226s] [ 95%] Built target akari_msgs__rosidl_generator_py
+[30.262s] [ 95%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[30.263s] [ 96%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[30.268s] [ 97%] [32mBuilding C object CMakeFiles/akari_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[30.565s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[30.641s] [ 98%] Built target akari_msgs__rosidl_typesupport_fastrtps_c__pyext
+[30.704s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[30.707s] [100%] [32m[1mLinking C shared library rosidl_generator_py/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[30.775s] [100%] Built target akari_msgs__rosidl_typesupport_c__pyext
+[30.777s] [100%] Built target akari_msgs__rosidl_typesupport_introspection_c__pyext
+[30.802s] Invoked command in '/home/akariros/Akari_ros2_humble/build/akari_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akariros/Akari_ros2_humble/build/akari_msgs -- -j4 -l4
+[31.183s] Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akariros/Akari_ros2_humble/build/akari_msgs
+[31.195s] -- Install configuration: ""
+[31.195s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/rosidl_interfaces/akari_msgs
+[31.195s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs
+[31.195s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv
+[31.196s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_pwmout.h
+[31.196s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail
+[31.196s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__functions.h
+[31.196s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__type_support.h
+[31.196s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__functions.c
+[31.197s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__struct.h
+[31.197s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__functions.c
+[31.197s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__type_support.h
+[31.197s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__struct.h
+[31.197s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__type_support.h
+[31.198s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__functions.c
+[31.198s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__type_support.h
+[31.198s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__functions.h
+[31.198s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__functions.h
+[31.198s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__struct.h
+[31.198s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__functions.h
+[31.199s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__struct.h
+[31.199s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__functions.h
+[31.199s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__type_support.h
+[31.199s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__functions.h
+[31.199s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__functions.c
+[31.200s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__type_support.h
+[31.200s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__functions.c
+[31.200s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__struct.h
+[31.200s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__functions.c
+[31.200s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__struct.h
+[31.201s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__type_support.h
+[31.201s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__struct.h
+[31.201s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__type_support.h
+[31.201s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__functions.h
+[31.201s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__functions.c
+[31.202s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__struct.h
+[31.202s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__type_support.h
+[31.202s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__functions.c
+[31.202s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__struct.h
+[31.202s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__functions.c
+[31.203s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__functions.h
+[31.203s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__functions.h
+[31.203s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/trigger.h
+[31.203s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_text.h
+[31.203s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_image.h
+[31.203s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_dout.h
+[31.204s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_color.h
+[31.204s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_allout.h
+[31.204s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_joint_float.h
+[31.204s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_joint_bool.h
+[31.204s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg
+[31.205s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_generator_c__visibility_control.h
+[31.205s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail
+[31.205s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__functions.c
+[31.205s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__functions.h
+[31.205s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__struct.h
+[31.205s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__type_support.h
+[31.206s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__functions.h
+[31.206s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__functions.c
+[31.206s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__type_support.h
+[31.206s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__struct.h
+[31.206s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/m5.h
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/akarisetting.h
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/move_joint.h
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__functions.c
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__functions.h
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__struct.h
+[31.207s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__type_support.h
+[31.208s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/library_path.sh
+[31.208s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/library_path.dsv
+[31.208s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_c.so
+[31.210s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_c.so" to ""
+[31.210s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs
+[31.210s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv
+[31.210s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail
+[31.211s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_fastrtps_c.h
+[31.211s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_fastrtps_c.h
+[31.211s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_fastrtps_c.h
+[31.212s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__rosidl_typesupport_fastrtps_c.h
+[31.212s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_fastrtps_c.h
+[31.212s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h
+[31.213s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_fastrtps_c.h
+[31.213s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__rosidl_typesupport_fastrtps_c.h
+[31.213s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_fastrtps_c.h
+[31.213s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg
+[31.214s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail
+[31.214s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_fastrtps_c.h
+[31.214s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__rosidl_typesupport_fastrtps_c.h
+[31.214s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.214s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action
+[31.215s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail
+[31.215s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_fastrtps_c.h
+[31.215s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_c.so
+[31.215s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[31.216s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs
+[31.216s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv
+[31.216s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_text.hpp
+[31.217s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_image.hpp
+[31.217s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_joint_bool.hpp
+[31.217s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_allout.hpp
+[31.217s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail
+[31.218s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__struct.hpp
+[31.218s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__traits.hpp
+[31.218s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__builder.hpp
+[31.218s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__builder.hpp
+[31.218s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__struct.hpp
+[31.219s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__builder.hpp
+[31.219s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__struct.hpp
+[31.219s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__struct.hpp
+[31.220s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__struct.hpp
+[31.220s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__traits.hpp
+[31.220s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__struct.hpp
+[31.221s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__builder.hpp
+[31.221s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__builder.hpp
+[31.221s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__traits.hpp
+[31.221s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__builder.hpp
+[31.222s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__traits.hpp
+[31.222s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__struct.hpp
+[31.222s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__traits.hpp
+[31.222s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__traits.hpp
+[31.223s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__builder.hpp
+[31.223s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__struct.hpp
+[31.223s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__builder.hpp
+[31.223s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__traits.hpp
+[31.224s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__traits.hpp
+[31.224s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__builder.hpp
+[31.224s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__struct.hpp
+[31.224s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__traits.hpp
+[31.225s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_display_color.hpp
+[31.225s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_dout.hpp
+[31.225s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/trigger.hpp
+[31.225s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_pwmout.hpp
+[31.226s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/set_joint_float.hpp
+[31.226s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg
+[31.226s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/akarisetting.hpp
+[31.226s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail
+[31.227s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__traits.hpp
+[31.227s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__struct.hpp
+[31.227s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__builder.hpp
+[31.227s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__traits.hpp
+[31.228s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__struct.hpp
+[31.228s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__builder.hpp
+[31.228s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/m5.hpp
+[31.228s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action
+[31.228s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail
+[31.229s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__traits.hpp
+[31.229s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__builder.hpp
+[31.229s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__struct.hpp
+[31.230s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/move_joint.hpp
+[31.230s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs
+[31.230s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv
+[31.230s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail
+[31.231s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/dds_fastrtps
+[31.231s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_fastrtps_cpp.hpp
+[31.231s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_fastrtps_cpp.hpp
+[31.231s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp
+[31.232s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_fastrtps_cpp.hpp
+[31.232s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__rosidl_typesupport_fastrtps_cpp.hpp
+[31.232s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_fastrtps_cpp.hpp
+[31.232s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_fastrtps_cpp.hpp
+[31.233s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_fastrtps_cpp.hpp
+[31.233s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__rosidl_typesupport_fastrtps_cpp.hpp
+[31.233s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg
+[31.233s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.233s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail
+[31.234s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/dds_fastrtps
+[31.234s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__rosidl_typesupport_fastrtps_cpp.hpp
+[31.234s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_fastrtps_cpp.hpp
+[31.234s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action
+[31.235s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail
+[31.235s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/dds_fastrtps
+[31.235s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_fastrtps_cpp.hpp
+[31.235s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_cpp.so
+[31.236s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.236s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs
+[31.236s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv
+[31.236s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail
+[31.236s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_introspection_c.h
+[31.237s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__type_support.c
+[31.237s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__type_support.c
+[31.237s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__rosidl_typesupport_introspection_c.h
+[31.238s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__type_support.c
+[31.238s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__type_support.c
+[31.238s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_introspection_c.h
+[31.238s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_introspection_c.h
+[31.239s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_introspection_c.h
+[31.239s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__type_support.c
+[31.239s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__type_support.c
+[31.239s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_introspection_c.h
+[31.239s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_introspection_c.h
+[31.240s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__rosidl_typesupport_introspection_c.h
+[31.240s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__type_support.c
+[31.240s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__type_support.c
+[31.241s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__type_support.c
+[31.241s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_introspection_c.h
+[31.241s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg
+[31.241s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.241s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail
+[31.242s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__type_support.c
+[31.242s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__type_support.c
+[31.242s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__rosidl_typesupport_introspection_c.h
+[31.242s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_introspection_c.h
+[31.243s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action
+[31.243s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail
+[31.243s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_introspection_c.h
+[31.243s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__type_support.c
+[31.243s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_c.so
+[31.244s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_c.so" to ""
+[31.244s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_c.so
+[31.245s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_c.so" to ""
+[31.245s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs
+[31.245s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv
+[31.246s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail
+[31.246s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__type_support.cpp
+[31.246s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__type_support.cpp
+[31.246s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__type_support.cpp
+[31.247s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__type_support.cpp
+[31.247s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_dout__rosidl_typesupport_introspection_cpp.hpp
+[31.247s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__rosidl_typesupport_introspection_cpp.hpp
+[31.247s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__rosidl_typesupport_introspection_cpp.hpp
+[31.248s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__type_support.cpp
+[31.248s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_image__type_support.cpp
+[31.248s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_allout__rosidl_typesupport_introspection_cpp.hpp
+[31.248s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_text__rosidl_typesupport_introspection_cpp.hpp
+[31.249s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__type_support.cpp
+[31.249s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_float__rosidl_typesupport_introspection_cpp.hpp
+[31.249s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_pwmout__type_support.cpp
+[31.250s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_display_color__rosidl_typesupport_introspection_cpp.hpp
+[31.250s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__type_support.cpp
+[31.250s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/set_joint_bool__rosidl_typesupport_introspection_cpp.hpp
+[31.250s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp
+[31.250s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg
+[31.251s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail
+[31.251s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__type_support.cpp
+[31.251s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/m5__rosidl_typesupport_introspection_cpp.hpp
+[31.251s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__rosidl_typesupport_introspection_cpp.hpp
+[31.252s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/msg/detail/akarisetting__type_support.cpp
+[31.252s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action
+[31.252s] -- Up-to-date: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail
+[31.252s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__type_support.cpp
+[31.252s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/include/akari_msgs/akari_msgs/action/detail/move_joint__rosidl_typesupport_introspection_cpp.hpp
+[31.253s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_cpp.so
+[31.254s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[31.254s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_cpp.so
+[31.255s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_typesupport_cpp.so" to ""
+[31.255s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/pythonpath.sh
+[31.255s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/pythonpath.dsv
+[31.256s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info
+[31.256s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[31.256s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[31.257s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[31.257s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[31.257s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs
+[31.257s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[31.258s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv
+[31.258s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_image_s.c
+[31.258s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/__init__.py
+[31.258s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_text.py
+[31.259s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_pwmout_s.c
+[31.259s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_allout_s.c
+[31.259s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_joint_float_s.c
+[31.260s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_image.py
+[31.260s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_joint_bool_s.c
+[31.260s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_trigger.py
+[31.260s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_color.py
+[31.261s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_text_s.c
+[31.261s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_allout.py
+[31.261s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_joint_bool.py
+[31.261s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_dout_s.c
+[31.262s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_trigger_s.c
+[31.262s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_joint_float.py
+[31.262s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_color_s.c
+[31.263s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_pwmout.py
+[31.263s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_dout.py
+[31.263s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.263s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/__init__.py
+[31.264s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/libakari_msgs__rosidl_generator_py.so
+[31.264s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg
+[31.264s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_m5_s.c
+[31.265s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_akarisetting.py
+[31.265s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/__init__.py
+[31.265s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_m5.py
+[31.265s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_akarisetting_s.c
+[31.266s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[31.266s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.267s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.267s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action
+[31.267s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/_move_joint.py
+[31.268s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/__init__.py
+[31.268s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/_move_joint_s.c
+[31.268s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/_akari_msgs_s.ep.rosidl_typesupport_c.c
+[31.389s] Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs'...
+[31.389s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/__init__.py'...
+[31.389s] Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action'...
+[31.389s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/__init__.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/action/_move_joint.py'...
+[31.390s] Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/__init__.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_akarisetting.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/msg/_m5.py'...
+[31.390s] Listing '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/__init__.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_allout.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_color.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_image.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_display_text.py'...
+[31.390s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_dout.py'...
+[31.391s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_joint_bool.py'...
+[31.391s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_joint_float.py'...
+[31.391s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_set_pwmout.py'...
+[31.391s] Compiling '/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/srv/_trigger.py'...
+[31.396s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.397s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[31.397s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.398s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[31.398s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.399s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/local/lib/python3.10/dist-packages/akari_msgs/akari_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[31.400s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_py.so
+[31.401s] -- Set runtime path of "/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/libakari_msgs__rosidl_generator_py.so" to ""
+[31.401s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout.idl
+[31.401s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor.idl
+[31.401s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage.idl
+[31.402s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText.idl
+[31.402s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout.idl
+[31.402s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout.idl
+[31.403s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger.idl
+[31.403s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointFloat.idl
+[31.403s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointBool.idl
+[31.403s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/msg/M5.idl
+[31.404s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/msg/Akarisetting.idl
+[31.404s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/action/MoveJoint.idl
+[31.404s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout.srv
+[31.405s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout_Request.msg
+[31.405s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetAllout_Response.msg
+[31.405s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor.srv
+[31.406s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor_Request.msg
+[31.406s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayColor_Response.msg
+[31.406s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage.srv
+[31.406s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage_Request.msg
+[31.407s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayImage_Response.msg
+[31.407s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText.srv
+[31.407s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText_Request.msg
+[31.408s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDisplayText_Response.msg
+[31.408s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout.srv
+[31.408s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout_Request.msg
+[31.409s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetDout_Response.msg
+[31.409s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout.srv
+[31.409s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout_Request.msg
+[31.409s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetPwmout_Response.msg
+[31.410s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger.srv
+[31.410s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger_Request.msg
+[31.410s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/Trigger_Response.msg
+[31.411s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointFloat.srv
+[31.411s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointFloat_Request.msg
+[31.412s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointFloat_Response.msg
+[31.412s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointBool.srv
+[31.412s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointBool_Request.msg
+[31.412s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/srv/SetJointBool_Response.msg
+[31.413s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/msg/M5.msg
+[31.413s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/msg/Akarisetting.msg
+[31.413s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/action/MoveJoint.action
+[31.413s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/package_run_dependencies/akari_msgs
+[31.414s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/parent_prefix_path/akari_msgs
+[31.414s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/ament_prefix_path.sh
+[31.414s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/ament_prefix_path.dsv
+[31.415s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/path.sh
+[31.415s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/environment/path.dsv
+[31.415s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.bash
+[31.415s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.sh
+[31.416s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.zsh
+[31.416s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/local_setup.dsv
+[31.416s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.dsv
+[31.416s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/ament_index/resource_index/packages/akari_msgs
+[31.417s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_cExport.cmake
+[31.417s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_cExport-noconfig.cmake
+[31.417s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[31.417s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[31.418s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_cppExport.cmake
+[31.418s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[31.418s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[31.419s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cExport.cmake
+[31.419s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[31.419s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cExport.cmake
+[31.419s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[31.420s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[31.420s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[31.420s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cppExport.cmake
+[31.420s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[31.421s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_pyExport.cmake
+[31.421s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/export_akari_msgs__rosidl_generator_pyExport-noconfig.cmake
+[31.421s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/rosidl_cmake-extras.cmake
+[31.422s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.422s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[31.422s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[31.423s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[31.423s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[31.423s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[31.423s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgsConfig.cmake
+[31.423s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/cmake/akari_msgsConfig-version.cmake
+[31.424s] -- Installing: /home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.xml
+[31.430s] Invoked command in '/home/akariros/Akari_ros2_humble/build/akari_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akariros/Akari_ros2_humble/build/akari_msgs

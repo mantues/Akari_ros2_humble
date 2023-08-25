@@ -1,0 +1,26 @@
+[2.699s] Invoking command in '/home/akariros/Akari_ros2_humble/m5_server': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/m5_server/prefix_override:/home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/m5_server build --build-base /home/akariros/Akari_ros2_humble/build/m5_server/build install --record /home/akariros/Akari_ros2_humble/build/m5_server/install.log --single-version-externally-managed
+[3.426s] running egg_info
+[3.427s] writing ../build/m5_server/m5_server.egg-info/PKG-INFO
+[3.427s] writing dependency_links to ../build/m5_server/m5_server.egg-info/dependency_links.txt
+[3.428s] writing entry points to ../build/m5_server/m5_server.egg-info/entry_points.txt
+[3.428s] writing requirements to ../build/m5_server/m5_server.egg-info/requires.txt
+[3.428s] writing top-level names to ../build/m5_server/m5_server.egg-info/top_level.txt
+[3.439s] reading manifest file '../build/m5_server/m5_server.egg-info/SOURCES.txt'
+[3.440s] writing manifest file '../build/m5_server/m5_server.egg-info/SOURCES.txt'
+[3.440s] running build
+[3.440s] running build_py
+[3.440s] copying m5_server/m5_server.py -> /home/akariros/Akari_ros2_humble/build/m5_server/build/lib/m5_server
+[3.441s] running install
+[3.441s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.441s]   warnings.warn(
+[3.441s] running install_lib
+[3.441s] copying /home/akariros/Akari_ros2_humble/build/m5_server/build/lib/m5_server/m5_server.py -> /home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages/m5_server
+[3.442s] byte-compiling /home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages/m5_server/m5_server.py to m5_server.cpython-310.pyc
+[3.444s] running install_data
+[3.445s] running install_egg_info
+[3.451s] removing '/home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages/m5_server-0.0.0-py3.10.egg-info' (and everything under it)
+[3.452s] Copying ../build/m5_server/m5_server.egg-info to /home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages/m5_server-0.0.0-py3.10.egg-info
+[3.453s] running install_scripts
+[3.505s] Installing m5_server script to /home/akariros/Akari_ros2_humble/install/m5_server/lib/m5_server
+[3.506s] writing list of installed files to '/home/akariros/Akari_ros2_humble/build/m5_server/install.log'
+[3.563s] Invoked command in '/home/akariros/Akari_ros2_humble/m5_server' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/m5_server/prefix_override:/home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/m5_server build --build-base /home/akariros/Akari_ros2_humble/build/m5_server/build install --record /home/akariros/Akari_ros2_humble/build/m5_server/install.log --single-version-externally-managed

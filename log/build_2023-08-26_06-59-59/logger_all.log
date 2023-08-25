@@ -1,0 +1,435 @@
+[0.658s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.658s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff852cfa350>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff8534ecac0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff8534ecac0>>)
+[0.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.713s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/akariros/Akari_ros2_humble'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extensions ['ignore', 'ignore_ament_install']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extension 'ignore'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extension 'ignore_ament_install'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extensions ['colcon_pkg']
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extension 'colcon_pkg'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extensions ['colcon_meta']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extension 'colcon_meta'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extensions ['ros']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(akari_client_example) by extension 'ros'
+[0.737s] DEBUG:colcon.colcon_core.package_identification:Package 'akari_client_example' with type 'ros.ament_python' and name 'akari_client_example'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extension 'ignore'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extension 'ignore_ament_install'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extensions ['colcon_pkg']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extension 'colcon_pkg'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extensions ['colcon_meta']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extension 'colcon_meta'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extensions ['ros']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(akari_launch) by extension 'ros'
+[0.739s] DEBUG:colcon.colcon_core.package_identification:Package 'akari_launch' with type 'ros.ament_python' and name 'akari_launch'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extension 'ignore'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extension 'ignore_ament_install'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extensions ['colcon_pkg']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extension 'colcon_pkg'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extensions ['colcon_meta']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extension 'colcon_meta'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extensions ['ros']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(akari_msgs) by extension 'ros'
+[0.742s] DEBUG:colcon.colcon_core.package_identification:Package 'akari_msgs' with type 'ros.ament_cmake' and name 'akari_msgs'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extension 'ignore'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extension 'ignore_ament_install'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extensions ['colcon_pkg']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extension 'colcon_pkg'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extensions ['colcon_meta']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extension 'colcon_meta'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extensions ['ros']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(akari_setting_publisher) by extension 'ros'
+[0.744s] DEBUG:colcon.colcon_core.package_identification:Package 'akari_setting_publisher' with type 'ros.ament_python' and name 'akari_setting_publisher'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extension 'ignore'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extension 'ignore_ament_install'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extensions ['colcon_pkg']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extension 'colcon_pkg'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extensions ['colcon_meta']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extension 'colcon_meta'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extensions ['ros']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(akari_state_publisher) by extension 'ros'
+[0.745s] DEBUG:colcon.colcon_core.package_identification:Package 'akari_state_publisher' with type 'ros.ament_python' and name 'akari_state_publisher'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extension 'ignore_ament_install'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extensions ['colcon_pkg']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extension 'colcon_pkg'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extensions ['colcon_meta']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extension 'colcon_meta'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extensions ['ros']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(m5_server) by extension 'ros'
+[0.748s] DEBUG:colcon.colcon_core.package_identification:Package 'm5_server' with type 'ros.ament_python' and name 'm5_server'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(servo_server) by extension 'ros'
+[0.751s] DEBUG:colcon.colcon_core.package_identification:Package 'servo_server' with type 'ros.ament_python' and name 'servo_server'
+[0.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.805s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/akariros/Akari_ros2_humble/install
+[0.809s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[0.812s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'cmake_target' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'akari_client_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.943s] DEBUG:colcon.colcon_core.verb:Building package 'akari_client_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/akari_client_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/akari_client_example', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/akari_client_example', 'symlink_install': False, 'test_result_base': None}
+[0.945s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'cmake_args' from command line to 'None'
+[0.945s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'cmake_target' from command line to 'None'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.946s] Level 5:colcon.colcon_core.verb:set package 'akari_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.946s] DEBUG:colcon.colcon_core.verb:Building package 'akari_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/akari_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/akari_launch', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/akari_launch', 'symlink_install': False, 'test_result_base': None}
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'cmake_args' from command line to 'None'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'cmake_target' from command line to 'None'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.948s] Level 5:colcon.colcon_core.verb:set package 'akari_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.949s] DEBUG:colcon.colcon_core.verb:Building package 'akari_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/akari_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/akari_msgs', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/akari_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.950s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'cmake_args' from command line to 'None'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'cmake_target' from command line to 'None'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'akari_setting_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.951s] DEBUG:colcon.colcon_core.verb:Building package 'akari_setting_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/akari_setting_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/akari_setting_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.953s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'cmake_args' from command line to 'None'
+[0.953s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'cmake_target' from command line to 'None'
+[0.953s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.953s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.953s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.953s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'akari_state_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.954s] DEBUG:colcon.colcon_core.verb:Building package 'akari_state_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/akari_state_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/akari_state_publisher', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/akari_state_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'cmake_args' from command line to 'None'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'cmake_target' from command line to 'None'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.956s] Level 5:colcon.colcon_core.verb:set package 'm5_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.956s] DEBUG:colcon.colcon_core.verb:Building package 'm5_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/m5_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/m5_server', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/m5_server', 'symlink_install': False, 'test_result_base': None}
+[0.958s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'cmake_args' from command line to 'None'
+[0.958s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'cmake_target' from command line to 'None'
+[0.958s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.958s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.959s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.959s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.959s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.959s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.959s] Level 5:colcon.colcon_core.verb:set package 'servo_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.959s] DEBUG:colcon.colcon_core.verb:Building package 'servo_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akariros/Akari_ros2_humble/build/servo_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akariros/Akari_ros2_humble/install/servo_server', 'merge_install': False, 'path': '/home/akariros/Akari_ros2_humble/servo_server', 'symlink_install': False, 'test_result_base': None}
+[0.960s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.967s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.967s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/akariros/Akari_ros2_humble/akari_client_example' with build type 'ament_python'
+[0.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_client_example', 'ament_prefix_path')
+[0.977s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/hook/ament_prefix_path.ps1'
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/hook/ament_prefix_path.dsv'
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/hook/ament_prefix_path.sh'
+[0.983s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.983s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.994s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/akariros/Akari_ros2_humble/akari_launch' with build type 'ament_python'
+[0.995s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_launch', 'ament_prefix_path')
+[0.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/hook/ament_prefix_path.ps1'
+[0.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/hook/ament_prefix_path.dsv'
+[1.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/hook/ament_prefix_path.sh'
+[1.003s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.003s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.014s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/akariros/Akari_ros2_humble/akari_msgs' with build type 'ament_cmake'
+[1.015s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/akariros/Akari_ros2_humble/akari_msgs'
+[1.018s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.018s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.032s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/akariros/Akari_ros2_humble/akari_setting_publisher' with build type 'ament_python'
+[1.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_setting_publisher', 'ament_prefix_path')
+[1.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/hook/ament_prefix_path.ps1'
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/hook/ament_prefix_path.dsv'
+[1.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/hook/ament_prefix_path.sh'
+[1.042s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.042s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.602s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/akariros/Akari_ros2_humble/akari_client_example'
+[1.607s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.607s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.103s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/akariros/Akari_ros2_humble/akari_launch'
+[2.106s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.106s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akariros/Akari_ros2_humble/install/servo_server:/home/akariros/Akari_ros2_humble/install/m5_server:/home/akariros/Akari_ros2_humble/install/akari_state_publisher:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher:/home/akariros/Akari_ros2_humble/install/akari_launch:/home/akariros/Akari_ros2_humble/install/akari_client_example:/opt/ros/humble /usr/bin/cmake --build /home/akariros/Akari_ros2_humble/build/akari_msgs -- -j4 -l4
+[2.937s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/akariros/Akari_ros2_humble/akari_setting_publisher'
+[2.961s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.961s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/build/akari_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akariros/Akari_ros2_humble/install/servo_server:/home/akariros/Akari_ros2_humble/install/m5_server:/home/akariros/Akari_ros2_humble/install/akari_state_publisher:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher:/home/akariros/Akari_ros2_humble/install/akari_launch:/home/akariros/Akari_ros2_humble/install/akari_client_example:/opt/ros/humble /usr/bin/cmake --build /home/akariros/Akari_ros2_humble/build/akari_msgs -- -j4 -l4
+[4.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/akari_launch': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_launch/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_launch build --build-base /home/akariros/Akari_ros2_humble/build/akari_launch/build install --record /home/akariros/Akari_ros2_humble/build/akari_launch/install.log --single-version-externally-managed
+[4.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/akari_client_example': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_client_example/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_client_example build --build-base /home/akariros/Akari_ros2_humble/build/akari_client_example/build install --record /home/akariros/Akari_ros2_humble/build/akari_client_example/install.log --single-version-externally-managed
+[4.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/akari_setting_publisher': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_setting_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_setting_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/install.log --single-version-externally-managed
+[5.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/akari_launch' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_launch/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_launch build --build-base /home/akariros/Akari_ros2_humble/build/akari_launch/build install --record /home/akariros/Akari_ros2_humble/build/akari_launch/install.log --single-version-externally-managed
+[5.062s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch' for CMake module files
+[5.062s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch' for CMake config files
+[5.064s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch/lib'
+[5.064s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch/bin'
+[5.064s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch/lib/pkgconfig/akari_launch.pc'
+[5.065s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch/lib/python3.10/site-packages'
+[5.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_launch', 'pythonpath')
+[5.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/hook/pythonpath.ps1'
+[5.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/hook/pythonpath.dsv'
+[5.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/hook/pythonpath.sh'
+[5.086s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_launch/bin'
+[5.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(akari_launch)
+[5.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/package.ps1'
+[5.094s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/package.dsv'
+[5.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/package.sh'
+[5.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/package.bash'
+[5.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_launch/share/akari_launch/package.zsh'
+[5.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/akari_launch/share/colcon-core/packages/akari_launch)
+[5.105s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/akariros/Akari_ros2_humble/akari_state_publisher' with build type 'ament_python'
+[5.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_state_publisher', 'ament_prefix_path')
+[5.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/hook/ament_prefix_path.ps1'
+[5.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/hook/ament_prefix_path.dsv'
+[5.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/hook/ament_prefix_path.sh'
+[5.121s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.121s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.843s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/akariros/Akari_ros2_humble/akari_state_publisher'
+[5.845s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.845s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.859s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example' for CMake module files
+[5.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/akari_client_example' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_client_example/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_client_example build --build-base /home/akariros/Akari_ros2_humble/build/akari_client_example/build install --record /home/akariros/Akari_ros2_humble/build/akari_client_example/install.log --single-version-externally-managed
+[5.861s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example' for CMake config files
+[5.861s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example/lib'
+[5.861s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example/bin'
+[5.862s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/pkgconfig/akari_client_example.pc'
+[5.862s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example/lib/python3.10/site-packages'
+[5.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_client_example', 'pythonpath')
+[5.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/hook/pythonpath.ps1'
+[5.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/hook/pythonpath.dsv'
+[5.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/hook/pythonpath.sh'
+[5.866s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_client_example/bin'
+[5.866s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(akari_client_example)
+[5.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/package.ps1'
+[5.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/package.dsv'
+[5.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/package.sh'
+[5.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/package.bash'
+[5.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_client_example/share/akari_client_example/package.zsh'
+[5.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/akari_client_example/share/colcon-core/packages/akari_client_example)
+[5.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/build/akari_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akariros/Akari_ros2_humble/install/servo_server:/home/akariros/Akari_ros2_humble/install/m5_server:/home/akariros/Akari_ros2_humble/install/akari_state_publisher:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher:/home/akariros/Akari_ros2_humble/install/akari_launch:/home/akariros/Akari_ros2_humble/install/akari_client_example:/opt/ros/humble /usr/bin/cmake --install /home/akariros/Akari_ros2_humble/build/akari_msgs
+[5.892s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/akariros/Akari_ros2_humble/m5_server' with build type 'ament_python'
+[5.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('m5_server', 'ament_prefix_path')
+[5.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/hook/ament_prefix_path.ps1'
+[5.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/hook/ament_prefix_path.dsv'
+[5.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/hook/ament_prefix_path.sh'
+[5.902s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.902s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.924s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher' for CMake module files
+[5.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/akari_setting_publisher' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_setting_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_setting_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_setting_publisher/install.log --single-version-externally-managed
+[5.926s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher' for CMake config files
+[5.928s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib'
+[5.928s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/bin'
+[5.928s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/pkgconfig/akari_setting_publisher.pc'
+[5.929s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/lib/python3.10/site-packages'
+[5.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_setting_publisher', 'pythonpath')
+[5.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/hook/pythonpath.ps1'
+[5.934s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/hook/pythonpath.dsv'
+[5.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/hook/pythonpath.sh'
+[5.935s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/bin'
+[5.936s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(akari_setting_publisher)
+[5.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/package.ps1'
+[5.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/package.dsv'
+[5.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/package.sh'
+[5.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/package.bash'
+[5.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/akari_setting_publisher/package.zsh'
+[5.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/akari_setting_publisher/share/colcon-core/packages/akari_setting_publisher)
+[5.947s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/akariros/Akari_ros2_humble/servo_server' with build type 'ament_python'
+[5.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_server', 'ament_prefix_path')
+[5.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/hook/ament_prefix_path.ps1'
+[5.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/hook/ament_prefix_path.dsv'
+[5.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/hook/ament_prefix_path.sh'
+[5.974s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.975s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.718s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/akariros/Akari_ros2_humble/m5_server'
+[6.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.298s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/akariros/Akari_ros2_humble/servo_server'
+[7.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.309s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(akari_msgs)
+[7.312s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs' for CMake module files
+[7.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/build/akari_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/akariros/Akari_ros2_humble/install/servo_server:/home/akariros/Akari_ros2_humble/install/m5_server:/home/akariros/Akari_ros2_humble/install/akari_state_publisher:/home/akariros/Akari_ros2_humble/install/akari_setting_publisher:/home/akariros/Akari_ros2_humble/install/akari_launch:/home/akariros/Akari_ros2_humble/install/akari_client_example:/opt/ros/humble /usr/bin/cmake --install /home/akariros/Akari_ros2_humble/build/akari_msgs
+[7.313s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs' for CMake config files
+[7.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_msgs', 'cmake_prefix_path')
+[7.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/cmake_prefix_path.ps1'
+[7.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/cmake_prefix_path.dsv'
+[7.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/cmake_prefix_path.sh'
+[7.321s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/lib'
+[7.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_msgs', 'ld_library_path_lib')
+[7.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/ld_library_path_lib.ps1'
+[7.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/ld_library_path_lib.dsv'
+[7.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/ld_library_path_lib.sh'
+[7.326s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/bin'
+[7.326s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/pkgconfig/akari_msgs.pc'
+[7.326s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/python3.10/site-packages'
+[7.327s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/bin'
+[7.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.ps1'
+[7.329s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.dsv'
+[7.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.sh'
+[7.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.bash'
+[7.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.zsh'
+[7.332s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/akari_msgs/share/colcon-core/packages/akari_msgs)
+[7.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/akari_state_publisher': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_state_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_state_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_state_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_state_publisher/install.log --single-version-externally-managed
+[8.383s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher' for CMake module files
+[8.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/akari_state_publisher' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/akari_state_publisher/prefix_override:/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/akari_state_publisher build --build-base /home/akariros/Akari_ros2_humble/build/akari_state_publisher/build install --record /home/akariros/Akari_ros2_humble/build/akari_state_publisher/install.log --single-version-externally-managed
+[8.384s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher' for CMake config files
+[8.385s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib'
+[8.385s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/bin'
+[8.386s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/pkgconfig/akari_state_publisher.pc'
+[8.386s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/lib/python3.10/site-packages'
+[8.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_state_publisher', 'pythonpath')
+[8.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/hook/pythonpath.ps1'
+[8.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/hook/pythonpath.dsv'
+[8.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/hook/pythonpath.sh'
+[8.393s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/bin'
+[8.394s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(akari_state_publisher)
+[8.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/package.ps1'
+[8.398s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/package.dsv'
+[8.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/package.sh'
+[8.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/package.bash'
+[8.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/akari_state_publisher/package.zsh'
+[8.404s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/akari_state_publisher/share/colcon-core/packages/akari_state_publisher)
+[8.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/servo_server': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/servo_server/prefix_override:/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/servo_server build --build-base /home/akariros/Akari_ros2_humble/build/servo_server/build install --record /home/akariros/Akari_ros2_humble/build/servo_server/install.log --single-version-externally-managed
+[8.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akariros/Akari_ros2_humble/m5_server': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/m5_server/prefix_override:/home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/m5_server build --build-base /home/akariros/Akari_ros2_humble/build/m5_server/build install --record /home/akariros/Akari_ros2_humble/build/m5_server/install.log --single-version-externally-managed
+[9.238s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(akari_msgs)
+[9.242s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs' for CMake module files
+[9.243s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs' for CMake config files
+[9.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_msgs', 'cmake_prefix_path')
+[9.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/cmake_prefix_path.ps1'
+[9.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/cmake_prefix_path.dsv'
+[9.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/cmake_prefix_path.sh'
+[9.249s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/lib'
+[9.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('akari_msgs', 'ld_library_path_lib')
+[9.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/ld_library_path_lib.ps1'
+[9.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/ld_library_path_lib.dsv'
+[9.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/hook/ld_library_path_lib.sh'
+[9.254s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/bin'
+[9.255s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/pkgconfig/akari_msgs.pc'
+[9.255s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/lib/python3.10/site-packages'
+[9.256s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/akari_msgs/bin'
+[9.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.ps1'
+[9.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.dsv'
+[9.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.sh'
+[9.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.bash'
+[9.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/akari_msgs/share/akari_msgs/package.zsh'
+[9.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/akari_msgs/share/colcon-core/packages/akari_msgs)
+[9.327s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server' for CMake module files
+[9.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/servo_server' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/servo_server/prefix_override:/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/servo_server build --build-base /home/akariros/Akari_ros2_humble/build/servo_server/build install --record /home/akariros/Akari_ros2_humble/build/servo_server/install.log --single-version-externally-managed
+[9.329s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server' for CMake config files
+[9.330s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server/lib'
+[9.330s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server/bin'
+[9.330s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server/lib/pkgconfig/servo_server.pc'
+[9.330s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server/lib/python3.10/site-packages'
+[9.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_server', 'pythonpath')
+[9.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/hook/pythonpath.ps1'
+[9.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/hook/pythonpath.dsv'
+[9.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/hook/pythonpath.sh'
+[9.336s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/servo_server/bin'
+[9.336s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_server)
+[9.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/package.ps1'
+[9.339s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/package.dsv'
+[9.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/package.sh'
+[9.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/package.bash'
+[9.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/servo_server/share/servo_server/package.zsh'
+[9.342s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/servo_server/share/colcon-core/packages/servo_server)
+[9.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akariros/Akari_ros2_humble/m5_server' returned '0': PYTHONPATH=/home/akariros/Akari_ros2_humble/build/m5_server/prefix_override:/home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/m5_server build --build-base /home/akariros/Akari_ros2_humble/build/m5_server/build install --record /home/akariros/Akari_ros2_humble/build/m5_server/install.log --single-version-externally-managed
+[9.401s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server' for CMake module files
+[9.402s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server' for CMake config files
+[9.403s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server/lib'
+[9.403s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server/bin'
+[9.403s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server/lib/pkgconfig/m5_server.pc'
+[9.404s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server/lib/python3.10/site-packages'
+[9.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('m5_server', 'pythonpath')
+[9.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/hook/pythonpath.ps1'
+[9.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/hook/pythonpath.dsv'
+[9.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/hook/pythonpath.sh'
+[9.408s] Level 1:colcon.colcon_core.environment:checking '/home/akariros/Akari_ros2_humble/install/m5_server/bin'
+[9.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(m5_server)
+[9.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/package.ps1'
+[9.411s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/package.dsv'
+[9.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/package.sh'
+[9.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/package.bash'
+[9.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/akariros/Akari_ros2_humble/install/m5_server/share/m5_server/package.zsh'
+[9.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akariros/Akari_ros2_humble/install/m5_server/share/colcon-core/packages/m5_server)
+[9.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.415s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.415s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.425s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.426s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.426s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.444s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.450s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akariros/Akari_ros2_humble/install/local_setup.ps1'
+[9.457s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/akariros/Akari_ros2_humble/install/_local_setup_util_ps1.py'
+[9.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akariros/Akari_ros2_humble/install/setup.ps1'
+[9.464s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akariros/Akari_ros2_humble/install/local_setup.sh'
+[9.465s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/akariros/Akari_ros2_humble/install/_local_setup_util_sh.py'
+[9.466s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akariros/Akari_ros2_humble/install/setup.sh'
+[9.469s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akariros/Akari_ros2_humble/install/local_setup.bash'
+[9.470s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akariros/Akari_ros2_humble/install/setup.bash'
+[9.473s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akariros/Akari_ros2_humble/install/local_setup.zsh'
+[9.474s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akariros/Akari_ros2_humble/install/setup.zsh'
