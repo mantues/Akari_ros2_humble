@@ -1,28 +1,21 @@
 import rclpy
 
 from rclpy.node import Node
-from rclpy.action import ActionServer
 
-from akari_msgs.msg import M5
 from akari_msgs.srv import (SetAllout, SetDisplayColor,
                                SetDout, SetPwmout,
                                SetDisplayImage, SetDisplayText,
                                Trigger)
-from akari_msgs.action import (MoveJoint)
+
 from akari_client import AkariClient
 from akari_client.color import Color, Colors
 from akari_client.position import Positions
 import random
 import time
-import os
-import sys
-from std_msgs.msg import Int32MultiArray
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
                 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
-
-text_pair = ['1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯']
 
 # server
 class m5server(Node):
@@ -50,7 +43,6 @@ class m5server(Node):
         self.akari = AkariClient()
         self.joints = self.akari.joints
         self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     # DISPLAY CALL BACK
     # callback

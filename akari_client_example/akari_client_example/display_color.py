@@ -7,7 +7,7 @@ from rclpy.node import Node
 from akari_msgs.srv import SetDisplayColor
 
 from akari_client import AkariClient
-from akari_client.color import Color, Colors
+from akari_client.color import Color
 
 import random
 
@@ -15,10 +15,10 @@ color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
                 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
 
-class m5client(Node):
+class m5client_color(Node):
 
     def __init__(self):
-        super().__init__('m5client_color_node')
+        super().__init__('display_color_client_node')
         # create client
         self.cli = self.create_client(SetDisplayColor, 'set_display_color')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -32,11 +32,6 @@ class m5client(Node):
                 green=random.randint(0, 255),
                 blue=random.randint(0, 255),
             )
-
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     def send_request(self):
         choice = random.choice(color_pair)
@@ -59,7 +54,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = m5client_color()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

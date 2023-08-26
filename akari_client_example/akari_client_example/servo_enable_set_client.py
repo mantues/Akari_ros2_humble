@@ -19,10 +19,10 @@ import time
 import os
 import sys
 
-class m5client(Node):
+class client_servo_enable_set(Node):
 
     def __init__(self):
-        super().__init__('m5client_set_servo_enable_node')
+        super().__init__('servo_enable_set_client_node')
         # create client
         self.cli = self.create_client(SetJointBool, 'set_joint_enable')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -30,10 +30,6 @@ class m5client(Node):
 
         # create request
         self.req = SetJointBool.Request()
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     def send_request(self):
         self.req.joint_name = ['pan', 'tilt']
@@ -51,7 +47,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = client_servo_enable_set()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

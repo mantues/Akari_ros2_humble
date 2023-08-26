@@ -18,10 +18,10 @@ color_pair_text = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIV
 text_pair = ['1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯']
 text_size = [3, 4, 5]
 
-class m5client(Node):
+class m5client_text(Node):
 
     def __init__(self):
-        super().__init__('m5client_text_node')
+        super().__init__('display_text_client_node')
         # create client
         self.cli = self.create_client(SetDisplayText, 'set_display_text')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -36,13 +36,11 @@ class m5client(Node):
                 blue=random.randint(0, 255),
             )
 
-
         self.akari = AkariClient()
         self.m5 = self.akari.m5stack
         self.data = self.m5.get()
 
     def send_request(self):
-        #color_num = int(input())
         self.req.text = random.choice(text_pair)
         self.req.pos_x = 0
         self.req.pos_y = 0
@@ -60,7 +58,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = m5client_text()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

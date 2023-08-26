@@ -16,10 +16,10 @@ file_pair = ["/jpg/logo320_ex.jpg", "/jpg/logo320.jpg", "/jpg/waiting.jpg"]
 pos_pair = [Positions.CENTER, Positions.LEFT, Positions.TOP,
              Positions.RIGHT, Positions.BOTTOM]
 
-class m5client(Node):
+class m5client_image(Node):
 
     def __init__(self):
-        super().__init__('m5client_set_display_image_node')
+        super().__init__('display_image_client_node')
         # create client
         self.cli = self.create_client(SetDisplayImage, 'set_display_image')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -27,10 +27,6 @@ class m5client(Node):
 
         # create request
         self.req = SetDisplayImage.Request()
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     def send_request(self):
         filepath = random.choice(file_pair)
@@ -51,7 +47,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = m5client_image()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

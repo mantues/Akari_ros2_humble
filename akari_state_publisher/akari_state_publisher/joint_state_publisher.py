@@ -1,36 +1,23 @@
 import rclpy
 from rclpy.node import Node
-from rclpy.duration import Duration
 
 from sensor_msgs.msg import JointState
-from std_msgs.msg import String
-from std_msgs.msg import Float32MultiArray
-from std_msgs.msg import Int32
 
-from akari_msgs.action import (MoveJoint)
 from akari_client import AkariClient
-from akari_client.color import Color, Colors
-from akari_client.position import Positions
 
-import time
-import threading
-
-class MinimalPublisher(Node):
+class joitstatepublisher(Node):
 
     def __init__(self):
-        super().__init__('akaristatepublisher')
+        super().__init__('akarijoitstatepublisher')
         timer_period = 0.5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+        self.timer = self.create_timer(timer_period, self.akari_callback)
         self.akaristatepublisher = self.create_publisher(JointState, 'akari_joint_states', 10)
         
         # SETTING AKARI
         self.akari = AkariClient()
         self.joints = self.akari.joints
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
                 
-    def timer_callback(self):
+    def akari_callback(self):
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
         jointnames = self.joints.get_joint_names()
@@ -46,14 +33,11 @@ class MinimalPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_publisher = MinimalPublisher()
+    _publisher = joitstatepublisher()
 
-    rclpy.spin(minimal_publisher)
-
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    minimal_publisher.destroy_node()
+    rclpy.spin(_publisher)
+    
+    _publisher.destroy_node()
     rclpy.shutdown()
 
 

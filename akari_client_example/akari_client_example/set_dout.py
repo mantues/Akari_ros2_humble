@@ -12,10 +12,10 @@ import random
 
 id_pair = [0,1]
 
-class m5client(Node):
+class m5client_set_dout(Node):
 
     def __init__(self):
-        super().__init__('m5client_set_dout_node')
+        super().__init__('set_dout_client_node')
         # create client
         self.cli = self.create_client(SetDout, 'set_dout_m5')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -23,10 +23,6 @@ class m5client(Node):
 
         # create request
         self.req = SetDout.Request()
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     def send_request(self):
         self.req.pin_id = random.choice(id_pair)
@@ -41,7 +37,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = m5client_set_dout()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

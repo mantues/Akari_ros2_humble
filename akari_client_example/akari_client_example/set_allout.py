@@ -10,10 +10,10 @@ from akari_client import AkariClient
 
 import random
 
-class m5client(Node):
+class m5client_set_allout(Node):
 
     def __init__(self):
-        super().__init__('m5client_set_allout_node')
+        super().__init__('set_allout_client_node')
         # create client
         self.cli = self.create_client(SetAllout, 'set_allout_m5')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -21,10 +21,6 @@ class m5client(Node):
 
         # create request
         self.req = SetAllout.Request()
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     def send_request(self):
         dout0_val = random.choice([True, False])
@@ -43,7 +39,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = m5client_set_allout()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

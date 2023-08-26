@@ -8,10 +8,10 @@ from akari_msgs.srv import Trigger
 
 from akari_client import AkariClient
 
-class m5client(Node):
+class m5client_reset(Node):
 
     def __init__(self):
-        super().__init__('m5client_reset_node')
+        super().__init__('display_reset_client_node')
         # create client
         self.cli = self.create_client(Trigger, 'reset_m5')
         while not self.cli.wait_for_service(timeout_sec=1.0):
@@ -19,10 +19,6 @@ class m5client(Node):
 
         # create request
         self.req = Trigger.Request()
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
 
     def send_request(self):
         self.get_logger().info('M5Stack reset')
@@ -35,7 +31,7 @@ class m5client(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client()
+    client = m5client_reset()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))
