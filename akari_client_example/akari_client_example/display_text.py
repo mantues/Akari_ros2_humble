@@ -18,7 +18,7 @@ color_pair_text = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIV
 text_pair = ['1.AKARI', '2.あかり', '3.灯り', '4.アカリ', '5.Akari', '6.akari', '7.灯']
 text_size = [3, 4, 5]
 
-class m5client_text(Node):
+class display_text_client(Node):
 
     def __init__(self):
         super().__init__('display_text_client_node')
@@ -58,7 +58,7 @@ class m5client_text(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_text()
+    client = display_text_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

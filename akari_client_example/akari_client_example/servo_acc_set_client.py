@@ -19,7 +19,7 @@ import time
 import os
 import sys
 
-class client_servo_acc_set(Node):
+class servo_acc_set_client(Node):
 
     def __init__(self):
         super().__init__('servo_acc_set_client_node')
@@ -47,7 +47,7 @@ class client_servo_acc_set(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = client_servo_acc_set()
+    client = servo_acc_set_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

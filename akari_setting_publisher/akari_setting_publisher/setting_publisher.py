@@ -8,10 +8,10 @@ from akari_msgs.msg import Akarisetting
 
 from akari_client import AkariClient
 
-class akari_publisher(Node):
+class akari_setting_publisher(Node):
 
     def __init__(self):
-        super().__init__('akarisettingpublisher')
+        super().__init__('akari_setting_publisher_node')
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.akari_callback)
         self.akarisettingpublisher = self.create_publisher(Akarisetting, 'akarisettingstates', 10)
@@ -50,7 +50,7 @@ class akari_publisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    _publisher = akari_publisher()
+    _publisher = akari_setting_publisher()
 
     rclpy.spin(_publisher)
     

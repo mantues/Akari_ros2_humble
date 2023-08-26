@@ -15,7 +15,7 @@ color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
                 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
 
-class m5client_color(Node):
+class display_color_client(Node):
 
     def __init__(self):
         super().__init__('display_color_client_node')
@@ -54,7 +54,7 @@ class m5client_color(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_color()
+    client = display_color_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

@@ -12,7 +12,7 @@ import random
 
 id_pair = [0,1]
 
-class m5client_set_dout(Node):
+class set_dout_client(Node):
 
     def __init__(self):
         super().__init__('set_dout_client_node')
@@ -37,7 +37,7 @@ class m5client_set_dout(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_set_dout()
+    client = set_dout_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

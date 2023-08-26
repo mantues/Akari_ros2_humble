@@ -12,7 +12,7 @@ import random
 class move_joints_action_client(Node):
 
     def __init__(self):
-        super().__init__('m5client_move_joints_action_client_node')
+        super().__init__('move_joints_action_client_node')
         # create action client
         self._action_client = ActionClient(self, MoveJoint, 'move_joints')
         while not self._action_client.wait_for_server(timeout_sec=1.0):

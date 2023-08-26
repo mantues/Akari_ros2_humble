@@ -16,7 +16,7 @@ file_pair = ["/jpg/logo320_ex.jpg", "/jpg/logo320.jpg", "/jpg/waiting.jpg"]
 pos_pair = [Positions.CENTER, Positions.LEFT, Positions.TOP,
              Positions.RIGHT, Positions.BOTTOM]
 
-class m5client_image(Node):
+class display_image_client(Node):
 
     def __init__(self):
         super().__init__('display_image_client_node')
@@ -47,7 +47,7 @@ class m5client_image(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_image()
+    client = display_image_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

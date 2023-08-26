@@ -21,9 +21,9 @@ color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
 
 # server
-class m5server(Node):
+class m5_server(Node):
     def __init__(self):
-        super().__init__("m5_service")
+        super().__init__("m5_server_node")
 
         # create service OUT
         self._set_dout_srv = self.create_service(SetDout, 'set_dout_m5', self.set_dout_m5)
@@ -183,7 +183,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     # create service
-    server = m5server()
+    server = m5_server()
 
     rclpy.spin(server)
 

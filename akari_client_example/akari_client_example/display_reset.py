@@ -8,7 +8,7 @@ from akari_msgs.srv import Trigger
 
 from akari_client import AkariClient
 
-class m5client_reset(Node):
+class display_reset_client(Node):
 
     def __init__(self):
         super().__init__('display_reset_client_node')
@@ -31,7 +31,7 @@ class m5client_reset(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_reset()
+    client = display_reset_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

@@ -13,9 +13,9 @@ from akari_client import AkariClient
 joint_pair = ['pan','tilt']
 
 # server
-class servoserver(Node):
+class servo_server(Node):
     def __init__(self):
-        super().__init__("servo_service")
+        super().__init__("servo_serer_node")
 
         # create action service JOINTS
         self._move_joint_action_srv = ActionServer(self, MoveJoint, 'move_joints', self.move_joints_action)
@@ -158,7 +158,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     # create service
-    server = servoserver()
+    server = servo_server()
 
     rclpy.spin(server)
 

@@ -8,10 +8,10 @@ from sensor_msgs.msg import JointState
 
 from akari_client import AkariClient
 
-class joitstatepublisher(Node):
+class akari_joitstate_publisher(Node):
 
     def __init__(self):
-        super().__init__('akarijoitstatepublisher')
+        super().__init__('akari_joitstate_publisher_node')
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.akari_callback)
         self.akaristatepublisher = self.create_publisher(JointState, 'akari_joint_states', 10)
@@ -36,7 +36,7 @@ class joitstatepublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    _publisher = joitstatepublisher()
+    _publisher = akari_joitstate_publisher()
 
     rclpy.spin(_publisher)
     

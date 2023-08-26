@@ -10,7 +10,7 @@ from akari_client import AkariClient
 
 import random
 
-class m5client_set_allout(Node):
+class set_allout_client(Node):
 
     def __init__(self):
         super().__init__('set_allout_client_node')
@@ -39,7 +39,7 @@ class m5client_set_allout(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_set_allout()
+    client = set_allout_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))

@@ -11,7 +11,7 @@ from akari_client import AkariClient
 import random
 
 
-class m5client_set_pwmout(Node):
+class set_pwmout_client(Node):
 
     def __init__(self):
         super().__init__('set_pwmout_client_node')
@@ -36,7 +36,7 @@ class m5client_set_pwmout(Node):
 def main(args=None):
     rclpy.init()
     # create client
-    client = m5client_set_pwmout()
+    client = set_pwmout_client()
     # send request
     response = client.send_request()
     client.get_logger().info('Result: : %s' %(str(response.result)))
