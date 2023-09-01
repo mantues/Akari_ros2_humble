@@ -12,7 +12,7 @@ from akari_client import AkariClient
 class m5stackpublisher(Node):
 
     def __init__(self):
-        super().__init__('m5stackPublisher_node')
+        super().__init__('m5stackpublisher_node')
         self.publisher_ = self.create_publisher(M5, '/m5stack', 10)
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -42,8 +42,8 @@ class m5stackpublisher(Node):
             self.get_logger().info('Button A pressed!')
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main(args = None):
+    rclpy.init(args = args)
     m5_publisher = m5stackpublisher()
     rclpy.spin(m5_publisher)
     m5_publisher.destroy_node()

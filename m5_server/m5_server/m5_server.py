@@ -37,9 +37,9 @@ class m5_server(Node):
         self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
 
         self.random_color = Color(
-                red=random.randint(0, 255),
-                green=random.randint(0, 255),
-                blue=random.randint(0, 255),
+                red = random.randint(0, 255),
+                green = random.randint(0, 255),
+                blue = random.randint(0, 255),
             )
 
         # SETTING AKARI
@@ -57,27 +57,27 @@ class m5_server(Node):
             if req_color == 'RANDOM':
                 self.m5.set_display_color(self.random_color)
                 time.sleep(0.5)
-                self.m5.set_display_text(text='RANDOM',
-                    pos_x=Positions.CENTER, pos_y=Positions.CENTER, size=5,
-                    text_color=Colors.WHITE, back_color=Colors.DARKGREY, refresh=False)
+                self.m5.set_display_text(text = 'RANDOM',
+                    pos_x = Positions.CENTER, pos_y = Positions.CENTER, size = 5,
+                    text_color = Colors.WHITE, back_color = Colors.DARKGREY, refresh = False)
             elif req_color == 'RESET':
                 self.m5.reset_m5()
             elif req_color == 'SELECT':
                 r_color = request.color_var[0]
                 g_color = request.color_var[1]
                 b_color = request.color_var[2]
-                color = Color(red=r_color, green=g_color, blue=b_color)
+                color = Color(red = r_color, green = g_color, blue = b_color)
                 self.m5.set_display_color(color)
                 time.sleep(0.5)
-                self.m5.set_display_text(text='SELECT',
-                    pos_x=Positions.CENTER, pos_y=Positions.CENTER, size=5,
-                    text_color=Colors.WHITE, back_color=Colors.DARKGREY, refresh=False)
+                self.m5.set_display_text(text = 'SELECT',
+                    pos_x = Positions.CENTER, pos_y = Positions.CENTER, size = 5,
+                    text_color = Colors.WHITE, back_color = Colors.DARKGREY, refresh = False)
             else:
                 self.m5.set_display_color(Colors[req_color])
                 time.sleep(0.5)
-                self.m5.set_display_text(text=req_color,
-                    pos_x=Positions.CENTER, pos_y=Positions.CENTER, size=5,
-                    text_color=Colors.WHITE, back_color=Colors.DARKGREY, refresh=False)
+                self.m5.set_display_text(text = req_color,
+                    pos_x = Positions.CENTER, pos_y = Positions.CENTER, size = 5,
+                    text_color = Colors.WHITE, back_color = Colors.DARKGREY, refresh = False)
             response.result = True
         else:
             self.m5.reset_m5()
@@ -97,7 +97,7 @@ class m5_server(Node):
         # set_display_text
         if req_text_color in color_pair:
             self.m5.set_display_text(
-                text=req_text, pos_x=req_pos_x, pos_y=req_pos_y, size=req_size, text_color=Colors[req_text_color], back_color=Colors[req_back_color], refresh=req_refresh
+                text = req_text, pos_x = req_pos_x, pos_y = req_pos_y, size = req_size, text_color = Colors[req_text_color], back_color = Colors[req_back_color], refresh = req_refresh
             )
             response.result = True
         else:
@@ -179,8 +179,8 @@ class m5_server(Node):
         return response
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main(args = None):
+    rclpy.init(args = args)
 
     # create service
     server = m5_server()

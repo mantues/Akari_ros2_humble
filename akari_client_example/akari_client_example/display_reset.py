@@ -14,7 +14,7 @@ class display_reset_client(Node):
         super().__init__('display_reset_client_node')
         # create client
         self.cli = self.create_client(Trigger, 'reset_m5')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
+        while not self.cli.wait_for_service(timeout_sec = 1.0):
             self.get_logger().info('service not available, waiting again...')
 
         # create request
@@ -28,8 +28,8 @@ class display_reset_client(Node):
         return self.future.result()
 
 
-def main(args=None):
-    rclpy.init()
+def main(args = None):
+    rclpy.init(args = args)
     # create client
     client = display_reset_client()
     # send request

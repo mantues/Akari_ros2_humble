@@ -18,7 +18,7 @@ class set_dout_client(Node):
         super().__init__('set_dout_client_node')
         # create client
         self.cli = self.create_client(SetDout, 'set_dout_m5')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
+        while not self.cli.wait_for_service(timeout_sec = 1.0):
             self.get_logger().info('service not available, waiting again...')
 
         # create request
@@ -34,8 +34,8 @@ class set_dout_client(Node):
         return self.future.result()
 
 
-def main(args=None):
-    rclpy.init()
+def main(args = None):
+    rclpy.init(args = args)
     # create client
     client = set_dout_client()
     # send request

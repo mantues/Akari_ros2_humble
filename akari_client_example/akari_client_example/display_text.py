@@ -24,16 +24,16 @@ class display_text_client(Node):
         super().__init__('display_text_client_node')
         # create client
         self.cli = self.create_client(SetDisplayText, 'set_display_text')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
+        while not self.cli.wait_for_service(timeout_sec = 1.0):
             self.get_logger().info('service not available, waiting again...')
 
         # create request
         self.req = SetDisplayText.Request()
 
         self.random_color = Color(
-                red=random.randint(0, 255),
-                green=random.randint(0, 255),
-                blue=random.randint(0, 255),
+                red = random.randint(0, 255),
+                green = random.randint(0, 255),
+                blue = random.randint(0, 255),
             )
 
         self.akari = AkariClient()
@@ -55,8 +55,8 @@ class display_text_client(Node):
         return self.future.result()
 
 
-def main(args=None):
-    rclpy.init()
+def main(args = None):
+    rclpy.init(args = args)
     # create client
     client = display_text_client()
     # send request

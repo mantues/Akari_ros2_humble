@@ -12,7 +12,7 @@ class akari_joitstate_publisher(Node):
 
     def __init__(self):
         super().__init__('akari_joitstate_publisher_node')
-        timer_period = 0.5  # seconds
+        timer_period = 1.0  # seconds
         self.timer = self.create_timer(timer_period, self.akari_callback)
         self.akaristatepublisher = self.create_publisher(JointState, 'akari_joint_states', 10)
         
@@ -33,8 +33,8 @@ class akari_joitstate_publisher(Node):
         self.akaristatepublisher.publish(msg)
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main(args = None):
+    rclpy.init(args = args)
 
     _publisher = akari_joitstate_publisher()
 

@@ -12,7 +12,7 @@ class akari_setting_publisher(Node):
 
     def __init__(self):
         super().__init__('akari_setting_publisher_node')
-        timer_period = 0.5  # seconds
+        timer_period = 1.0  # seconds
         self.timer = self.create_timer(timer_period, self.akari_callback)
         self.akarisettingpublisher = self.create_publisher(Akarisetting, 'akarisettingstates', 10)
         
@@ -35,8 +35,6 @@ class akari_setting_publisher(Node):
         accelerations = self.joints.get_joint_accelerations()
         msg.jointaccelerations = [accelerations[(jointnames[0])], accelerations[(jointnames[1])]]
         
-        #servoenabled = self.joints.get_servo_enabled()
-        #msg.servoenabled = [servoenabled[(jointnames[0])], servoenabled[(jointnames[1])]]
         pan_status = self.joints.pan_joint.get_servo_enabled()
         tilt_status = self.joints.tilt_joint.get_servo_enabled()
         msg.servoenabled = [pan_status, tilt_status]
@@ -47,8 +45,8 @@ class akari_setting_publisher(Node):
         self.akarisettingpublisher.publish(msg)
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main(args = None):
+    rclpy.init(args = args)
 
     _publisher = akari_setting_publisher()
 

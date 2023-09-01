@@ -42,9 +42,9 @@ class servo_server(Node):
         vel_tilt = action_msg.request.vel_tilt
         goal_pan = action_msg.request.goal_pan
         goal_tilt = action_msg.request.goal_tilt
-        self.joints.set_joint_accelerations(pan=acc_pan,tilt=acc_tilt)
-        self.joints.set_joint_velocities(pan=vel_pan,tilt=vel_tilt)
-        self.joints.move_joint_positions(pan=goal_pan,tilt=goal_tilt)
+        self.joints.set_joint_accelerations(pan = acc_pan,tilt = acc_tilt)
+        self.joints.set_joint_velocities(pan = vel_pan,tilt = vel_tilt)
+        self.joints.move_joint_positions(pan = goal_pan,tilt = goal_tilt)
         
         # feedback
         pan_state = self.joints.get_moving_state()['pan']
@@ -71,24 +71,22 @@ class servo_server(Node):
         if req_joint_list[0] == 'pan':
             req_acc = request.val[0]
             
-            self.joints.set_joint_accelerations(pan=req_acc)
+            self.joints.set_joint_accelerations(pan = req_acc)
             self.get_logger().info('Change pan acc : %s' % str(req_acc))
             response.result = True
             
         else:
-            self.m5.reset_m5()
             self.get_logger().info('JOINT NAME pan IS INVALID')
             response.result = False
                         
         if req_joint_list[1] == 'tilt':
             req_acc = request.val[1]
             
-            self.joints.set_joint_accelerations(tilt=req_acc)
+            self.joints.set_joint_accelerations(tilt = req_acc)
             self.get_logger().info('Change tilt acc : %s' % (str(req_acc)))
             response.result = True
             
         else:
-            self.m5.reset_m5()
             self.get_logger().info('JOINT NAME tilt IS INVALID')
             response.result = False
             
@@ -106,7 +104,6 @@ class servo_server(Node):
             response.result = True
             
         else:
-            self.m5.reset_m5()
             self.get_logger().info('JOINT NAME pan IS INVALID')
             response.result = False
                         
@@ -118,7 +115,6 @@ class servo_server(Node):
             response.result = True
             
         else:
-            self.m5.reset_m5()
             self.get_logger().info('JOINT NAME tilt IS INVALID')
             response.result = False
             
@@ -131,12 +127,11 @@ class servo_server(Node):
         if req_joint_list[0] == 'pan':
             req_enable = request.val[0]
             
-            self.joints.set_servo_enabled(pan=req_enable)
+            self.joints.set_servo_enabled(pan = req_enable)
             self.get_logger().info('Change pan enable : %s' % str(req_enable))
             response.result = True
             
         else:
-            self.m5.reset_m5()
             self.get_logger().info('JOINT NAME pan IS INVALID')
             response.result = False
                         
@@ -148,14 +143,13 @@ class servo_server(Node):
             response.result = True
             
         else:
-            self.m5.reset_m5()
             self.get_logger().info('JOINT NAME tilt IS INVALID')
             response.result = False
             
         return response
 
-def main(args=None):
-    rclpy.init(args=args)
+def main(args = None):
+    rclpy.init(args = args)
 
     # create service
     server = servo_server()

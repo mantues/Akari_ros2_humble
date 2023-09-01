@@ -17,7 +17,7 @@ class set_pwmout_client(Node):
         super().__init__('set_pwmout_client_node')
         # create client
         self.cli = self.create_client(SetPwmout, 'set_pwmout_m5')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
+        while not self.cli.wait_for_service(timeout_sec = 1.0):
             self.get_logger().info('service not available, waiting again...')
 
         # create request
@@ -33,8 +33,8 @@ class set_pwmout_client(Node):
         return self.future.result()
 
 
-def main(args=None):
-    rclpy.init()
+def main(args = None):
+    rclpy.init(args = args)
     # create client
     client = set_pwmout_client()
     # send request
