@@ -13,12 +13,12 @@ from akari_msgs.srv import (SetAllout, SetDisplayColor,
 from akari_client import AkariClient
 from akari_client.color import Color, Colors
 from akari_client.position import Positions
-import random
+
 import time
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
-                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
+                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'SELECT']
 
 # server
 class m5_server(Node):
@@ -36,12 +36,6 @@ class m5_server(Node):
         self._set_display_image_srv = self.create_service(SetDisplayImage, 'set_display_image', self.set_display_image)
         self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
 
-        self.random_color = Color(
-                red = random.randint(0, 255),
-                green = random.randint(0, 255),
-                blue = random.randint(0, 255),
-            )
-
         # SETTING AKARI
         self.akari = AkariClient()
         self.joints = self.akari.joints
@@ -54,13 +48,7 @@ class m5_server(Node):
         self.get_logger().info('Change color : %s' % (str(req_color)))
         # set_display_color
         if req_color in color_pair:
-            if req_color == 'RANDOM':
-                self.m5.set_display_color(self.random_color)
-                time.sleep(0.5)
-                self.m5.set_display_text(text = 'RANDOM',
-                    pos_x = Positions.CENTER, pos_y = Positions.CENTER, size = 5,
-                    text_color = Colors.WHITE, back_color = Colors.DARKGREY, refresh = False)
-            elif req_color == 'RESET':
+            if req_color == 'RESET':
                 self.m5.reset_m5()
             elif req_color == 'SELECT':
                 r_color = request.color_var[0]

@@ -13,7 +13,7 @@ import random
 
 color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
                 'LIGHTGREY','DARKGREY','BLUE','GREEN','CYAN','RED','MAGENTA',
-                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'RANDOM', 'SELECT']
+                'YELLOW','WHITE','ORANGE','GREENYELLOW','PINK','RESET', 'SELECT']
 
 class display_color_client(Node):
 
@@ -27,11 +27,6 @@ class display_color_client(Node):
         # create request
         self.req = SetDisplayColor.Request()
 
-        self.random_color = Color(
-                red = random.randint(0, 255),
-                green = random.randint(0, 255),
-                blue = random.randint(0, 255),
-            )
 
     def send_request(self):
         choice = random.choice(color_pair)
