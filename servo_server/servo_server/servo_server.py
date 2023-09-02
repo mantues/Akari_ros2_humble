@@ -35,15 +35,9 @@ class servo_server(Node):
         # enable servo
         self.joints.enable_all_servo()
         feedback = MoveJoint.Feedback()
-
-        acc_pan = action_msg.request.acc_pan
-        acc_tilt = action_msg.request.acc_tilt
-        vel_pan = action_msg.request.vel_pan
-        vel_tilt = action_msg.request.vel_tilt
+        
         goal_pan = action_msg.request.goal_pan
         goal_tilt = action_msg.request.goal_tilt
-        self.joints.set_joint_accelerations(pan = acc_pan,tilt = acc_tilt)
-        self.joints.set_joint_velocities(pan = vel_pan,tilt = vel_tilt)
         self.joints.move_joint_positions(pan = goal_pan,tilt = goal_tilt)
         
         # feedback
@@ -56,7 +50,7 @@ class servo_server(Node):
             action_msg.publish_feedback(feedback)
             pan_state = self.joints.get_moving_state()['pan']
             tilt_state = self.joints.get_moving_state()['tilt']
-        self.get_logger().info('GOAL pan: %s tilt: %s' % (str(goal_tilt), str(goal_pan)))
+        self.get_logger().info('GOAL pan: %s tilt: %s' % (str(goal_pan), str(goal_tilt)))
         action_msg.succeed()
         result = MoveJoint.Result()
 

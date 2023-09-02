@@ -1,8 +1,4 @@
 #For move joints
-float32 acc_pan
-float32 acc_tilt
-float32 vel_pan
-float32 vel_tilt
 float32 goal_pan
 float32 goal_tilt
 ---

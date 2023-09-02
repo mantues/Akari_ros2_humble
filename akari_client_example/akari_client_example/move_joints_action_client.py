@@ -22,16 +22,8 @@ class move_joints_action_client(Node):
         goal_msg = MoveJoint.Goal()
         goal_pan = random.uniform(-1.0, 1.0)
         goal_tilt = random.uniform(-0.5, 0.5)
-        acc_pan = 0.15
-        acc_tilt = 0.15
-        vel_pan = 0.15
-        vel_tilt = 0.15
         goal_msg.goal_pan = goal_pan
         goal_msg.goal_tilt = goal_tilt
-        goal_msg.acc_pan = acc_pan
-        goal_msg.acc_tilt = acc_tilt
-        goal_msg.vel_pan = vel_pan
-        goal_msg.vel_tilt = vel_tilt
         self._action_client.wait_for_server()
 
         self._send_goal_future = self._action_client.send_goal_async(goal_msg, feedback_callback = self.feedback_callback)
