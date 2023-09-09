@@ -12,14 +12,3 @@ uint8 pwmout0
 float32 temperature
 float32 pressure
 uint16 brightness
-float32 imu_ax
-float32 imu_ay
-float32 imu_az
-float32 imu_gx
-float32 imu_gy
-float32 imu_gz
-float32 imu_pitch
-float32 imu_roll
-float32 imu_yaw
-float32 general0
-float32 general1

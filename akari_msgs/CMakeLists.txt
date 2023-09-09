@@ -32,7 +32,7 @@ set(srv_files
 )
 set(msg_files
   "msg/M5.msg"
-  "msg/Akarisetting.msg"
+  "msg/ServoState.msg"
 )
 set(action_files
   "action/MoveJoint.action"
@@ -48,7 +48,7 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}/
 )
 
-  
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
