@@ -28,7 +28,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'm5publisher = akari_client_example.m5stack_publisher:main',
             'display_color = akari_client_example.display_color:main',
             'display_text = akari_client_example.display_text:main',
             'display_image = akari_client_example.display_image:main',

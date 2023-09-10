@@ -15,13 +15,13 @@ def generate_launch_description():
             name='m5_server'
         ),
         Node(
-            package='akari_setting_publisher',
-            executable='setting_publisher',
-            name='setting_publisher'
-        ),
-        Node(
-            package='akari_state_publisher',
+            package='state_publisher',
             executable='joint_state_publisher',
             name='joint_state_publisher'
+        ),
+        Node(
+            package='state_publisher',
+            executable='m5stack_publisher',
+            name='m5stack_publisher'
         )
     ])

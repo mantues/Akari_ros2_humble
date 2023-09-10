@@ -3,17 +3,14 @@
 
 import rclpy
 from rclpy.node import Node
-
 from akari_msgs.msg import M5
-
 from akari_client import AkariClient
 
 
-class m5stackpublisher(Node):
-
+class m5stack_publisher(Node):
     def __init__(self):
-        super().__init__('m5stackpublisher_node')
-        self.publisher_ = self.create_publisher(M5, '/m5stack', 10)
+        super().__init__("m5stack_publisher_node")
+        self.publisher_ = self.create_publisher(M5, "/m5stack", 10)
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
@@ -23,6 +20,7 @@ class m5stackpublisher(Node):
 
     def timer_callback(self):
         msg = M5()
+        msg.header.stamp = self.get_clock().now().to_msg()
         self.data = self.m5.get()
         msg.button_a = self.data["button_a"]
         msg.button_b = self.data["button_b"]
@@ -35,18 +33,14 @@ class m5stackpublisher(Node):
         msg.temperature = self.data["temperature"]
         msg.brightness = self.data["brightness"]
         msg.pressure = self.data["pressure"]
-        msg.general0 = self.data["general0"]
-        msg.general1 = self.data["general1"]
         self.publisher_.publish(msg)
-        if self.data["button_a"]:
-            self.get_logger().info('Button A pressed!')
 
 
-def main(args = None):
-    rclpy.init(args = args)
-    m5_publisher = m5stackpublisher()
-    rclpy.spin(m5_publisher)
-    m5_publisher.destroy_node()
+def main(args=None):
+    rclpy.init(args=args)
+    publisher = m5stack_publisher()
+    rclpy.spin(publisher)
+    publisher.destroy_node()
 
     rclpy.shutdown()
 

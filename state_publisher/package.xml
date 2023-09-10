@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>akari_state_publisher</name>
+  <name>state_publisher</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="akariros@todo.todo">akariros</maintainer>
@@ -26,7 +26,7 @@
   <build_depend>rclpy</build_depend>
   <exec_depend>rclpy</exec_depend>
   <test_depend>rclpy</test_depend>
-  
+
   <exec_depend>ros2launch</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
