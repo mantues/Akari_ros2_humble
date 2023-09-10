@@ -40,6 +40,7 @@ setup(
             'servo_acc_set_client = akari_client_example.servo_acc_set_client:main',
             'servo_vel_set_client = akari_client_example.servo_vel_set_client:main',
             'servo_enable_set_client = akari_client_example.servo_enable_set_client:main',
+            'servo_client = akari_client_example.servo_client:main',
         ],
     },
 )
