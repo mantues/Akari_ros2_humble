@@ -24,29 +24,48 @@ color_pair = ['BLACK','NAVY','DARKGREEN','DARKCYAN','MAROON','PURPLE','OLIVE',
 class m5_server(Node):
     def __init__(self):
         super().__init__("m5_server_node")
-
-        # create service OUT
-        self._set_dout_srv = self.create_service(SetDout, 'set_dout_m5', self.set_dout_m5)
-        self._set_pwmout_srv = self.create_service(SetPwmout, 'set_pwmout_m5', self.set_pwmout_m5)
-        self._set_allout_srv = self.create_service(SetAllout, 'set_allout_m5', self.set_allout_m5)
-        self._reset_allout_srv = self.create_service(Trigger, 'reset_allout_m5', self.reset_allout_m5)
-        # create service DISPLAY
-        self._set_display_color_srv = self.create_service(SetDisplayColor, 'set_display_color', self.set_display_color)
-        self._set_display_text_srv = self.create_service(SetDisplayText, 'set_display_text', self.set_display_text)
-        self._set_display_image_srv = self.create_service(SetDisplayImage, 'set_display_image', self.set_display_image)
-        self._reset_m5_srv = self.create_service(Trigger, 'reset_m5', self.reset_m5)
-
+        # create service display color
+        self._set_display_color_srv = self.create_service(
+            SetDisplayColor, 'set_display_color', self.set_display_color
+        )
+        # create service display text
+        self._set_display_text_srv = self.create_service(
+            SetDisplayText, 'set_display_text', self.set_display_text
+        )
+        # create service display image
+        self._set_display_image_srv = self.create_service(
+            SetDisplayImage, 'set_display_image', self.set_display_image
+        )
+        # create service reset m5stack
+        self._reset_m5_srv = self.create_service(
+            Trigger, 'reset_m5', self.reset_m5
+        )
+        # create service dout
+        self._set_dout_srv = self.create_service(
+            SetDout, 'set_dout_m5', self.set_dout_m5
+        )
+        # create service pwmout
+        self._set_pwmout_srv = self.create_service(
+            SetPwmout, 'set_pwmout_m5', self.set_pwmout_m5
+        )
+        # create service allout
+        self._set_allout_srv = self.create_service(
+            SetAllout, 'set_allout_m5', self.set_allout_m5
+        )
+        # create service reset allout
+        self._reset_allout_srv = self.create_service(
+            Trigger, 'reset_allout_m5', self.reset_allout_m5
+        )
         # SETTING AKARI
         self.akari = AkariClient()
         self.joints = self.akari.joints
         self.m5 = self.akari.m5stack
 
     # DISPLAY CALL BACK
-    # callback
     def set_display_color(self, request, response):
+        # set_display_color
         req_color = request.color
         self.get_logger().info('Change color : %s' % (str(req_color)))
-        # set_display_color
         if req_color in color_pair:
             if req_color == 'RESET':
                 self.m5.reset_m5()
@@ -68,7 +87,7 @@ class m5_server(Node):
                     text_color = Colors.WHITE, back_color = Colors.DARKGREY, refresh = False)
             response.result = True
         else:
-            self.m5.reset_m5()
+            self.get_logger().error(e)
             response.result = False
         return response
 
@@ -89,7 +108,7 @@ class m5_server(Node):
             )
             response.result = True
         else:
-            self.m5.reset_m5()
+d           self.get_logger().error(e)
             response.result = False
         return response
 
@@ -126,6 +145,7 @@ class m5_server(Node):
             response.result = True
         else:
             self.get_logger().info('PIN_ID is NOT Corect (0-2 is OK): %s' % (str(req_id)))
+            self.get_logger().error(e)
             response.result = False
         return response
 
@@ -140,6 +160,7 @@ class m5_server(Node):
             response.result = True
         else:
             self.get_logger().info('PIN_ID: %s or Value: %s is NOT Corect (ID:0-2, Value:0-255)' % (str(req_id), str(req_val)))
+            self.get_logger().error(e)
             response.result = False
         return response
 
@@ -155,6 +176,7 @@ class m5_server(Node):
             response.result = True
         else:
             self.get_logger().info('PWM Value: %s is NOT Corect (0-255)' % (str(req_pwmout0_val)))
+            self.get_logger().error(e)
             response.result = False
         return response
 
