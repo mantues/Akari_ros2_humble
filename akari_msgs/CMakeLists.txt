@@ -29,6 +29,7 @@ set(srv_files
   "srv/Trigger.srv"
   "srv/SetJointFloat.srv"
   "srv/SetJointBool.srv"
+  "srv/SetJointPos.srv"
 )
 set(msg_files
   "msg/M5.msg"
