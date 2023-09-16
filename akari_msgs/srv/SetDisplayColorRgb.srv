@@ -1,4 +1,6 @@
 #For set LCD color
-string color
+uint8 r
+uint8 g
+uint8 b
 ---
 bool result

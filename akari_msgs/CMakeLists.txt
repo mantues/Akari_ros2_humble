@@ -22,6 +22,7 @@ find_package(rosidl_default_generators REQUIRED)
 set(srv_files
   "srv/SetAllout.srv"
   "srv/SetDisplayColor.srv"
+  "srv/SetDisplayColorRgb.srv"
   "srv/SetDisplayImage.srv"
   "srv/SetDisplayText.srv"
   "srv/SetDout.srv"
