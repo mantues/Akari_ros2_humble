@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+from typing import Optional
+
 import rclpy
-from rclpy.node import Node
-from akari_msgs.msg import ServoState
 from akari_client import AkariClient
+from akari_msgs.msg import ServoState
+from rclpy.node import Node
 
 
-class joint_state_publisher(Node):
-    def __init__(self):
+class joint_state_publisher(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("joint_state_publisher_node")
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.akari_callback)
@@ -17,7 +19,7 @@ class joint_state_publisher(Node):
         self.akari = AkariClient()
         self.joints = self.akari.joints
 
-    def akari_callback(self):
+    def akari_callback(self) -> None:
         msg = ServoState()
         msg.header.stamp = self.get_clock().now().to_msg()
         joint_names = self.joints.get_joint_names()
@@ -48,7 +50,7 @@ class joint_state_publisher(Node):
         self.state_publisher.publish(msg)
 
 
-def main(args=None):
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     publisher = joint_state_publisher()
     rclpy.spin(publisher)
