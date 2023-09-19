@@ -1,23 +1,21 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import rclpy
-
 from typing import Optional
-from rclpy.node import Node
-from rclpy.action import ActionServer
 
-from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
-from akari_msgs.action import MoveJoint
+import rclpy
 from akari_client import AkariClient
+from akari_msgs.action import MoveJoint
+from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
+from rclpy.action import ActionServer
+from rclpy.node import Node
 
 joint_pair = ["pan", "tilt"]
 
 
-# server
-class servo_server(Node):
-    def __init__(self):
-        super().__init__("servo_serer_node")
+class servo_server(Node):  # type: ignore
+    def __init__(self) -> None:
+        super().__init__("servo_serer")
         # create action service JOINTS
         self._move_joint_action = ActionServer(
             self, MoveJoint, "move_joint", self.move_joints_action
@@ -43,7 +41,7 @@ class servo_server(Node):
         self.joints = self.akari.joints
 
     # ACTION CALL BACK
-    def move_joints_action(self, action_msg):
+    def move_joints_action(self, action_msg: MoveJoint) -> MoveJoint.Result:
         # enable servo
         self.joints.enable_all_servo()
         feedback = MoveJoint.Feedback()
@@ -53,25 +51,21 @@ class servo_server(Node):
         # feedback
         pan_state = self.joints.get_moving_state()["pan"]
         tilt_state = self.joints.get_moving_state()["tilt"]
-        while pan_state == False or tilt_state == False:
-            self.get_logger().info(
-                "SERVO state: %s" % (str(self.joints.get_moving_state()))
-            )
+        while not pan_state or not tilt_state:
             feedback.pos_pan = self.joints.get_joint_positions()["pan"]
             feedback.pos_tilt = self.joints.get_joint_positions()["tilt"]
             action_msg.publish_feedback(feedback)
             pan_state = self.joints.get_moving_state()["pan"]
             tilt_state = self.joints.get_moving_state()["tilt"]
-        self.get_logger().info(
-            "GOAL pan: %s tilt: %s" % (str(goal_pan), str(goal_tilt))
-        )
         action_msg.succeed()
         result = MoveJoint.Result()
         return result
 
     # SERVER CALL BACK
     # servo acc set
-    def move_joints(self, request, response):
+    def move_joints(
+        self, request: SetJointPos.Request, response: SetJointPos.Response
+    ) -> SetJointPos.Response:
         pan_pos: Optional[float] = None
         tilt_pos: Optional[float] = None
         for index, name in enumerate(request.joint_name):
@@ -91,7 +85,9 @@ class servo_server(Node):
         return response
 
     # servo vel set
-    def set_servo_vel(self, request, response):
+    def set_servo_vel(
+        self, request: SetJointFloat.Request, response: SetJointFloat.Response
+    ) -> SetJointFloat.Response:
         pan_vel: Optional[float] = None
         tilt_vel: Optional[float] = None
         for index, name in enumerate(request.joint_name):
@@ -109,7 +105,9 @@ class servo_server(Node):
         return response
 
     # servo vel set
-    def set_servo_acc(self, request, response):
+    def set_servo_acc(
+        self, request: SetJointFloat.Request, response: SetJointFloat.Response
+    ) -> SetJointFloat.Response:
         pan_acc: Optional[float] = None
         tilt_acc: Optional[float] = None
         for index, name in enumerate(request.joint_name):
@@ -127,7 +125,9 @@ class servo_server(Node):
         return response
 
     # servo enable set
-    def set_servo_enable(self, request, response):
+    def set_servo_enable(
+        self, request: SetJointBool.Request, response: SetJointBool.Response
+    ) -> SetJointBool.Response:
         pan_enable: Optional[bool] = None
         tilt_enable: Optional[bool] = None
         for index, name in enumerate(request.joint_name):
@@ -145,7 +145,7 @@ class servo_server(Node):
         return response
 
 
-def main(args=None):
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     server = servo_server()
     rclpy.spin(server)

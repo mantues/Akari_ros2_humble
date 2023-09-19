@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+from typing import Optional
+
 import rclpy
-from rclpy.node import Node
-from akari_msgs.msg import M5
 from akari_client import AkariClient
+from akari_msgs.msg import M5
+from rclpy.node import Node
 
 
-class m5stack_publisher(Node):
-    def __init__(self):
+class m5stack_publisher(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("m5stack_publisher_node")
         self.publisher_ = self.create_publisher(M5, "/m5stack", 10)
         timer_period = 0.1
@@ -18,7 +20,7 @@ class m5stack_publisher(Node):
         self.m5 = self.akari.m5stack
         self.data = self.m5.get()
 
-    def timer_callback(self):
+    def timer_callback(self) -> None:
         msg = M5()
         msg.header.stamp = self.get_clock().now().to_msg()
         self.data = self.m5.get()
@@ -36,7 +38,7 @@ class m5stack_publisher(Node):
         self.publisher_.publish(msg)
 
 
-def main(args=None):
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     publisher = m5stack_publisher()
     rclpy.spin(publisher)
