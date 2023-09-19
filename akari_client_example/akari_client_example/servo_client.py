@@ -3,17 +3,8 @@
 
 import rclpy
 from rclpy.node import Node
-
-from akari_msgs.msg import M5
 from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
-
-from akari_client import AkariClient
-from akari_client.color import Color, Colors
-from akari_client.position import Positions
-import random
 import time
-import os
-import sys
 
 
 class servo_client(Node):
@@ -35,9 +26,7 @@ class servo_client(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    # create client
     client = servo_client()
-    # send request
 
     client.get_logger().info("STEP1. Set both servo enable")
     req = SetJointBool.Request()
