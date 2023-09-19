@@ -3,9 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-
 from akari_msgs.srv import SetDisplayImage
-
 from akari_client import AkariClient
 from akari_client.position import Positions
 import random
@@ -19,11 +17,14 @@ pos_pair = [Positions.CENTER, Positions.LEFT, Positions.TOP,
 class display_image_client(Node):
 
     def __init__(self):
-        super().__init__('display_image_client_node')
+        super().__init__("display_image_client_node")
         # create client
-        self.cli = self.create_client(SetDisplayImage, 'set_display_image')
-        while not self.cli.wait_for_service(timeout_sec = 1.0):
-            self.get_logger().info('service not available, waiting again...')
+        self.cli = self.create_client(
+            SetDisplayImage, "set_display_image"
+        )while not self.cli_color.wait_for_service(
+            timeout_sec=1.0
+        ) and self.cli_color_rgb.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info("service not available, waiting again...")
 
         # create request
         self.req = SetDisplayImage.Request()
@@ -37,24 +38,24 @@ class display_image_client(Node):
         self.req.pos_y = pos_y
         scale = random.uniform(0.5, 1.0)
         self.req.scale = scale
-        self.get_logger().info('filepath: %s scale: %s X: %s Y: %s' % (str(filepath), str(scale),  str(pos_x),  str(pos_y)))
+        self.get_logger().info("filepath: %s scale: %s X: %s Y: %s" % (str(filepath), str(scale),  str(pos_x),  str(pos_y)))
 
         self.future = self.cli.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
 
 
-def main(args = None):
-    rclpy.init(args = args)
+def main(args=None):
+    rclpy.init(args=args)
     # create client
     client = display_image_client()
     # send request
     response = client.send_request()
-    client.get_logger().info('Result: : %s' %(str(response.result)))
+    client.get_logger().info("Result: : %s" %(str(response.result)))
     client.destroy_node()
 
     rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

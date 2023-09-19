@@ -22,22 +22,22 @@ import sys
 class servo_enable_set_client(Node):
 
     def __init__(self):
-        super().__init__('servo_enable_set_client_node')
+        super().__init__("servo_enable_set_client_node")
         # create client
-        self.cli = self.create_client(SetJointBool, 'set_joint_enable')
+        self.cli = self.create_client(SetJointBool, "set_joint_enable")
         while not self.cli.wait_for_service(timeout_sec = 1.0):
-            self.get_logger().info('service not available, waiting again...')
+            self.get_logger().info("service not available, waiting again...")
 
         # create request
         self.req = SetJointBool.Request()
 
     def send_request(self):
-        self.req.joint_name = ['pan', 'tilt']
+        self.req.joint_name = ["pan", "tilt"]
         pan_val = random.choice([True, False])
         tilt_val = random.choice([True, False])
         self.req.val = [pan_val, tilt_val]
         
-        self.get_logger().info('Request enable pan : %s tilt : %s' % (str(pan_val), str(tilt_val)))
+        self.get_logger().info("Request enable pan : %s tilt : %s" % (str(pan_val), str(tilt_val)))
 
         self.future = self.cli.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
@@ -50,11 +50,11 @@ def main(args = None):
     client = servo_enable_set_client()
     # send request
     response = client.send_request()
-    client.get_logger().info('Result: : %s' %(str(response.result)))
+    client.get_logger().info("Result: : %s" %(str(response.result)))
     client.destroy_node()
 
     rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
