@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import rclpy
-from rclpy.node import Node
-from akari_msgs.srv import SetDisplayColor, SetDisplayColorRgb
-from akari_client.color import Color
 import time
 
+import rclpy
+from akari_client.color import Color
+from akari_msgs.srv import SetDisplayColor, SetDisplayColorRgb
+from rclpy.node import Node
 
-class display_color_client(Node):
+
+class DisplayColorClient(Node):
     def __init__(self):
         super().__init__("display_color_client_node")
         # create client
@@ -24,7 +25,7 @@ class display_color_client(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    client = display_color_client()
+    client = DisplayColorClient()
 
     print("STEP1. Set display color to white")
     req = SetDisplayColor.Request()
@@ -55,7 +56,7 @@ def main(args=None):
     print("")
     time.sleep(2)
 
-    client.get_logger().info("Finish!")
+    print("Finish!")
     client.destroy_node()
     rclpy.shutdown()
 

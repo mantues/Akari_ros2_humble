@@ -1,68 +1,90 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+import time
+
 import rclpy
-from rclpy.node import Node
+from akari_client.color import Colors
+from akari_client.position import Positions
 from akari_msgs.srv import SetDisplayText
-from akari_client import AkariClient
-from akari_client.color import Color, Colors
-import random
+from rclpy.node import Node
 
-color_pair_text = ["BLACK","NAVY","DARKGREEN","DARKCYAN","MAROON","PURPLE","OLIVE",
-                "LIGHTGREY","DARKGREY","BLUE","GREEN","CYAN","RED","MAGENTA",
-                "YELLOW","WHITE","ORANGE","GREENYELLOW","PINK"]
 
-text_pair = ["1.AKARI", "2.あかり", "3.灯り", "4.アカリ", "5.Akari", "6.akari", "7.灯"]
-text_size = [3, 4, 5]
-
-class display_text_client(Node):
-
+class DisplayTextClient(Node):
     def __init__(self):
         super().__init__("display_text_client_node")
         # create client
-        self.cli = self.create_client(
-        SetDisplayText, "set_display_text"
-        )while not self.cli_color.wait_for_service(
-            timeout_sec=1.0
-        ) and self.cli_color_rgb.wait_for_service(timeout_sec=1.0):
+        self.cli = self.create_client(SetDisplayText, "set_display_text")
+        while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info("service not available, waiting again...")
-        # create request
-        self.req = SetDisplayText.Request()
-
-        self.random_color = Color(
-                red = random.randint(0, 255),
-                green = random.randint(0, 255),
-                blue = random.randint(0, 255),
-            )
-
-        self.akari = AkariClient()
-        self.m5 = self.akari.m5stack
-        self.data = self.m5.get()
-
-    def send_request(self):
-        self.req.text = random.choice(text_pair)
-        self.req.pos_x = 0
-        self.req.pos_y = 0
-        self.req.size = random.choice(text_size)
-        self.req.text_color = random.choice(color_pair_text)
-        self.req.back_color = random.choice(color_pair_text)
-        self.req.refresh = False
-        self.get_logger().info("Change color : %s" % (self.req))
-
-        self.future = self.cli.call_async(self.req)
-        rclpy.spin_until_future_complete(self, self.future)
-        return self.future.result()
 
 
-def main(args=None):
+def main(args=None) -> None:
     rclpy.init(args=args)
-    # create client
-    client = display_text_client()
-    # send request
-    response = client.send_request()
-    client.get_logger().info("Result: : %s" %(str(response.result)))
-    client.destroy_node()
+    client = DisplayTextClient()
 
+    print("STEP1. display 1.AKARI at top left")
+    req = SetDisplayText.Request()
+    req.text = "1.AKARI"
+    req.pos_x = Positions.LEFT
+    req.pos_y = Positions.TOP
+    req.size = 5
+    req.text_color = "BLACK"
+    req.back_color = "WHITE"
+    req.refresh = True
+    client.future = client.cli.call_async(req)
+    rclpy.spin_until_future_complete(client, client.future)
+    client.get_logger().info(f"Result: : {client.future.result().result}")
+    print("")
+    time.sleep(2)
+
+    print("STEP2. display 2.あかり at middle center")
+    req = SetDisplayText.Request()
+    req.text = "2.あかり"
+    req.pos_x = Positions.CENTER
+    req.pos_y = Positions.CENTER
+    req.size = 6
+    req.text_color = "BLUE"
+    req.back_color = "YELLOW"
+    req.refresh = True
+    client.future = client.cli.call_async(req)
+    rclpy.spin_until_future_complete(client, client.future)
+    client.get_logger().info(f"Result: : {client.future.result().result}")
+    print("")
+    time.sleep(2)
+
+    print("STEP3. display 3.灯り at (50,40) without background refresh")
+    req = SetDisplayText.Request()
+    req.text = "3.灯り"
+    req.pos_x = 50
+    req.pos_y = 40
+    req.size = 3
+    req.text_color = "WHITE"
+    req.back_color = "RED"
+    req.refresh = False
+    client.future = client.cli.call_async(req)
+    rclpy.spin_until_future_complete(client, client.future)
+    client.get_logger().info(f"Result: : {client.future.result().result}")
+    print("")
+    time.sleep(2)
+
+    print("STEP3. display 4.灯 at middle center")
+    req = SetDisplayText.Request()
+    req.text = "4.灯"
+    req.pos_x = Positions.CENTER
+    req.pos_y = Positions.CENTER
+    req.size = 11
+    req.text_color = "WHITE"
+    req.back_color = "BLACK"
+    req.refresh = True
+    client.future = client.cli.call_async(req)
+    rclpy.spin_until_future_complete(client, client.future)
+    client.get_logger().info(f"Result: : {client.future.result().result}")
+    print("")
+    time.sleep(2)
+
+    print("Finish!")
+    client.destroy_node()
     rclpy.shutdown()
 
 

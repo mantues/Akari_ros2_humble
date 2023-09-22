@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import rclpy
-from rclpy.node import Node
-from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
 import time
 
+import rclpy
+from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
+from rclpy.node import Node
 
-class servo_client(Node):
+
+class ServoClient(Node):
     def __init__(self):
         super().__init__("servo_client_node")
         # create client
@@ -26,7 +27,7 @@ class servo_client(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    client = servo_client()
+    client = ServoClient()
 
     client.get_logger().info("STEP1. Set both servo enable")
     req = SetJointBool.Request()
@@ -133,7 +134,7 @@ def main(args=None):
     print("")
     time.sleep(2)
 
-    client.get_logger().info("Finish!")
+    print("Finish!")
     client.destroy_node()
     rclpy.shutdown()
 
