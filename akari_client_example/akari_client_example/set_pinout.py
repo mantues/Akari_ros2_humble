@@ -6,6 +6,7 @@ from rclpy.node import Node
 from akari_msgs.srv import SetDout, SetPwmout, SetAllout, Trigger
 import time
 
+
 class SetPinoutClient(Node):
     def __init__(self):
         super().__init__("set_pinout_client_node")
@@ -23,7 +24,7 @@ class SetPinoutClient(Node):
             self.get_logger().info("service not available, waiting again...")
 
 
-def main(args=None):
+def main(args=None) -> None:
     rclpy.init(args=args)
     client = SetPinoutClient()
 
@@ -59,7 +60,7 @@ def main(args=None):
     time.sleep(2)
 
     print("STEP4. Reset allout")
-    req =Trigger.Request()
+    req = Trigger.Request()
     client.future = client.cli_reset_allout.call_async(req)
     rclpy.spin_until_future_complete(client, client.future)
     client.get_logger().info(f"Result: : {client.future.result().result}")
