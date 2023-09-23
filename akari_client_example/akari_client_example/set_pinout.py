@@ -2,14 +2,15 @@
 # coding:utf-8
 
 import time
+from typing import Optional
 
 import rclpy
 from akari_msgs.srv import SetAllout, SetDout, SetPwmout, Trigger
 from rclpy.node import Node
 
 
-class SetPinoutClient(Node):
-    def __init__(self):
+class SetPinoutClient(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("set_pinout_client_node")
         # create client
         self.cli_dout = self.create_client(SetDout, "set_dout")
@@ -25,7 +26,7 @@ class SetPinoutClient(Node):
             self.get_logger().info("service not available, waiting again...")
 
 
-def main(args=None) -> None:
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     client = SetPinoutClient()
 

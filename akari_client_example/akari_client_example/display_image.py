@@ -2,6 +2,7 @@
 # coding:utf-8
 
 import time
+from typing import Optional
 
 import rclpy
 from akari_client.position import Positions
@@ -9,8 +10,8 @@ from akari_msgs.srv import SetDisplayImage
 from rclpy.node import Node
 
 
-class DisplayImageClient(Node):
-    def __init__(self):
+class DisplayImageClient(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("display_image_client_node")
         # create client
         self.cli = self.create_client(SetDisplayImage, "set_display_image")
@@ -18,7 +19,7 @@ class DisplayImageClient(Node):
             self.get_logger().info("service not available, waiting again...")
 
 
-def main(args=None) -> None:
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     client = DisplayImageClient()
 

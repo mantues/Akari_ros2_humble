@@ -2,22 +2,23 @@
 # coding:utf-8
 
 import time
-from typing import Any
+from typing import Optional
 
 import rclpy
 from akari_msgs.action import MoveJoint
 from rclpy.action import ActionClient
+from rclpy.executors import Future
 from rclpy.node import Node
 
 
-class move_joints_action_client(Node):
-    def __init__(self):
+class move_joints_action_client(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("move_joints_action_client_node")
         self._action_client = ActionClient(self, MoveJoint, "move_joint")
         while not self._action_client.wait_for_server(timeout_sec=1.0):
             self.get_logger().info("service not available, waiting again...")
 
-    def goal_response_callback(self, future) -> None:
+    def goal_response_callback(self, future: Future) -> None:
         goal_handle = future.result()
         if not goal_handle.accepted:
             self.get_logger().info("Goal rejected")
@@ -26,17 +27,17 @@ class move_joints_action_client(Node):
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.get_result_callback)
 
-    def get_result_callback(self, future) -> None:
+    def get_result_callback(self, future: Future) -> None:
         result = future.result().result
         self.get_logger().info("Result: {0}".format(result.result))
 
-    def feedback_callback(self, feedback_msg):
+    def feedback_callback(self, feedback_msg: MoveJoint.Feedback) -> None:
         feedback = feedback_msg.feedback
         self.get_logger().info(f"pan: {feedback.pos_pan:.3f}")
         self.get_logger().info(f"tilt: {feedback.pos_tilt:.3f}")
 
 
-def main(args=None):
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     client = move_joints_action_client()
 

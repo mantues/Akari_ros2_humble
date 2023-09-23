@@ -2,15 +2,15 @@
 # coding:utf-8
 
 import time
+from typing import Optional
 
 import rclpy
-from akari_client import AkariClient
 from akari_msgs.srv import Trigger
 from rclpy.node import Node
 
 
-class ResetM5Client(Node):
-    def __init__(self):
+class ResetM5Client(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("display_reset_client_node")
         # create client
         self.cli = self.create_client(Trigger, "reset_m5")
@@ -20,7 +20,7 @@ class ResetM5Client(Node):
         self.req = Trigger.Request()
 
 
-def main(args=None) -> None:
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     # create client
     client = ResetM5Client()

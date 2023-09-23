@@ -2,14 +2,15 @@
 # coding:utf-8
 
 import time
+from typing import Optional
 
 import rclpy
 from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
 from rclpy.node import Node
 
 
-class ServoClient(Node):
-    def __init__(self):
+class ServoClient(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("servo_client_node")
         self.cli_pos = self.create_client(SetJointPos, "move_joint")
         self.cli_vel = self.create_client(SetJointFloat, "set_joint_vel")
@@ -24,7 +25,7 @@ class ServoClient(Node):
             self.get_logger().info("service not available, waiting again...")
 
 
-def main(args=None):
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     client = ServoClient()
 

@@ -2,16 +2,16 @@
 # coding:utf-8
 
 import time
+from typing import Optional
 
 import rclpy
-from akari_client.color import Colors
 from akari_client.position import Positions
 from akari_msgs.srv import SetDisplayText
 from rclpy.node import Node
 
 
-class DisplayTextClient(Node):
-    def __init__(self):
+class DisplayTextClient(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("display_text_client_node")
         # create client
         self.cli = self.create_client(SetDisplayText, "set_display_text")
@@ -19,7 +19,7 @@ class DisplayTextClient(Node):
             self.get_logger().info("service not available, waiting again...")
 
 
-def main(args=None) -> None:
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     client = DisplayTextClient()
 
