@@ -1,26 +1,23 @@
 #!/usr/bin/env python
 # coding:utf-8
 
+import time
+
 import rclpy
-
-from rclpy.node import Node
-
+from akari_client import AkariClient
+from akari_client.color import Color, Colors
+from akari_client.position import Positions
 from akari_msgs.srv import (
     SetAllout,
     SetDisplayColor,
     SetDisplayColorRgb,
-    SetDout,
-    SetPwmout,
     SetDisplayImage,
     SetDisplayText,
+    SetDout,
+    SetPwmout,
     Trigger,
 )
-
-from akari_client import AkariClient
-from akari_client.color import Color, Colors
-from akari_client.position import Positions
-
-import time
+from rclpy.node import Node
 
 color_pair = [
     "BLACK",
@@ -46,7 +43,7 @@ color_pair = [
 
 
 # server
-class m5_server(Node):
+class M5Server(Node):
     def __init__(self):
         super().__init__("m5_server_node")
         # create service display color from name
@@ -68,20 +65,18 @@ class m5_server(Node):
         # create service reset m5stack
         self._reset_m5_srv = self.create_service(Trigger, "reset_m5", self.reset_m5)
         # create service dout
-        self._set_dout_srv = self.create_service(
-            SetDout, "set_dout_m5", self.set_dout_m5
-        )
+        self._set_dout_srv = self.create_service(SetDout, "set_dout", self.set_dout)
         # create service pwmout
         self._set_pwmout_srv = self.create_service(
-            SetPwmout, "set_pwmout_m5", self.set_pwmout_m5
+            SetPwmout, "set_pwmout", self.set_pwmout
         )
         # create service allout
         self._set_allout_srv = self.create_service(
-            SetAllout, "set_allout_m5", self.set_allout_m5
+            SetAllout, "set_allout", self.set_allout
         )
         # create service reset allout
         self._reset_allout_srv = self.create_service(
-            Trigger, "reset_allout_m5", self.reset_allout_m5
+            Trigger, "reset_allout", self.reset_allout
         )
         self.akari = AkariClient()
         self.joints = self.akari.joints
@@ -160,7 +155,7 @@ class m5_server(Node):
             response.result = False
         return response
 
-    def set_dout_m5(self, request, response):
+    def set_dout(self, request, response):
         req_id = request.pin_id
         req_val = request.val
         response.result = True
@@ -177,7 +172,7 @@ class m5_server(Node):
             response.result = False
         return response
 
-    def set_pwmout_m5(self, request, response):
+    def set_pwmout(self, request, response):
         req_id = request.pin_id
         req_val = request.val
         response.result = True
@@ -195,7 +190,7 @@ class m5_server(Node):
             response.result = False
         return response
 
-    def set_allout_m5(self, request, response):
+    def set_allout(self, request, response):
         req_dout0 = request.dout0_val
         req_dout1 = request.dout1_val
         req_pwmout0_val = request.pwmout0_val
@@ -215,7 +210,7 @@ class m5_server(Node):
             response.result = False
         return response
 
-    def reset_allout_m5(self, request, response):
+    def reset_allout(self, request, response):
         response.result = True
         try:
             self.m5.reset_allout()
@@ -227,7 +222,7 @@ class m5_server(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    server = m5_server()
+    server = M5Server()
     rclpy.spin(server)
     rclpy.shutdown()
 

@@ -10,12 +10,10 @@ from akari_msgs.srv import SetJointBool, SetJointFloat, SetJointPos
 from rclpy.action import ActionServer
 from rclpy.node import Node
 
-joint_pair = ["pan", "tilt"]
 
-
-class servo_server(Node):  # type: ignore
+class ServoServer(Node):  # type: ignore
     def __init__(self) -> None:
-        super().__init__("servo_serer")
+        super().__init__("servo_server")
         # create action service JOINTS
         self._move_joint_action = ActionServer(
             self, MoveJoint, "move_joint", self.move_joints_action
@@ -147,7 +145,7 @@ class servo_server(Node):  # type: ignore
 
 def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
-    server = servo_server()
+    server = ServoServer()
     rclpy.spin(server)
     rclpy.shutdown()
 

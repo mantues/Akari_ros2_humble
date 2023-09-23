@@ -9,7 +9,7 @@ from akari_msgs.msg import M5
 from rclpy.node import Node
 
 
-class m5stack_publisher(Node):  # type: ignore
+class M5stackPublisher(Node):  # type: ignore
     def __init__(self) -> None:
         super().__init__("m5stack_publisher_node")
         self.publisher_ = self.create_publisher(M5, "/m5stack", 10)
@@ -40,7 +40,7 @@ class m5stack_publisher(Node):  # type: ignore
 
 def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
-    publisher = m5stack_publisher()
+    publisher = M5stackPublisher()
     rclpy.spin(publisher)
     publisher.destroy_node()
 

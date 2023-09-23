@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import rclpy
-from rclpy.node import Node
-from akari_msgs.srv import SetDisplayColor, SetDisplayColorRgb
-from akari_client.color import Color
 import time
+from typing import Optional
+
+import rclpy
+from akari_msgs.srv import SetDisplayColor, SetDisplayColorRgb
+from rclpy.node import Node
 
 
-class display_color_client(Node):
-    def __init__(self):
+class DisplayColorClient(Node):  # type: ignore
+    def __init__(self) -> None:
         super().__init__("display_color_client_node")
-        # create client
         self.cli_color = self.create_client(SetDisplayColor, "set_display_color")
         self.cli_color_rgb = self.create_client(
             SetDisplayColorRgb, "set_display_color_rgb"
@@ -22,9 +22,9 @@ class display_color_client(Node):
             self.get_logger().info("service not available, waiting again...")
 
 
-def main(args=None):
+def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
-    client = display_color_client()
+    client = DisplayColorClient()
 
     print("STEP1. Set display color to white")
     req = SetDisplayColor.Request()
@@ -55,7 +55,7 @@ def main(args=None):
     print("")
     time.sleep(2)
 
-    client.get_logger().info("Finish!")
+    print("Finish!")
     client.destroy_node()
     rclpy.shutdown()
 
