@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # coding:utf-8
 
-import rclpy
-from rclpy.node import Node
-from akari_msgs.srv import SetDout, SetPwmout, SetAllout, Trigger
 import time
+
+import rclpy
+from akari_msgs.srv import SetAllout, SetDout, SetPwmout, Trigger
+from rclpy.node import Node
 
 
 class SetPinoutClient(Node):

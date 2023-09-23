@@ -39,6 +39,8 @@ setup(
             "set_pinout = akari_client_example.set_pinout:main",
             "set_pwmout = akari_client_example.set_pwmout:main",
             "servo_client = akari_client_example.servo_client:main",
+            "joint_state_subscriber = akari_client_example.joint_state_subscriber:main",
+            "m5_subscriber = akari_client_example.m5_subscriber:main",
         ],
     },
 )

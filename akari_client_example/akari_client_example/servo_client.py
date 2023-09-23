@@ -11,7 +11,6 @@ from rclpy.node import Node
 class ServoClient(Node):
     def __init__(self):
         super().__init__("servo_client_node")
-        # create client
         self.cli_pos = self.create_client(SetJointPos, "move_joint")
         self.cli_vel = self.create_client(SetJointFloat, "set_joint_vel")
         self.cli_acc = self.create_client(SetJointFloat, "set_joint_acc")

@@ -12,7 +12,6 @@ from rclpy.node import Node
 class DisplayColorClient(Node):
     def __init__(self):
         super().__init__("display_color_client_node")
-        # create client
         self.cli_color = self.create_client(SetDisplayColor, "set_display_color")
         self.cli_color_rgb = self.create_client(
             SetDisplayColorRgb, "set_display_color_rgb"
