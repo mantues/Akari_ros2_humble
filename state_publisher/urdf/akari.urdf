@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<robot name="akari">
+    <!-- main center object -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://state_publisher/urdf/akari_body.stl" />
+            </geometry>
+            <material name="gray">
+                <color rgba="0.3 0.3 0.3 1"/>
+            </material>
+        </visual>
+    </link>
+    
+    <link name="pan_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://state_publisher/urdf/akari_servo.stl" />
+            </geometry>
+            <material name="gray">
+                <color rgba="0.2 0.2 0.2 1"/>
+            </material>
+        </visual>
+    </link>
+
+    <link name="tilt_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://state_publisher/urdf/akari_head.stl" />
+            </geometry>
+            <material name="gray">
+                <color rgba="0.2 0.2 0.2 1"/>
+            </material>
+        </visual>
+    </link>
+
+    <!-- Robot Footprint -->
+    <link name="base_footprint"/>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_footprint"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    </joint>
+    
+    <joint name="servo_joint" type="continuous">
+        <parent link="base_footprint"/>
+        <child link="pan_link"/>
+        <origin xyz="0.0 0.0012 0.055" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <joint name="head_joint" type="continuous">
+        <parent link="pan_link"/>
+        <child link="tilt_link"/>
+        <origin xyz="0.0 -0.024 0.019" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+    </joint>
+</robot>
