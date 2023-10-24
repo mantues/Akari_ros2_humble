@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<sdf version='1.7'>
+  <model name='akari_body'>
+    <link name='akari_base'>
+    <self_collide>1</self_collide>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>50</mass>
+        <inertia>
+          <ixx>1.9e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.5e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.9e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://state_publisher/gazebomodel/akari_body.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name='servo_joint'>
+    <self_collide>1</self_collide>
+      <inertial>
+        <pose>0.0 0.012 0.055 0 0 0</pose>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>1.9e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.5e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.9e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='hservo_joint_collision'>
+        <pose>0.0 0.012 0.055 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='servo_joint_visual'>
+        <pose>0.0 0.012 0.055 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://state_publisher/gazebomodel/akari_servo.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name='head_joint'>
+    <self_collide>1</self_collide>
+      <inertial>
+        <pose>0.0 -0.012 0.075 0 0 0</pose>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>1.9e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.5e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.9e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='head_joint_collision'>
+        <pose>0.0 -0.012 0.075 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='head_joint_visual'>
+        <pose>0.0 -0.012 0.075 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://state_publisher/gazebomodel/akari_head.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    
+    <!-- Robot JOINTS -->
+    <joint name="pan_joint" type="revolute">
+        <parent> akari_base </parent>
+        <child> servo_joint </child>
+        <pose> 0.0 0.012 0.055 0 0 0 </pose>
+        <axis>
+        <xyz> 0 0 1</xyz>
+        <limit>
+          <lower>-2</lower>
+          <upper>2</upper>
+          <effort>5</effort>
+          <velocity>3.14159274</velocity>
+        </limit>
+        </axis>
+    </joint>
+
+    <joint name="tilt_joint" type="revolute">
+        <parent> servo_joint </parent>
+        <child> head_joint </child>
+        <pose> 0.0 -0.012 0.075 0 0 0</pose>
+        <axis>
+        <xyz> 1 0 0 </xyz>
+        <limit>
+          <lower>-0.5</lower>
+          <upper>0.8</upper>
+          <effort>5</effort>
+          <velocity>3.14159274</velocity>
+        </limit>
+        </axis>
+    </joint>    
+  </model>
+</sdf>
+
