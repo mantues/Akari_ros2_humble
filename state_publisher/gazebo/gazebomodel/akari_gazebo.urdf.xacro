@@ -1,89 +1,20 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
-    <!-- body -->
-    <link name="base_link">
-        <visual>
-            <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-            <geometry>
-                <mesh filename="package://state_publisher/urdf/akari_body.stl" />
-            </geometry>
-            <material name="gray">
-                <color rgba="0.3 0.3 0.3 1"/>
-            </material>
-        </visual>
-        <collision>
-            <geometry>
-                <box size="0.01 0.01 0.01"/>
-            </geometry>
-        </collision>
-        <inertial>
-          <mass value="50.0"/>
-          <origin xyz="0 0.0 0" rpy="0 0 0"/>
-        <inertia ixx="0.000019" iyy="0.000035" izz="0.000019" ixy="0.000" ixz="0.000" iyz="0.000"/>
-        </inertial>
-    </link>
+<robot name="akari_xacro" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_body.urdf.xacro"/>
+  <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_servo.urdf.xacro"/>
+  <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_head.urdf.xacro"/>
+  <link name="base_footprint"/>
 
-    <link name="pan_link">
-        <visual>
-            <origin xyz="0 0.0 0" rpy="0 0 0"/>
-            <geometry>
-                <mesh filename="package://state_publisher/urdf/akari_servo.stl" />
-            </geometry>
-            <material name="gray">
-                <color rgba="0.2 0.2 0.2 1"/>
-            </material>
-        </visual>
-        <collision>
-            <geometry>
-                <box size="0.01 0.01 0.01"/>
-            </geometry>
-        </collision>
-        <inertial>
-          <mass value="0.05"/>
-          <origin xyz="0 0.005 0" rpy="0 0 0"/>
-        <inertia ixx="0.000019" iyy="0.000035" izz="0.000019" ixy="0.000" ixz="0.000" iyz="0.000"/>
-        </inertial>
-    </link>
-    <link name="tilt_link">
-        <visual>
-            <origin xyz="0 0.0 0" rpy="0 0 0"/>
-            <geometry>
-                <mesh filename="package://state_publisher/urdf/akari_head.stl" />
-            </geometry>
-            <material name="gray">
-                <color rgba="0.2 0.2 0.2 1"/>
-            </material>
-        </visual>
-        <collision>
-            <geometry>
-                <box size="0.01 0.01 0.01"/>
-            </geometry>
-        </collision>
-        <inertial>
-          <mass value="0.05"/>
-          <origin xyz="0 0.075 0" rpy="0 0 0"/>
-        <inertia ixx="0.000019" iyy="0.000035" izz="0.000019" ixy="0.000" ixz="0.000" iyz="0.000"/>
-        </inertial>
-    </link>
-    <!-- Robot Footprint -->
-    <link name="base_footprint"/>
-    <joint name="base_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="base_footprint"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
-    
-    <joint name="servo_joint" type="revolute">
-        <parent link="base_link"/>
-        <child link="pan_link"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <dynamics damping="1.0"/>
-    </joint>
-    <joint name="head_joint" type="revolute">
-        <parent link="pan_link"/>
-        <child link="tilt_link"/>
-        <axis xyz="1.0 0.0 0.0"/>
-        <dynamics damping="1.0"/>
-    </joint>
-    
+  <xacro:akaribase parent="base_footprint">
+    <origin xyz="0 0 0.005" rpy="0 0 0" />
+  </xacro:akaribase>
+
+  <xacro:akariservo parent="base_link">
+    <origin xyz="0.0 0.012 0.055" rpy="0 0 0" />
+  </xacro:akariservo>
+  
+  <xacro:akarihead parent="servo_link">
+    <origin xyz="0.0 -0.024 0.020" rpy="0 0 0" />
+  </xacro:akarihead>
+
 </robot>
