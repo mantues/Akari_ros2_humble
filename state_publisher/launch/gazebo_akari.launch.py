@@ -17,16 +17,20 @@ def generate_launch_description():
 
     model_dir = get_package_prefix('state_publisher')
     print(model_dir)
-    install_dir = os.path.join(get_package_share_directory('state_publisher'),'akari_gazebo_model')
-    os.environ['GAZEBO_MODEL_PATH'] = install_dir
-    print(install_dir)
-
+    #install_dir = os.path.join(get_package_share_directory('state_publisher'),'akari_gazebo_model')
+    #os.environ['GAZEBO_MODEL_PATH'] = install_dir
+    #print(install_dir)
+    
+    xacro_file = os.path.join(get_package_share_directory(pkg_name), "akari_gazebo_model", "akari_gazebo.urdf.xacro")
+    robot_description_raw = xacro.process_file(xacro_file).toxml()
+    
     # Configure the node
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
-        arguments=[file_subpath]
+        arguments=[file_subpath],
+        parameters=[{'robot_description': robot_description_raw}]
     )
 
     # Configure the node
