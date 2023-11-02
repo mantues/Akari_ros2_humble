@@ -24,6 +24,14 @@ setup(
             os.path.join("share", package_name, "rviz"),
             glob(os.path.join("rviz/*")),
         ),
+        (
+            os.path.join("share", package_name, "akari_gazebo_model"),
+            glob(os.path.join("akari_gazebo/model/*")),
+        ),
+        (
+            os.path.join("share", package_name, "akari_gazebo_world"),
+            glob(os.path.join("akari_gazebo/world/*")),
+        ),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
@@ -36,6 +44,7 @@ setup(
         "console_scripts": [
             "joint_state_publisher = state_publisher.joint_state_publisher:main",
             "m5stack_publisher = state_publisher.m5stack_publisher:main",
+            "spawn_akari = state_publisher.spawn_akari:main",
         ],
     },
 )
