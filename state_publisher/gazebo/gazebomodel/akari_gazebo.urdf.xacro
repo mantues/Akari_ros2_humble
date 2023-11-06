@@ -24,8 +24,8 @@
   </xacro:akarihead>
 
   <!-- =============== Transmission =============== -->
-  <xacro:akari_trans prefix="servo" interface="VelocityJointInterface" />
-  <xacro:akari_trans prefix="head" interface="VelocityJointInterface" />
+  <xacro:akari_trans prefix="pan" interface="VelocityJointInterface" />
+  <xacro:akari_trans prefix="tilt" interface="VelocityJointInterface" />
   
   <!-- =============== Gazebo =============== -->
   <ros2_control name="GazeboSystem" type="system">
@@ -38,14 +38,7 @@
       <robotNamespace>akari_xacro</robotNamespace>
       <parameters>$(find state_publisher)/akari_gazebo_model/akari_controll.yaml</parameters>
     </plugin>
-    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
-      <robotNamespace>akari_xacro</robotNamespace>
-      <frameName>map</frameName>
-      <bodyName>akari_spawn::base_footprint</bodyName>
-      <topicName>/tracker</topicName>
-      <updateRate>10.0</updateRate>
-    </plugin>
-  </gazebo>
+ </gazebo>
   <xacro:akari_base_gazebo />
   
   </robot>

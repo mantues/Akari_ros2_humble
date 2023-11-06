@@ -19,9 +19,19 @@
         <remapping>~/out:=joint_states</remapping>
       </ros>
       <update_rate>20</update_rate>
-      <joint_name>akari_servo_joint</joint_name>
-      <joint_name>akari_head_joint</joint_name>
+      <joint_name>pan</joint_name>
+      <joint_name>tilt</joint_name>
     </plugin>
+    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
+      <robotNamespace>akari_xacro</robotNamespace>
+      <frameName>map</frameName>
+      <body_name>base_footprint</body_name>
+      <ros>
+        <namespace>/odometry</namespace>
+        <remapping>odom:=ground_truth</remapping>
+      </ros>
+      <update_rate>10.0</update_rate>
+    </plugin>    
   </gazebo>    
   </xacro:macro>
 </robot>
