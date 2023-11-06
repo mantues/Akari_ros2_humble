@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="akari_trans" params="prefix interface">
+    <transmission name="${prefix}_link">
+      <type>transmission_interface/SimpleTransmission</type>
+
+      <joint name="${prefix}_joint">
+        <hardwareInterface>${interface}</hardwareInterface>
+      </joint>
+      
+      <actuator name="${prefix}_motor">
+        <hardwareInterface>${interface}</hardwareInterface>
+      </actuator>
+    </transmission>
+  </xacro:macro>
+</robot>

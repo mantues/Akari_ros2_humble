@@ -1,10 +1,16 @@
 <?xml version="1.0"?>
 <robot name="akari_xacro" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- =============== File include =============== -->
   <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_body.urdf.xacro"/>
   <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_servo.urdf.xacro"/>
   <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_head.urdf.xacro"/>
+  <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_transmission.xacro"/>
+  <xacro:include filename="$(find state_publisher)/akari_gazebo_model/akari_gazebo.gazebo.xacro"/>
+  
+  <!-- =============== Base =============== -->
   <link name="base_footprint"/>
 
+  <!-- =============== Model =============== -->
   <xacro:akaribase parent="base_footprint">
     <origin xyz="0 0 0.005" rpy="0 0 0" />
   </xacro:akaribase>
@@ -14,7 +20,32 @@
   </xacro:akariservo>
   
   <xacro:akarihead parent="servo_link">
-    <origin xyz="0.0 -0.024 0.020" rpy="0 0 0" />
+    <origin xyz="0.0 -0.024 0.025" rpy="0 0 0" />
   </xacro:akarihead>
 
-</robot>
+  <!-- =============== Transmission =============== -->
+  <xacro:akari_trans prefix="servo" interface="VelocityJointInterface" />
+  <xacro:akari_trans prefix="head" interface="VelocityJointInterface" />
+  
+  <!-- =============== Gazebo =============== -->
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+  </ros2_control>
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros2_control.so">
+      <robotNamespace>akari_xacro</robotNamespace>
+      <parameters>$(find state_publisher)/akari_gazebo_model/akari_controll.yaml</parameters>
+    </plugin>
+    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
+      <robotNamespace>akari_xacro</robotNamespace>
+      <frameName>map</frameName>
+      <bodyName>akari_spawn::base_footprint</bodyName>
+      <topicName>/tracker</topicName>
+      <updateRate>10.0</updateRate>
+    </plugin>
+  </gazebo>
+  <xacro:akari_base_gazebo />
+  
+  </robot>

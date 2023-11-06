@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="akariservo" params="parent *joint_servo">
-    <joint name="servo_joint" type="continuous">
+    <joint name="akari_servo_joint" type="continuous">
       <xacro:insert_block name="joint_servo" />
       <axis xyz="0.0 0.0 1.0" />
       <parent link="${parent}" />
