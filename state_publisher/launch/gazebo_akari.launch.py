@@ -58,11 +58,23 @@ def generate_launch_description():
                         arguments=['-entity', 'akari_spawn', '-topic', '/robot_description'],
                         output='screen')
     
+    load_joint_state_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'start', 'joint_state_broadcaster'],
+        output='screen'
+    )
+    
+    load_akari_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_start_controller', 'akari_controller'],
+        output='screen'
+    )
+    
     # Run the node
     return LaunchDescription([
         node_robot_state_publisher,
-        node_robot_state_publisher_gui,
-        node_rviz2,
+        #node_robot_state_publisher_gui,
+        #node_rviz2,
+        #load_joint_state_controller,
+        #load_akari_controller,
         gazebo,
         spawn_entity
     ])
