@@ -30,25 +30,7 @@ class JointStatePublisher(Node):  # type: ignore
         msg.velocity = [velocities[(joint_names[0])], velocities[(joint_names[1])]]
 
         positions = self.joints.get_joint_positions()
-        msg.position = [positions[(joint_names[0])], positions[(joint_names[1])]]
-
-        """
-        accelerations = self.joints.get_joint_accelerations()
-        msg.acceleration = [
-            accelerations[(joint_names[0])],
-            accelerations[(joint_names[1])],
-        ]
-        
-        pan_status = self.joints.pan_joint.get_servo_enabled()
-        tilt_status = self.joints.tilt_joint.get_servo_enabled()
-        msg.enabled = [pan_status, tilt_status]
-
-        moving_state = self.joints.get_moving_state()
-        msg.moving_state = [
-            moving_state[(joint_names[0])],
-            moving_state[(joint_names[1])],
-        ]
-        """
+        msg.position = [positions[(joint_names[0])], -1*positions[(joint_names[1])]]
 
         self.state_publisher.publish(msg)
 
