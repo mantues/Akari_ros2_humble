@@ -1,8 +1,9 @@
 <?xml version="1.0" ?>
-<robot name="akari">
+<robot name="akari_urdf">
     <!-- main center object -->
     <link name="base_link">
         <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="package://state_publisher/urdf/akari_body.stl" />
             </geometry>
@@ -10,10 +11,20 @@
                 <color rgba="0.3 0.3 0.3 1"/>
             </material>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+        <inertial>
+          <mass value="0.05"/>
+          <origin xyz="0 0.0 0" rpy="0 0 0"/>
+        <inertia ixx="0.000019" iyy="0.000035" izz="0.000019" ixy="0.000" ixz="0.000" iyz="0.000"/>
+        </inertial>
     </link>
-    
     <link name="pan_link">
         <visual>
+            <origin xyz="0 0.0 0" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="package://state_publisher/urdf/akari_servo.stl" />
             </geometry>
@@ -21,10 +32,20 @@
                 <color rgba="0.2 0.2 0.2 1"/>
             </material>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+        <inertial>
+          <mass value="0.05"/>
+          <origin xyz="0 0.005 0" rpy="0 0 0"/>
+        <inertia ixx="0.000019" iyy="0.000035" izz="0.000019" ixy="0.000" ixz="0.000" iyz="0.000"/>
+        </inertial>
     </link>
-
     <link name="tilt_link">
         <visual>
+            <origin xyz="0 0.0 0" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="package://state_publisher/urdf/akari_head.stl" />
             </geometry>
@@ -32,25 +53,32 @@
                 <color rgba="0.2 0.2 0.2 1"/>
             </material>
         </visual>
+        <collision>
+            <geometry>
+                <box size="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+        <inertial>
+          <mass value="0.05"/>
+          <origin xyz="0 0.075 0" rpy="0 0 0"/>
+        <inertia ixx="0.000019" iyy="0.000035" izz="0.000019" ixy="0.000" ixz="0.000" iyz="0.000"/>
+        </inertial>
     </link>
-
     <!-- Robot Footprint -->
     <link name="base_footprint"/>
-
     <joint name="base_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_footprint"/>
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
     </joint>
     
-    <joint name="servo_joint" type="continuous">
-        <parent link="base_footprint"/>
+    <joint name="pan" type="continuous">
+        <parent link="base_link"/>
         <child link="pan_link"/>
-        <origin xyz="0.0 0.0012 0.055" rpy="0 0 0"/>
+        <origin xyz="0.0 0.012 0.055" rpy="0 0 0"/>
         <axis xyz="0 0 1"/>
     </joint>
-
-    <joint name="head_joint" type="continuous">
+    <joint name="tilt" type="continuous">
         <parent link="pan_link"/>
         <child link="tilt_link"/>
         <origin xyz="0.0 -0.024 0.019" rpy="0 0 0"/>
