@@ -34,7 +34,7 @@ set(srv_files
 )
 set(msg_files
   "msg/M5.msg"
-  "msg/JointState.msg"
+  "msg/AkariJointState.msg"
 )
 set(action_files
   "action/MoveJoint.action"
