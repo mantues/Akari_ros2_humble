@@ -1,7 +1,7 @@
 from typing import Optional
 
 import rclpy
-from akari_msgs.msg import JointState
+from akari_msgs.msg import AkariJointState
 from rclpy.node import Node
 
 
@@ -9,7 +9,7 @@ class JointStateSubscriber(Node):  # type: ignore
     def __init__(self) -> None:
         super().__init__("servo_subscriber")
         self.subscription = self.create_subscription(
-            JointState, "/joint_state", self.servo_callback, 10
+            JointState, "/akari_joint_state", self.servo_callback, 10
         )
         self.subscription
 
