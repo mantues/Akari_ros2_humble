@@ -9,7 +9,7 @@ class JointStateSubscriber(Node):  # type: ignore
     def __init__(self) -> None:
         super().__init__("servo_subscriber")
         self.subscription = self.create_subscription(
-            JointState, "/akari_joint_state", self.servo_callback, 10
+            AkariJointState, "/akari_joint_state", self.servo_callback, 10
         )
         self.subscription
 
