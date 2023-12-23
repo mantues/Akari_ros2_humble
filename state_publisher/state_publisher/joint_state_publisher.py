@@ -6,8 +6,8 @@ from typing import Optional
 import rclpy
 from akari_client import AkariClient
 from akari_msgs.msg import AkariJointState
-from sensor_msgs.msg import JointState
 from rclpy.node import Node
+from sensor_msgs.msg import JointState
 
 
 class JointStatePublisher(Node):  # type: ignore
@@ -17,7 +17,9 @@ class JointStatePublisher(Node):  # type: ignore
         self.timer = self.create_timer(timer_period, self.akari_callback)
         self.timer = self.create_timer(timer_period, self.akari_joint_states)
         self.state_publisher = self.create_publisher(JointState, "/joint_states", 10)
-        self.akari_state_publisher = self.create_publisher(AkariJointState, "/akari_joint_states", 10)
+        self.akari_state_publisher = self.create_publisher(
+            AkariJointState, "/akari_joint_states", 10
+        )
         # SETTING AKARI
         self.akari = AkariClient()
         self.joints = self.akari.joints
@@ -32,7 +34,7 @@ class JointStatePublisher(Node):  # type: ignore
         msg.velocity = [velocities[(joint_names[0])], velocities[(joint_names[1])]]
 
         positions = self.joints.get_joint_positions()
-        msg.position = [positions[(joint_names[0])], -1*positions[(joint_names[1])]]
+        msg.position = [positions[(joint_names[0])], -1 * positions[(joint_names[1])]]
 
         self.state_publisher.publish(msg)
 
@@ -43,7 +45,10 @@ class JointStatePublisher(Node):  # type: ignore
         akari_msg.name = [joint_names[0], joint_names[1]]
 
         velocities = self.joints.get_joint_velocities()
-        akari_msg.velocity = [velocities[(joint_names[0])], velocities[(joint_names[1])]]
+        akari_msg.velocity = [
+            velocities[(joint_names[0])],
+            velocities[(joint_names[1])],
+        ]
 
         positions = self.joints.get_joint_positions()
         akari_msg.position = [positions[(joint_names[0])], positions[(joint_names[1])]]

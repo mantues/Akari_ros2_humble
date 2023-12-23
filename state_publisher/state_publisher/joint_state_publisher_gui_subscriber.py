@@ -5,13 +5,12 @@ from typing import Optional
 
 import rclpy
 from akari_client import AkariClient
-#from akari_msgs.msg import JointState
 from sensor_msgs.msg import JointState
 from rclpy.node import Node
 
 class JointStateSubscriber(Node):  # type: ignore
     def __init__(self) -> None:
-        super().__init__("joint_state_subscriber_node")
+        super().__init__("joint_state_gui_subscriber_node")
         self.state_subscriber = self.create_subscription(JointState, "/joint_states", self.akari_callback, 10)
         self.state_subscriber
         # SETTING AKARI
