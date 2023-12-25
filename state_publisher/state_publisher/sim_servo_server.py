@@ -24,17 +24,16 @@ class SimServoServer(Node):  # type: ignore
         self.akari_pan = 0.0
         self.akari_tilt = 0.0
         # SETTING AKARI
-        self.akari = AkariClient()
-        self.joints = self.akari.joints
+        #self.akari = AkariClient()
+        #self.joints = self.akari.joints
 
     # SERVER CALL BACK
     def akari_callback(self) -> None:
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
-        joint_names = self.joints.get_joint_names()
         msg.name = ["pan", "tilt"]
         msg.position = [self.akari_pan, -1 * self.akari_tilt]
-        msg.velocity = [self.akari_pan, -1 * self.akari_tilt]
+        #msg.velocity = [self.akari_pan, -1 * self.akari_tilt]
         
         self.state_publisher.publish(msg)
         
@@ -53,7 +52,7 @@ class SimServoServer(Node):  # type: ignore
                 self.akari_pan = request.val[index]
             elif name == "tilt":
                 tilt_pos = request.val[index]
-                self.tilt_pan = request.val[index]
+                self.akari_tilt = request.val[index]
         response.result = True
         
         self.get_logger().info(f"Result: : {self.akari_pan}")
