@@ -4,7 +4,7 @@
 from typing import Optional
 
 import rclpy
-from akari_client import AkariClient
+#from akari_client import AkariClient
 from akari_msgs.srv import SetJointPos
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
@@ -55,7 +55,7 @@ class SimServoServer(Node):  # type: ignore
                 self.akari_tilt = request.val[index]
         response.result = True
         
-        self.get_logger().info(f"Result: : {self.akari_pan}")
+        self.get_logger().info(f"Result: {self.akari_pan}")
         try:
             #msg.position = [pan_pos, -1 * tilt_pos]
             #self.state_publisher.publish(msg)
