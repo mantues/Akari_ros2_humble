@@ -26,11 +26,23 @@ setup(
         ),
         (
             os.path.join("share", package_name, "akari_gazebo_model"),
-            glob(os.path.join("akari_gazebo/model/*")),
+            glob(os.path.join("models/*")),
+        ),
+        (
+            os.path.join("share", package_name, "akari_gazebo_yaml"),
+            glob(os.path.join("yamls/*")),
         ),
         (
             os.path.join("share", package_name, "akari_gazebo_world"),
-            glob(os.path.join("akari_gazebo/world/*")),
+            glob(os.path.join("worlds/*")),
+        ),
+        (
+            os.path.join("share", package_name, "image"),
+            glob(os.path.join("image/*.png")),
+        ),
+        (
+            os.path.join("share", package_name, "font"),
+            glob(os.path.join("font/*.ttf")),
         ),
     ],
     install_requires=["setuptools"],
@@ -43,8 +55,11 @@ setup(
     entry_points={
         "console_scripts": [
             "joint_state_publisher = state_publisher.joint_state_publisher:main",
+            "joint_state_publisher_gui_subscriber = state_publisher.joint_state_publisher_gui_subscriber:main",
             "m5stack_publisher = state_publisher.m5stack_publisher:main",
-            "spawn_akari = state_publisher.spawn_akari:main",
+            "sim_servo_server = state_publisher.sim_servo_server:main",
+            "sim_servo_client = state_publisher.sim_servo_client:main",
+            "sim_m5_server = state_publisher.sim_m5_server:main",
         ],
     },
 )
