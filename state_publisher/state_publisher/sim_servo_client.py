@@ -51,10 +51,10 @@ def main(args: Optional[str] = None) -> None:
     print("")
     time.sleep(2)
 
-    client.get_logger().info("STEP3. Move tilt pos to 0.3 rad")
+    client.get_logger().info("STEP3. Move tilt pos to -0.3 rad")
     req = SetJointPos.Request()
     req.joint_name = ["tilt"]
-    req.val = [0.3]
+    req.val = [-0.3]
     req.sync = True
     client.future = client.cli_pos.call_async(req)
     rclpy.spin_until_future_complete(client, client.future)
