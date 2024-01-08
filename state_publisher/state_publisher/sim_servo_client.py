@@ -29,10 +29,10 @@ def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     client = ServoClient()
 
-    client.get_logger().info("STEP4. Move to initial pos")
+    client.get_logger().info("STEP1. Move (pan,tilt) to (-0.4, 0.4) rad")
     req = SetJointPos.Request()
     req.joint_name = ["pan", "tilt"]
-    req.val = [0.5, 0.5]
+    req.val = [-0.4, 0.4]
     req.sync = True
     client.future = client.cli_pos.call_async(req)
     rclpy.spin_until_future_complete(client, client.future)
@@ -40,7 +40,7 @@ def main(args: Optional[str] = None) -> None:
     print("")
     time.sleep(2)
 
-    client.get_logger().info("STEP5. Move pan pos to 0.5 rad")
+    client.get_logger().info("STEP2. Move pan pos to 0.5 rad")
     req = SetJointPos.Request()
     req.joint_name = ["pan"]
     req.val = [0.5]
@@ -51,10 +51,10 @@ def main(args: Optional[str] = None) -> None:
     print("")
     time.sleep(2)
 
-    client.get_logger().info("STEP6. Move tilt pos to -0.3 rad")
+    client.get_logger().info("STEP3. Move tilt pos to 0.3 rad")
     req = SetJointPos.Request()
     req.joint_name = ["tilt"]
-    req.val = [-0.3]
+    req.val = [0.3]
     req.sync = True
     client.future = client.cli_pos.call_async(req)
     rclpy.spin_until_future_complete(client, client.future)
@@ -62,7 +62,7 @@ def main(args: Optional[str] = None) -> None:
     print("")
     time.sleep(2)
 
-    client.get_logger().info("STEP8. Move (pan,tilt) to (-0.2, 0.4) rad")
+    client.get_logger().info("STEP4. Move (pan,tilt) to (-0.2, 0.4) rad")
     req = SetJointPos.Request()
     req.joint_name = ["pan", "tilt"]
     req.val = [-0.2, 0.4]
@@ -73,7 +73,7 @@ def main(args: Optional[str] = None) -> None:
     print("")
     time.sleep(2)
 
-    client.get_logger().info("STEP9. Move to initial pos")
+    client.get_logger().info("STEP5. Move to initial pos")
     req = SetJointPos.Request()
     req.joint_name = ["pan", "tilt"]
     req.val = [0.0, 0.0]

@@ -45,10 +45,10 @@ class SimServoServer(Node):  # type: ignore
         msg.name = ["pan", "tilt"]
         pan_pos: Optional[float] = None
         tilt_pos: Optional[float] = None
+        del_pan_pose = 0.0
+        del_tilt_pose = 0.0
+        num = 40
         for index, name in enumerate(request.joint_name):
-            del_pan_pose = 0.0
-            del_tilt_pose = 0.0
-            num = 10
             # set_servo
             if name == "pan":
                 pan_pos = request.val[index]
@@ -58,14 +58,14 @@ class SimServoServer(Node):  # type: ignore
                 tilt_pos = request.val[index]
                 #self.akari_tilt = request.val[index]
                 del_tilt_pose = (tilt_pos - self.akari_tilt)/num
-            for i in range(num):
-                msg.header.stamp = self.get_clock().now().to_msg()
-                self.akari_pan += del_pan_pose
-                self.akari_tilt += del_tilt_pose
-                msg.position = [self.akari_pan, -1 * self.akari_tilt]
-                self.state_publisher.publish(msg)
-                time.sleep(0.25)
-                self.get_logger().info(f"Result: {self.akari_pan, self.akari_tilt}")
+        for i in range(num):
+            msg.header.stamp = self.get_clock().now().to_msg()
+            self.akari_pan += del_pan_pose
+            self.akari_tilt += del_tilt_pose
+            msg.position = [self.akari_pan, -1 * self.akari_tilt]
+            self.state_publisher.publish(msg)
+            time.sleep(0.05)
+            self.get_logger().info(f"Result: {self.akari_pan, self.akari_tilt}")
         response.result = True
         
         #self.get_logger().info(f"Result: {self.akari_pan}")
