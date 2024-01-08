@@ -8,6 +8,7 @@ import rclpy
 from akari_msgs.srv import SetJointPos
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
+import time
 
 class SimServoServer(Node):  # type: ignore
     def __init__(self) -> None:
@@ -41,21 +42,33 @@ class SimServoServer(Node):  # type: ignore
         self, request: SetJointPos.Request, response: SetJointPos.Response
     ) -> SetJointPos.Response:
         msg = JointState()
-        msg.header.stamp = self.get_clock().now().to_msg()
         msg.name = ["pan", "tilt"]
         pan_pos: Optional[float] = None
         tilt_pos: Optional[float] = None
         for index, name in enumerate(request.joint_name):
+            del_pan_pose = 0.0
+            del_tilt_pose = 0.0
+            num = 10
             # set_servo
             if name == "pan":
                 pan_pos = request.val[index]
-                self.akari_pan = request.val[index]
+                #self.akari_pan = request.val[index]
+                del_pan_pose = (pan_pos - self.akari_pan)/num
             elif name == "tilt":
                 tilt_pos = request.val[index]
-                self.akari_tilt = request.val[index]
+                #self.akari_tilt = request.val[index]
+                del_tilt_pose = (tilt_pos - self.akari_tilt)/num
+            for i in range(num):
+                msg.header.stamp = self.get_clock().now().to_msg()
+                self.akari_pan += del_pan_pose
+                self.akari_tilt += del_tilt_pose
+                msg.position = [self.akari_pan, -1 * self.akari_tilt]
+                self.state_publisher.publish(msg)
+                time.sleep(0.25)
+                self.get_logger().info(f"Result: {self.akari_pan, self.akari_tilt}")
         response.result = True
         
-        self.get_logger().info(f"Result: {self.akari_pan}")
+        #self.get_logger().info(f"Result: {self.akari_pan}")
         try:
             #msg.position = [pan_pos, -1 * tilt_pos]
             #self.state_publisher.publish(msg)

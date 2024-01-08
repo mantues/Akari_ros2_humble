@@ -150,9 +150,9 @@ class M5Server(Node):
             PIL_image = Image.fromarray(self.akari_image)
             draw_image = ImageDraw.Draw(PIL_image)
             draw_image.rectangle(
-                  [(10, 110), (150, 140)], fill=(255, 255, 255), outline=(0, 255, 0), width=1
+                  [(10, 110), (150, 175)], fill=(255, 255, 255), outline=(255, 255, 255), width=1
                   )
-            font = ImageFont.truetype(self.ipa_font, 30)
+            font = ImageFont.truetype(self.ipa_font, 20)
             draw_image.text((10, 110), req_text, font=font, fill=(255, 0, 0, 255))
             cvt_image = np.array(PIL_image)
             #cvt_image = cv2.cvtColor(cvt_image, cv2.COLOR_BGR2RGB)
