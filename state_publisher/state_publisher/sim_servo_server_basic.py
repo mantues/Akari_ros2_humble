@@ -6,22 +6,37 @@ from typing import Optional
 import rclpy
 #from akari_client import AkariClient
 from akari_msgs.srv import SetJointPos
-
+from rclpy.node import Node
 from sensor_msgs.msg import JointState
 import time
-from rclpy.node import Node
-from rclpy.executors import MultiThreadedExecutor
-import threading
 
 class SimServoServer(Node):  # type: ignore
     def __init__(self) -> None:
         super().__init__("sim_servo_server")
+        timer_period = 0.1  # seconds
+        self.timer = self.create_timer(timer_period, self.akari_callback)
         # create service service JOINTS for simulator
         self._sim_servo_pos_srv = self.create_service(
             SetJointPos, "move_joint", self.move_joint_subscriber
         )
+        # create publisher
+        self.state_publisher = self.create_publisher(JointState, "/joint_states", 10)
+        
         self.akari_pan = 0.0
         self.akari_tilt = 0.0
+        # SETTING AKARI
+        #self.akari = AkariClient()
+        #self.joints = self.akari.joints
+
+    # SERVER CALL BACK
+    def akari_callback(self) -> None:
+        msg = JointState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.name = ["pan", "tilt"]
+        msg.position = [self.akari_pan, -1 * self.akari_tilt]
+        #msg.velocity = [self.akari_pan, -1 * self.akari_tilt]
+        
+        self.state_publisher.publish(msg)
         
     def move_joint_subscriber(
         self, request: SetJointPos.Request, response: SetJointPos.Response
@@ -49,6 +64,7 @@ class SimServoServer(Node):  # type: ignore
             self.akari_tilt += del_tilt_pos
             
             msg.position = [self.akari_pan, -1 * self.akari_tilt]
+            self.state_publisher.publish(msg)
             time.sleep(0.05)
             
         self.get_logger().info(f"Result: {self.akari_pan, self.akari_tilt}")
@@ -64,44 +80,14 @@ class SimServoServer(Node):  # type: ignore
             response.result = False
         return response
 
-class SimServoPublisher(Node):  # type: ignore
-    def __init__(self) -> None:
-        super().__init__("sim_servo_publisher")
-        timer_period = 0.1  # seconds
-        self.timer = self.create_timer(timer_period, self.akari_callback)
-        # create publisher
-        self.state_publisher = self.create_publisher(JointState, "/joint_states", 10)
-        
-        self.akari_pan = 0.0
-        self.akari_tilt = 0.0
-        
 
-    # SERVER CALL BACK
-    def akari_callback(self) -> None:
-        msg = JointState()
-        msg.header.stamp = self.get_clock().now().to_msg()
-        msg.name = ["pan", "tilt"]
-        msg.position = [self.akari_pan, -1 * self.akari_tilt]
-        self.state_publisher.publish(msg)
 
 def main(args: Optional[str] = None) -> None:
     rclpy.init(args=args)
     subscriber = SimServoServer()
-    publisher = SimServoPublisher()
-
-    executor = MultiThreadedExecutor()
-    executor.add_node(subscriber)
-    executor.add_node(publisher)
-    
-    executor_thread = threading.Thread(target=executor.spin, daemon=True)
-    executor_thread.start()
-    try:
-       while rclpy.ok():
-           time.sleep(2)
-    except KeyboardInterrupt:
-       pass
+    rclpy.spin(subscriber)
     rclpy.shutdown()
-    executor_thread.join()
+
 
 if __name__ == "__main__":
     main()
