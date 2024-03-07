@@ -67,13 +67,16 @@ def path_plotter(VMAX, ACC, D1, D2):
       Pos += VMAXset
       path_first.append(Pos)
       path_latter.append(distance - Pos)
+  # 不連続な部位の調整
+  if(delta < mid):
+      path_latter.append(0.5*distance)
   # 後半経路を逆転させる
   path_latter_l = path_latter[::-1]
   # 後半経路の距離分だけ足してつじつま合わせ
   delta_value = distance - path_latter[0]
   path_latter_a = [x + delta_value for x in path_latter_l]
   # 経路の結合
-  path_all = path_first[:-1] + path_latter_a
+  path_all = path_first + path_latter_a
   # 始点と終点が逆転していたらひっくり返す
   if FLAG == 1:
     path_all = path_all[::-1]
